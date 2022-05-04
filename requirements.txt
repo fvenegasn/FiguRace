@@ -1,0 +1,3 @@
+# acá van las librerias instaladas
+
+PySimpleGUI==4.59.0
