@@ -3,32 +3,20 @@ import PySimpleGUI as sg
 
 def abrir_menu():
 
-    ruta_imagen = os.path.join(os.getcwd(),'imagenes','figurace_logo.png')
+    ruta_imagen = os.path.join(os.getcwd(),'static','imagenes','figurace_logo.png')
     
     perfiles_lista = ['Aca','van','los','perfiles']
 
     menu = [
-        [
-            sg.Button("Jugar",key="-Jugar-",font=('Arial',27))
-            ],
-        [
-            sg.Button("Configuración",font=('Arial',20))
-            ],
-        [
-            sg.Button("Puntaje",key='-Puntajes-',font=('Arial',20))
-            ],
-        [
-            sg.Button("Perfil",font=('Arial',20))
-            ],
+        [sg.Button("Jugar",key="-Jugar-",font=('Arial',27))],
+        [sg.Button("Configuración",font=('Arial',20))],
+        [sg.Button("Puntaje",key='-Puntajes-',font=('Arial',20))],
+        [sg.Button("Perfil",font=('Arial',20))],
         ]
 
     perfiles = [
-        [
-            sg.Text("Perfiles",font=('Arial',15))
-            ],
-        [
-            sg.Listbox(values=perfiles_lista,size=(15,10),horizontal_scroll=True)
-            ]
+        [sg.Text("Perfiles",font=('Arial',15))],
+        [sg.Listbox(values=perfiles_lista,size=(15,10),horizontal_scroll=True)]
     ]
 
     dificultad = [
