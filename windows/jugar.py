@@ -1,5 +1,6 @@
-import PySimpleGUI as sg 
+import PySimpleGUI as sg
 from common.hacer_ventana import crear_ventana
+
 
 """-------------------------LOGÍSTICA------------------------------"""
 def logistica(event,values):
@@ -11,7 +12,7 @@ def logistica(event,values):
 """-------------------------EJECUCIÓN------------------------------"""
 def ejecutar():
     layout = [
-        [sg.Text("Pantalla de puntajes",font=('Arial',15))],
-        [sg.Button("Volver al menú", key="-VOLVER-",font=('Arial',14))],
+        [sg.Text("Pantalla de juego",font=('Arial',15))],
+        [sg.Button("Volver al menú", key="-VOLVER-",font=('Arial',15))],
     ]
-    crear_ventana('Puntajes',layout,acciones=logistica)
+    crear_ventana("Pantalla de Juego", layout,logistica)
