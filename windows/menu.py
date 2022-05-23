@@ -3,7 +3,7 @@ import os
 import PySimpleGUI as sg
 from common.hacer_ventana import crear_ventana #renderizar_ventana
 
-from windows import jugar, puntajes
+from windows import jugar, puntajes, perfil
 
 #from abrir_menu import abrir_menu
 #from juego import abrir_juego
@@ -48,8 +48,7 @@ def logica_ventana(event,values):
             puntajes.ejecutar()
 
         case '-PERFIL-':
-            print("PERFIL")
-            #perfil.ejecutar()
+            perfil.ejecutar()
 
         case '-CONFIGURACION-':
             print("CONFIGURACION")
