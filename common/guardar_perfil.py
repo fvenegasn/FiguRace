@@ -29,7 +29,7 @@ def guardar_en_archivo(dato_in):
     except FileNotFoundError:
         arch_usuarios = open(ruta,'x')
         json.dump([dato_in],arch_usuarios,indent=4)
-        arch_usuarios.close()
+    arch_usuarios.close()
     return exito
 
 def existe(datos_arch,nick):

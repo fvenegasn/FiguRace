@@ -1,12 +1,14 @@
 import PySimpleGUI as sg
 from common.hacer_ventana import crear_ventana
-from windows import crear_perfil
+from windows.perfil import crear_perfil,editar_perfil
 
 """-------------------------LOGÍSTICA------------------------------"""
 def logistica(event,values):
     match event:
         case '-CREAR-':
             crear_perfil.ejecutar()
+        case '-EDITAR-':
+            editar_perfil.ejecutar()
         case '-VOLVER-':
             return False
     return True
