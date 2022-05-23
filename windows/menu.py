@@ -3,7 +3,7 @@ import os
 import PySimpleGUI as sg
 from common.hacer_ventana import crear_ventana #renderizar_ventana
 
-from windows import jugar, puntajes, perfil
+from windows import jugar, puntajes, configuracion
 
 #from abrir_menu import abrir_menu
 #from juego import abrir_juego
@@ -51,8 +51,7 @@ def logica_ventana(event,values):
             perfil.ejecutar()
 
         case '-CONFIGURACION-':
-            print("CONFIGURACION")
-            #configuracion.ejecutar
+            configuracion.ejecutar()
 
         case sg.WIN_CLOSED:
             return False
