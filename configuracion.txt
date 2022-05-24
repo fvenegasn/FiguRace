@@ -1,1 +1,0 @@
-{"Facil": {"tiempo_limite": "10", "cant_rondas": "1", "rta_correcta": "20", "rta_incorrecta": "1", "cant_caracteristicas": "10"}, "Media": {"tiempo_limite": 30, "cant_rondas": 10, "rta_correcta": 1, "rta_incorrecta": 0.5, "cant_caracteristicas": 3}, "Dificil": {"tiempo_limite": 15, "cant_rondas": 10, "rta_correcta": 1, "rta_incorrecta": 1, "cant_caracteristicas": 2}}

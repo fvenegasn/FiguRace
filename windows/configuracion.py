@@ -1,5 +1,6 @@
 import PySimpleGUI as sg
 import json
+import os
 from common.validar_numeros import validate_integer
 
 #El juego tiene, por default, una configuración determinada para cada dificultad
@@ -25,18 +26,21 @@ options = {
     "cant_caracteristicas" : 2
     }
 }
-
-#Esta función devolverá la dificultad elegida por el usuario a efectos de modificar los valores de la configuración correctos
-def check_difficulty (event):
-    if event == "Facil":
-        return "Facil"
-    elif event == "Media":
-        return "Media"
-    elif event == "Dificultad":
-        return "Dificil"
     
 #Esta función pasa los valores ingresados en pantalla por el usuario a la configuración del juego
-def values_to_options(options, values, difficulty):
+def values_to_options(options:dict, values:dict, difficulty:str) -> None:
+    """
+    función 'values_to_options'
+
+    Def:
+        Modifica el diccionario con los parámetros de configuración predeterminado con los valores
+        ingresados por el usuario en pantalla.
+    
+    Args:
+        - options (dict): Diccionario que contiene los parámetros de juego para cada dificultad
+        - values (dict): Diccionario que contiene los parámetros de juego ingresado por el usuario en pantalla
+        - difficulty (str): String que contiene la dificultad elegida por el usuario en pantalla
+    """
     x = 0
     dicc_aux = options[difficulty]
     for elem in dicc_aux:
@@ -68,7 +72,7 @@ def secondary_configuration():
     return sg.Window("Selección de opciones", layout, margins=(100, 50), finalize=True)
 
 def ejecutar():
-    archivo = open ("configuracion.txt", "w", encoding="UTF-8")
+    archivo = open (os.path.join(os.getcwd(), 'data','json',"configuracion.json"), "w", encoding="UTF-8")
     window = primary_configuration()
 
     while True:
@@ -78,7 +82,7 @@ def ejecutar():
             break
         elif event == "Facil" or event == "Media" or event == "Dificil":
             #entrar en la dificultad ingresada y llamar a segunda ventana
-            difficulty = check_difficulty(event)
+            difficulty = event
             window.close()
             window = secondary_configuration()
         elif event == "Continuar" or event == "Cancelar":

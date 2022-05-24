@@ -1,0 +1,12 @@
+[
+    {
+        "nick": "Fran",
+        "edad": "20",
+        "genero": "m"
+    },
+    {
+        "nick": "Jorge",
+        "edad": "43",
+        "genero": "M"
+    }
+]
