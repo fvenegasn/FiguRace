@@ -1,12 +1,14 @@
 [
     {
-        "nick": "Fran",
-        "edad": "20",
-        "genero": "m"
+        "nick": "Juli",
+        "edad": "27",
+        "genero": "Femenino",
+        "contrase\u00f1a": "jc19"
     },
     {
-        "nick": "Jorge",
-        "edad": "43",
-        "genero": "M"
+        "nick": "Pepe",
+        "edad": "24",
+        "genero": "Masculino",
+        "contrase\u00f1a": "789"
     }
 ]

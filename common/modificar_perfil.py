@@ -1,13 +1,15 @@
 import os
 import json
-from common.Usuario import Usuario
+from common.usuario import Usuario
+from common.validar_numeros import validate_integer
 
-def editar_perfil(valor_1,valor_2,valor_3):
-    usuario = Usuario(valor_1,valor_2,valor_3)
-    
+def editar_perfil(valor_1,valor_2,valor_3,valor_4):
+    usuario = Usuario(valor_1,valor_2,valor_3,valor_4)
+    if (not validate_integer(valor_2)):
+        return False
     ruta=os.path.join(os.getcwd(),'data','json','usuarios_datos')
     try:
-        arch_usuarios = open(ruta, "r+")
+        arch_usuarios = open(ruta, "r+",encoding='utf-8')
         datos_arch = json.load(arch_usuarios)
         exito,datos_arch = modificar(datos_arch,usuario)
         if exito:
@@ -27,5 +29,6 @@ def modificar(datos_arch,usuario):
         if dato['nick']== usuario.nick:
             dato['edad'] = usuario.edad
             dato['genero'] = usuario.genero
+            dato['contraseña'] = usuario.contraseña
             return True,datos_arch
     return False,datos_arch
