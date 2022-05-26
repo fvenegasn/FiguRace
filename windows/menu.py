@@ -1,9 +1,8 @@
-#from sre_parse import expand_template
 import os
 import PySimpleGUI as sg
-from common.hacer_ventana import crear_ventana #renderizar_ventana
+from common.hacer_ventana import crear_ventana 
 
-from windows import jugar, puntajes, configuracion
+from windows import jugar, puntajes, configuracion,como_jugar
 from windows.perfil import perfil
 from common.verificar_perfil import mostrar_seleccionado
 
@@ -56,10 +55,14 @@ def logica_ventana(event,values):
         case '-CONFIGURACION-':
             configuracion.ejecutar()
         
+        case '-COMO-JUGAR-':
+            como_jugar.ejecutar()
+
         case '-ACTUALIZAR-':
             ejecutar()
             return False 
-        case sg.WIN_CLOSED:
+
+        case None | sg.WIN_CLOSED:
             return False
     return True
     
