@@ -4,7 +4,11 @@ import json
 from common.guardar_perfil import existe
 
 
-def verificar_perfil(nick,contraseña):
+def verificar_perfil(nick:str,contraseña:str):
+    """
+        Devuelve True si existe el nick y la contraseña es correcta.
+        Caso contrario devuelve False
+    """ > bool
 
     ruta=os.path.join(os.getcwd(),'data','json','usuarios_datos')
     
@@ -19,13 +23,19 @@ def verificar_perfil(nick,contraseña):
     except FileNotFoundError:
         return False
 
-def guardar_seleccionado(nick):
+def guardar_seleccionado(nick:str):
+    """
+        Guarda en un txt el nick
+    """
     ruta=os.path.join(os.getcwd(),'data','txt','perfil_seleccionado.txt')
     with open(ruta,"w",encoding='utf-8') as arch_nombre:
         arch_nombre.write(nick)
 
-def mostrar_seleccionado():
-    ruta=os.path.join(os.getcwd(),'data','txt','perfil_seleccionado.txt')
+def mostrar_seleccionado(ruta:str):
+    """
+        Retorna nick guardado en ruta
+    """ > str
+
     try:
         with open(ruta,"r",encoding='utf-8') as arch_nombre:
             return arch_nombre.read()

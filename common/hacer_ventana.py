@@ -1,6 +1,6 @@
 import PySimpleGUI as sg
 
-def crear_ventana(name,layout,acciones):
+def crear_ventana(name:str,layout:list,acciones:function):
     """
     funcion crear_ventana
     
@@ -26,15 +26,3 @@ def crear_ventana(name,layout,acciones):
         window.UnHide()
     window.close()   
 
-# def renderizar_ventana(ventana_actual:sg.Window,ventana_siguiente:sg.Window):
-#     """
-#     function `renderizar_ventana`
-#     Def:
-#         Esta funcion se basa en ocultar una ventana actual para ejecutar otra ventana enviada por parametro
-#     Args:
-#         ventana_actual(sg.Window): Ventana actual del sistema
-#         ventana_siguiente (sg.Window): Ventana la cual se quiere renderizar
-#     """
-#     ventana_actual.Hide()
-#     ventana_siguiente.ejecutar()  # type: ignore
-#     ventana_actual.UnHide()

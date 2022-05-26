@@ -10,11 +10,11 @@ from common.verificar_perfil import mostrar_seleccionado
 """-------------------------INTERFAZ------------------------------"""
 def interfaz():
     ruta_imagen = os.path.join(os.getcwd(),'static','figurace_logo.png')
- 
+    ruta_nick = os.path.join(os.getcwd(),'data','txt','perfil_seleccionado.txt')
     perfiles = [
             [
                 sg.Text("Figuracer: ",font=('Arial',15)),
-                sg.Text(mostrar_seleccionado(),key='-MOSTRAR_NICK-',font=('Arial',15))
+                sg.Text(mostrar_seleccionado(ruta_nick),key='-MOSTRAR_NICK-',font=('Arial',15))
             ]
         ]
     dificultad = [
@@ -26,7 +26,8 @@ def interfaz():
             [sg.Button("Jugar",key="-JUGAR-",font=('Arial',27))],
             [sg.Button("Perfil",key='-PERFIL-',font=('Arial',20))],
             [sg.Button("Puntaje",key='-PUNTAJES-',font=('Arial',20))],
-            [sg.Button("Configuración",key='-CONFIGURACION-',font=('Arial',20))]
+            [sg.Button("Configuración",key='-CONFIGURACION-',font=('Arial',20))],
+            [sg.Button("Actualizar",key='-ACTUALIZAR-',font=('Arial',10))]
             
     ]
 
@@ -55,6 +56,9 @@ def logica_ventana(event,values):
         case '-CONFIGURACION-':
             configuracion.ejecutar()
         
+        case '-ACTUALIZAR-':
+            ejecutar()
+            return False 
         case sg.WIN_CLOSED:
             return False
     return True

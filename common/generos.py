@@ -3,4 +3,5 @@ lista_generos = [
     'Masculino',
     'No-binario',
     'Transgénero',
-    'Otro']
+    'Otro'
+    ]
