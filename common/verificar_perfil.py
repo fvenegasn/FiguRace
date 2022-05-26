@@ -8,7 +8,7 @@ def verificar_perfil(nick:str,contraseña:str):
     """
         Devuelve True si existe el nick y la contraseña es correcta.
         Caso contrario devuelve False
-    """ > bool
+    """
 
     ruta=os.path.join(os.getcwd(),'data','json','usuarios_datos')
     
@@ -34,7 +34,7 @@ def guardar_seleccionado(nick:str):
 def mostrar_seleccionado(ruta:str):
     """
         Retorna nick guardado en ruta
-    """ > str
+    """
 
     try:
         with open(ruta,"r",encoding='utf-8') as arch_nombre:

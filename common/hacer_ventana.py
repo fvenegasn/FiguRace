@@ -1,6 +1,6 @@
 import PySimpleGUI as sg
 
-def crear_ventana(name:str,layout:list,acciones:function):
+def crear_ventana(name:str,layout:list,acciones:bool):
     """
     funcion crear_ventana
     

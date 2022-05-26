@@ -4,7 +4,7 @@ from common.usuario import Usuario
 from common.validar_numeros import validate_integer
 
 def guardar_perfil(valor_1:str,valor_2:str,valor_3:str,valor_4:str):
-    """Retorna True si se pudo guardar con exito el nuevo usuario""" > bool
+    """Retorna True si se pudo guardar con exito el nuevo usuario"""
     
     if (not validate_integer(valor_2)):
         return False
@@ -18,7 +18,7 @@ def guardar_en_archivo(dato_in:dict):
     """
         Guarda nuevo usuario en archivo si el nick no es uno ya existente y devuelve True. 
         Caso contrario devuelve False
-    """ > bool
+    """
     
     ruta=os.path.join(os.getcwd(),'data','json','usuarios_datos')
     exito = False
@@ -44,7 +44,7 @@ def existe(datos_arch:list,nick:str):
     """
         Devuelve True si el nick a ingresar ya existe. 
         Caso contrario devuelve False
-    """ > bool
+    """
     
     for usuario in datos_arch:
         if usuario['nick']==nick:

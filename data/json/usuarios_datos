@@ -10,5 +10,11 @@
         "edad": "24",
         "genero": "Masculino",
         "contrase\u00f1a": "789"
+    },
+    {
+        "nick": "Juliuss",
+        "edad": "27",
+        "genero": "Femenino",
+        "contrase\u00f1a": "asd"
     }
 ]

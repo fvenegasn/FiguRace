@@ -7,7 +7,7 @@ def editar_perfil(valor_1:str,valor_2:str,valor_3:str,valor_4:str):
     """
         Edita los datos del perfil (valor_2,valor_3,valor_4) 
         si el nick ingresado existe (valor_1)
-    """ > bool
+    """
     
     usuario = Usuario(valor_1,valor_2,valor_3,valor_4)
     if (not validate_integer(valor_2)):
@@ -30,7 +30,7 @@ def modificar(datos_arch:list,usuario:Usuario):
     """
         Devuelve True si el nick a ingresar existe y modifica  y devuelve los respectivos datos. 
         Caso contrario devuelve False
-    """ > (bool,list)
+    """
     
     for dato in datos_arch:
         if dato['nick']== usuario.nick:
