@@ -16,7 +16,7 @@ def opciones_random(nombre:str,correcta:str):
         retorna una lista de las opciones elegidas de manera aleatoria, mas la opcion correcta
     """
     
-    archivo=os.path.join(os.getcwd(),'data','csv',nombre)
+    archivo=os.path.join(os.getcwd(),'data','csv','data_set_'+nombre.lower()+'.csv')
     try:
         data = open(archivo,'r',encoding='UTF-8')
     except FileNotFoundError:
