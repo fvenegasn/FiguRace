@@ -1,6 +1,6 @@
 import os
 import json
-from common.usuario import Usuario
+from common.Usuario import Usuario
 from common.validar_numeros import validate_integer
 
 def guardar_perfil(valor_1:str,valor_2:str,valor_3:str,valor_4:str):
