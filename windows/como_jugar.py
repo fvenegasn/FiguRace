@@ -3,6 +3,13 @@ from common.hacer_ventana import crear_ventana
 import os
 
 def abrir_explicacion_juego():
+    """
+    Funcion abrir_explicacion_juego
+    
+    Def:
+        Esta funcion abre y lee desde un archivo, la explicacion de como se juega al Figurace
+        y retorna lo leido
+    """
     archivo_path=os.path.join(os.getcwd(),'static','explicacion_juego')
     try:
         with open(archivo_path,'r',encoding='utf-8') as archivo:

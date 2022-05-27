@@ -7,7 +7,7 @@ def opciones_random(nombre:str,correcta:str):
      funcion opciones_random
     
     Def:
-        Esta funcion crea una ventana con los atributos pasados y crea un loop que permite la interacción con la misma
+        Esta funcion retorna las 5 opciones a escribir en la tarjeta, entre las que esta la correcta
 
     Args:
         nombre(str): nombre del csv del cual se leen las opciones

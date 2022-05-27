@@ -26,6 +26,7 @@ def interfaz():
             [sg.Button("Perfil",key='-PERFIL-',font=('Arial',20))],
             [sg.Button("Puntaje",key='-PUNTAJES-',font=('Arial',20))],
             [sg.Button("Configuración",key='-CONFIGURACION-',font=('Arial',20))],
+            [sg.Button("Como Jugar",key='-COMO-JUGAR-',font=('Arial',20))],
             [sg.Button("Actualizar",key='-ACTUALIZAR-',font=('Arial',10))]
             
     ]
