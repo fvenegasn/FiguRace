@@ -1,32 +1,46 @@
 import PySimpleGUI as sg
 from common.hacer_ventana import crear_ventana
 import os
-
-def abrir_explicacion_juego():
-    """
-    Funcion abrir_explicacion_juego
-    
-    Def:
-        Esta funcion abre y lee desde un archivo, la explicacion de como se juega al Figurace
-        y retorna lo leido
-    """
-    archivo_path=os.path.join(os.getcwd(),'static','explicacion_juego')
-    try:
-        with open(archivo_path,'r',encoding='utf-8') as archivo:
-            return archivo.read()
-    except FileNotFoundError:
-        print(f'No se encontro el archivo{archivo_path}')
-        exit(1) 
+from static import explicacion_juego 
     
 
 """-------------------------INTERFAZ-------------------------------"""
 def interface():
-    explicacion=abrir_explicacion_juego()
+    ruta_imagen = os.path.join(os.getcwd(),'static','figurace_logo.png')
+    
+    about_jugar = [
+            [
+                sg.Text("Jugar: ",font=('Arial',14)),
+                sg.Text(explicacion_juego.play_button,key='-PLAY-',font=('Arial',12))
+            ]
+        ]
+    about_perfil = [
+            [
+                sg.Text("Perfil: ",font=('Arial',14)),
+                sg.Text(explicacion_juego.profile_button,key='-PROFILE-',font=('Arial',12))
+            ]
+        ]
+    about_puntajes = [
+            [
+                sg.Text("Puntajes: ",font=('Arial',14)),
+                sg.Text(explicacion_juego.score_button,key='-SCORE-',font=('Arial',12))
+            ]
+        ]
+    about_config = [
+            [
+                sg.Text("Configuración: ",font=('Arial',14)),
+                sg.Text(explicacion_juego.config_button,key='-CONFIG-',font=('Arial',12))
+            ]
+        ]
+
     layout=[
-        [sg.Text('Cómo Jugar', font=(any,20),justification='center')],
-        [sg.Text(explicacion,font=('Arial',15),justification='center')],
-        [sg.Button('Volver',key='-VOLVER-',)],
-    ]
+            [sg.Image(filename=ruta_imagen,key='-IMAGEN-')],
+            [sg.Column(about_jugar)],
+            [sg.Column(about_perfil)],
+            [sg.Column(about_puntajes)],
+            [sg.Column(about_config)],
+            [sg.Button("Volver al menú", key="-VOLVER-",font=('Arial',13))],
+        ]
     return layout
 
 """-------------------------LOGÍSTICA------------------------------"""
@@ -40,4 +54,4 @@ def logistica(event,values):
 """-------------------------EJECUCIÓN------------------------------"""
 def ejecutar():
     layout=interface()
-    crear_ventana("Pantalla de Juego", layout,acciones=logistica)
+    crear_ventana("Cómo Jugar", layout,acciones=logistica)
