@@ -28,7 +28,8 @@ def logistica(event,values):
             difficulty = dificultad.ejecutar()
         case '-PARAMETROS-':
             parametros = set_parametros.ejecutar()
-            values_to_options (options, parametros, difficulty)
+            if options != parametros:
+                values_to_options (options, parametros, difficulty)
             json.dump (options, archivo, indent=4)
         case '-DATASET-':
             chosen_dataset = dataset.ejecutar()
