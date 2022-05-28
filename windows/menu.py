@@ -1,8 +1,8 @@
 import os
 import PySimpleGUI as sg
 from common.hacer_ventana import crear_ventana 
-
-from windows import jugar, puntajes, configuracion,como_jugar
+from windows import jugar, puntajes, como_jugar
+from windows.configuration import nueva_configuracion
 from windows.perfil import perfil
 from common.verificar_perfil import mostrar_seleccionado
 
@@ -18,7 +18,7 @@ def interfaz():
         ]
     dificultad = [
             [sg.Text("Dificultades",font=('Arial',15)),
-            sg.Combo(values=["Fácil","Media","Difícil"],size=(10,10))
+            sg.Combo(values=["Fácil","Media","Difícil"],size=(10,10)) #-> aca se debería mostrar la dificultad seleccionada
             ]
         ]
     menu=[
@@ -54,7 +54,8 @@ def logica_ventana(event,values):
             perfil.ejecutar()
         
         case '-CONFIGURACION-':
-            configuracion.ejecutar()
+            #configuracion.ejecutar()
+            nueva_configuracion.ejecutar()
         
         case '-COMO-JUGAR-':
             como_jugar.ejecutar()
