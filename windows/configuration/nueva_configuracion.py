@@ -6,7 +6,7 @@ from common.hacer_ventana import crear_ventana
 from common.parametros import options
 from helpers.transformar_valores import values_to_options
 from windows.configuration import dataset, dificultad, set_parametros
-
+from common.manejo_datos_juego import guardar_dato
 
 """-------------------------INTERFAZ-------------------------------"""
 def interface():
@@ -26,6 +26,7 @@ def logistica(event,values):
     match event:
         case '-DIFICULTAD-':
             difficulty = dificultad.ejecutar()
+            guardar_dato(difficulty,'dificultad')
         case '-PARAMETROS-':
             parametros = set_parametros.ejecutar()
             if options != parametros:
@@ -33,7 +34,7 @@ def logistica(event,values):
             json.dump (options, archivo, indent=4)
         case '-DATASET-':
             chosen_dataset = dataset.ejecutar()
-            print (chosen_dataset)
+            guardar_dato(chosen_dataset,'dataset')
         case '-VOLVER-':
             json.dump (options, archivo, indent=4)
             return False

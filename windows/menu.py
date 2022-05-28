@@ -4,7 +4,7 @@ from common.hacer_ventana import crear_ventana
 from windows import jugar, puntajes, como_jugar
 from windows.configuration import nueva_configuracion
 from windows.perfil import perfil
-from common.verificar_perfil import mostrar_seleccionado
+from common.manejo_datos_juego import mostrar_seleccionado
 
 """-------------------------INTERFAZ------------------------------"""
 def interfaz():
@@ -13,12 +13,17 @@ def interfaz():
     perfiles = [
             [
                 sg.Text("Figuracer: ",font=('Arial',15)),
-                sg.Text(mostrar_seleccionado(ruta_nick),key='-MOSTRAR_NICK-',font=('Arial',15))
+                sg.Text(mostrar_seleccionado('perfil'),key='-MOSTRAR_NICK-',font=('Arial',15),background_color='LavenderBlush3')
             ]
         ]
     dificultad = [
-            [sg.Text("Dificultades",font=('Arial',15)),
-            sg.Combo(values=["Fácil","Media","Difícil"],size=(10,10)) #-> aca se debería mostrar la dificultad seleccionada
+            [sg.Text("Dificultad:",font=('Arial',15)),
+            sg.Text(mostrar_seleccionado('dificultad'),key='-MOSTRAR_DIFICULTAD-',font=('Arial',15),background_color='LavenderBlush3')
+            ]
+        ]
+    dataset = [
+            [sg.Text("Dataset:",font=('Arial',15)),
+            sg.Text(mostrar_seleccionado('dataset'),key='-MOSTRAR_DATASET-',font=('Arial',15),background_color='LavenderBlush3')
             ]
         ]
     menu=[
@@ -27,15 +32,18 @@ def interfaz():
             [sg.Button("Puntaje",key='-PUNTAJES-',font=('Arial',20))],
             [sg.Button("Configuración",key='-CONFIGURACION-',font=('Arial',20))],
             [sg.Button("Como Jugar",key='-COMO-JUGAR-',font=('Arial',20))],
-            [sg.Button("Actualizar",key='-ACTUALIZAR-',font=('Arial',10))]
-            
+            [sg.Button("Actualizar",key='-ACTUALIZAR-',font=('Arial',10))]  
+    ]
+
+    config =[
+            [sg.Column(perfiles)],
+            [sg.Column(dificultad)],
+            [sg.Column(dataset)]
     ]
 
     layout=[
             [sg.Image(filename=ruta_imagen,key='-IMAGEN-')],
-            [sg.Column(menu)],
-            [sg.Column(perfiles)],
-            [sg.Column(dificultad)]
+            [sg.Column(menu),sg.Column(config)]
         ]
     return layout
 

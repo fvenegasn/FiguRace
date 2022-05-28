@@ -22,22 +22,3 @@ def verificar_perfil(nick:str,contraseña:str):
             return False
     except FileNotFoundError:
         return False
-
-def guardar_seleccionado(nick:str):
-    """
-        Guarda en un txt el nick
-    """
-    ruta=os.path.join(os.getcwd(),'data','txt','perfil_seleccionado.txt')
-    with open(ruta,"w",encoding='utf-8') as arch_nombre:
-        arch_nombre.write(nick)
-
-def mostrar_seleccionado(ruta:str):
-    """
-        Retorna nick guardado en ruta
-    """
-
-    try:
-        with open(ruta,"r",encoding='utf-8') as arch_nombre:
-            return arch_nombre.read()
-    except FileNotFoundError:
-        return "No hay perfil seleccionado"
