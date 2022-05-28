@@ -16,5 +16,17 @@
         "edad": "27",
         "genero": "Femenino",
         "contrase\u00f1a": "asd"
+    },
+    {
+        "nick": "El negro",
+        "edad": "20",
+        "genero": "No-binario",
+        "contrase\u00f1a": "asdasd"
+    },
+    {
+        "nick": "Tebi",
+        "edad": "21",
+        "genero": "Transg\u00e9nero",
+        "contrase\u00f1a": "asdasd"
     }
 ]
