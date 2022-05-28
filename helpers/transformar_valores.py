@@ -1,6 +1,7 @@
 #Esta función pasa los valores ingresados en pantalla por el usuario a la configuración del juego
 from common.validar_numeros import validate_integer
 
+
 def values_to_options(options:dict, values:dict, difficulty:str) -> None:
     """
     función 'values_to_options'
@@ -18,5 +19,5 @@ def values_to_options(options:dict, values:dict, difficulty:str) -> None:
     dicc_aux = options[difficulty]
     for elem in dicc_aux:
         if (values[x] != "" and validate_integer(values[x])):
-            dicc_aux[elem] = values[x]
+            dicc_aux[elem] = int(values[x])
         x = x + 1
