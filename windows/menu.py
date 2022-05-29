@@ -2,7 +2,7 @@ import os
 import PySimpleGUI as sg
 from common.hacer_ventana import crear_ventana 
 from windows import jugar, puntajes, como_jugar
-from windows.configuration import nueva_configuracion
+from windows.configuration import configuracion
 from windows.perfil import perfil
 from common.manejo_datos_juego import mostrar_seleccionado
 
@@ -62,8 +62,7 @@ def logica_ventana(event,values):
             perfil.ejecutar()
         
         case '-CONFIGURACION-':
-            #configuracion.ejecutar()
-            nueva_configuracion.ejecutar()
+            configuracion.ejecutar()
         
         case '-COMO-JUGAR-':
             como_jugar.ejecutar()

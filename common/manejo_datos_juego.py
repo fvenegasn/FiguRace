@@ -1,9 +1,13 @@
 import json
 import os
+from typing import Any
 
-def guardar_dato(dato:str,clave:str):
+def guardar_dato(dato:str,clave:str) -> None:
     """
-        Guarda en el archivo del juego el dato enviado en dato
+        función 'guardar_dato'
+        
+        Def:
+            Guarda en el archivo del juego el dato enviado en dato
 
         Args:
             dato(str): dato a guardar
@@ -20,9 +24,12 @@ def guardar_dato(dato:str,clave:str):
         archivo.truncate()
 
 
-def mostrar_seleccionado(clave:str):
+def mostrar_seleccionado(clave:str) -> Any:
     """
-        Retorna el dato guardado en ruta con la clave pasada por parametro
+        función 'mostrar_seleccionado'
+        
+        Def:
+            Retorna el dato guardado en ruta con la clave pasada por parametro
         
         Args:
             clave(str): clave del diccionario de los datos del juego (perfil,dificultad,dataset)

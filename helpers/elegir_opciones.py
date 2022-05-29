@@ -2,7 +2,7 @@ import os
 from random import choices,shuffle
 import csv
 
-def opciones_random(nombre:str,correcta:str):
+def opciones_random(nombre:str,correcta:str) -> list:
     """
      funcion opciones_random
     
