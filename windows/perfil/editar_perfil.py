@@ -21,23 +21,24 @@ def logistica(event,values):
 def ejecutar():
     layout = [
         [
-            sg.Text('Ingrese su nick', size =(17, 1)), 
+            sg.Text('Ingrese su nick:', size =(17, 1)), 
             sg.InputText()
+            ],
+        [
+            sg.Text('Ingrese su contraseña:', size =(17, 1)), sg.InputText()
             ],
         [
             sg.Text('Ingrese nuevos datos:')
             ],
         [
-            sg.Text('Edad', size =(17, 1)), 
+            sg.Text('Edad:', size =(17, 1)), 
             sg.InputText()
             ],
         [
-            sg.Text('Género autopercibido', size =(17, 1)), 
+            sg.Text('Género autopercibido:', size =(17, 1)), 
             sg.Combo(values=lista_generos)
             ],
-        [
-            sg.Text('Contraseña', size =(17, 1)), sg.InputText()
-            ],
+        
         [
             sg.Button("Aceptar", key="-ACEPTAR-"), 
             sg.Button("Cancelar", key="-CANCELAR-")

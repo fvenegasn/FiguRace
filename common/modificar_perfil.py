@@ -9,7 +9,7 @@ def editar_perfil(valor_1:str,valor_2:str,valor_3:str,valor_4:str):
         si el nick ingresado existe (valor_1)
     """
     
-    usuario = Usuario(valor_1,valor_2,valor_3,valor_4)
+    usuario = Usuario(valor_1,valor_3,valor_4,valor_2)
     if (not validate_integer(valor_2)):
         return False
     ruta=os.path.join(os.getcwd(),'data','json','usuarios_datos')
@@ -34,8 +34,10 @@ def modificar(datos_arch:list,usuario:Usuario):
     
     for dato in datos_arch:
         if dato['nick']== usuario.nick:
-            dato['edad'] = usuario.edad
-            dato['genero'] = usuario.genero
-            dato['contraseña'] = usuario.contraseña
-            return True,datos_arch
+            if dato['contraseña'] == usuario.contraseña:
+                dato['edad'] = usuario.edad
+                dato['genero'] = usuario.genero
+                return True,datos_arch
+            else:
+                return False,datos_arch
     return False,datos_arch
