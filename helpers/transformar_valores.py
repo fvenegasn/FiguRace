@@ -2,7 +2,7 @@
 from common.validar_numeros import validate_integer
 
 
-def values_to_options(options:dict, values:dict, difficulty:str) -> None:
+def values_to_options(options_copy:dict, values:dict, difficulty:str) -> None:
     """
     función 'values_to_options'
 
@@ -16,8 +16,8 @@ def values_to_options(options:dict, values:dict, difficulty:str) -> None:
         - difficulty (str): String que contiene la dificultad elegida por el usuario en pantalla
     """
     x = 0
-    dicc_aux = options[difficulty]
-    for elem in dicc_aux:
+
+    for elem in options_copy[difficulty]:
         if (values[x] != "" and validate_integer(values[x])):
-            dicc_aux[elem] = int(values[x])
+            options_copy[difficulty][elem] = int(values[x])
         x = x + 1

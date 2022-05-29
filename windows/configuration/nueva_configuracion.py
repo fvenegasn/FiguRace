@@ -1,4 +1,4 @@
-from platform import architecture
+from this import d
 import PySimpleGUI as sg
 import json
 import os
@@ -7,6 +7,8 @@ from common.parametros import options
 from helpers.transformar_valores import values_to_options
 from windows.configuration import dataset, dificultad, set_parametros
 from common.manejo_datos_juego import guardar_dato
+import copy
+options_copy = copy.deepcopy(options)
 
 """-------------------------INTERFAZ-------------------------------"""
 def interface():
@@ -20,23 +22,22 @@ def interface():
 
 """-------------------------LOGÍSTICA------------------------------"""
 def logistica(event,values):
-    archivo = open (os.path.join(os.getcwd(), 'data','json',"configuracion.json"), "w", encoding="UTF-8")
-    difficulty = "Media" #Dificultad por defecto
-    chosen_dataset = "Lagos Argentina" #Dataset por defecto
+
     match event:
         case '-DIFICULTAD-':
             difficulty = dificultad.ejecutar()
             guardar_dato(difficulty,'dificultad')
         case '-PARAMETROS-':
-            parametros = set_parametros.ejecutar()
-            if options != parametros:
-                values_to_options (options, parametros, difficulty)
-            json.dump (options, archivo, indent=4)
+            parametros, dificultad_modif = set_parametros.ejecutar()
+            if parametros != None:
+                ruta = os.path.join(os.getcwd(), 'data','json',"configuracion.json")
+                with open (ruta, "w", encoding="UTF-8") as archivo:
+                    values_to_options (options_copy, parametros, dificultad_modif)
+                    json.dump (options_copy, archivo, indent=4)
         case '-DATASET-':
             chosen_dataset = dataset.ejecutar()
             guardar_dato(chosen_dataset,'dataset')
         case '-VOLVER-':
-            json.dump (options, archivo, indent=4)
             return False
     return True
 

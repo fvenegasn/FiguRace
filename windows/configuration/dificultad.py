@@ -7,7 +7,7 @@ def interface():
         [sg.Button("FACIL", key="-FACIL-",font=('Arial',15))],
         [sg.Button("MEDIA", key="-MEDIA-",font=('Arial',15))],
         [sg.Button("DIFICIL", key="-DIFICIL-",font=('Arial',15))],
-        [sg.Button("Volver al menú", key="-VOLVER-",font=('Arial',13))],
+        [sg.Button("Volver", key="-VOLVER-",font=('Arial',13))],
     ]
     return layout
 
