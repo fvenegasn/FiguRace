@@ -1,7 +1,10 @@
 import PySimpleGUI as sg
 from common.hacer_ventana import crear_ventana
-from windows.configuration import dificultad
-from common.to_default import to_default
+from common.guardar_parametros import guardar_parametros
+from helpers.transformar_valores import values_to_options
+from common.parametros import options
+import copy
+options_copy = copy.deepcopy(options)
 
 """-------------------------INTERFAZ-------------------------------"""
 def interface():
@@ -11,26 +14,30 @@ def interface():
         [sg.Text('Ingrese el puntaje sumado por cada respuesta correcta'), sg.InputText()],
         [sg.Text('Ingrese el puntaje sumado por cada respuesta incorrecta'), sg.InputText()],
         [sg.Text('Ingrese la cantidad de características a mostrar'), sg.InputText()],
-        [sg.Button('Elige dificultad a modificar', key="-CONTINUAR-"),sg.Button('Parámetros por defecto', key="-DEFAULT-"), sg.Button('Cancelar', key="-CANCELAR-")] 
+        [sg.Text('Elije dificultad a modificar: '), sg.Button("FACIL", key="-FACIL-",font=('Arial',10)), sg.Button("MEDIA", key="-MEDIA-",font=('Arial',10)), sg.Button("DIFICIL", key="-DIFICIL-",font=('Arial',10))],
+        [sg.Button('Parámetros por defecto', key="-DEFAULT-"), sg.Button('Cancelar', key="-CANCELAR-")] 
     ]
     return layout
 
 """-------------------------LOGÍSTICA------------------------------"""
 def logistica(event, values):
-    global dict_values
-    global dificultad_modif
-    dificultad_modif = "Media" #por defecto
     match event:
-        case '-CONTINUAR-':
-            dict_values = values
-            dificultad_modif = dificultad.ejecutar()
+        case '-FACIL-':
+            values_to_options(options_copy, values, 'Facil')
+            guardar_parametros(options_copy)
+            return False
+        case '-MEDIA-':
+            values_to_options(options_copy, values, 'Media')
+            guardar_parametros(options_copy)
+            return False
+        case '-DIFICIL-':
+            values_to_options(options_copy, values, 'Dificil')
+            guardar_parametros(options_copy)
             return False
         case '-DEFAULT-':
-            to_default()
-            dict_values = None
+            guardar_parametros(options)
             return False
         case '-CANCELAR-':
-            dict_values = None
             return False
     return True
 
@@ -39,4 +46,3 @@ def logistica(event, values):
 def ejecutar():
     layout=interface()
     crear_ventana("Selección de dificultad", layout,acciones=logistica)
-    return dict_values,dificultad_modif

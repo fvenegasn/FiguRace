@@ -1,5 +1,6 @@
 import PySimpleGUI as sg
 from common.hacer_ventana import crear_ventana
+from common.manejo_datos_juego import guardar_dato
 
 """-------------------------INTERFAZ-------------------------------"""
 def interface():
@@ -13,17 +14,15 @@ def interface():
 
 """-------------------------LOGÍSTICA------------------------------"""
 def logistica(event,values):
-    global chosen_dataset
-    chosen_dataset = "Lagos Argentina"
     match event:
         case '-SPOTIFY-':
-            chosen_dataset = "Spotify"
+            guardar_dato("Spotify",'dataset')
             return False
         case '-LAGOS-':
-            chosen_dataset = "Lagos Argentina"
+            guardar_dato("Lagos Argentina",'dataset')
             return False
         case '-PELIS-':
-            chosen_dataset = "Películas"
+            guardar_dato("Películas",'dataset')
             return False
         case '-VOLVER-':
             return False
@@ -33,4 +32,3 @@ def logistica(event,values):
 def ejecutar():
     layout=interface()
     crear_ventana("Selección de Dataset", layout,acciones=logistica)
-    return chosen_dataset

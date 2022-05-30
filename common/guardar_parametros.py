@@ -3,7 +3,7 @@ import json
 from common.parametros import options
 
 
-def to_default() -> None:
+def guardar_parametros(datos:dict) -> None:
     """
     funcion 'to_default'
 
@@ -12,4 +12,4 @@ def to_default() -> None:
     """
     ruta = os.path.join(os.getcwd(), 'data','json',"configuracion.json")
     with open (ruta, "w", encoding="UTF-8") as archivo:
-        json.dump (options, archivo, indent=4)
+        json.dump (datos, archivo, indent=4)

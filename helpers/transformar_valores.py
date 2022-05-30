@@ -16,6 +16,7 @@ def values_to_options(options_copy:dict, values:dict, difficulty:str) -> None:
         - difficulty (str): String que contiene la dificultad elegida por el usuario en pantalla
     """
     x = 0
+    print(options_copy[difficulty])
 
     for elem in options_copy[difficulty]:
         if (values[x] != "" and validate_integer(values[x])):

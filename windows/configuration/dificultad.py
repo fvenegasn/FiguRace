@@ -1,5 +1,6 @@
 import PySimpleGUI as sg
 from common.hacer_ventana import crear_ventana
+from common.manejo_datos_juego import guardar_dato
 
 """-------------------------INTERFAZ-------------------------------"""
 def interface():
@@ -13,17 +14,16 @@ def interface():
 
 """-------------------------LOGÍSTICA------------------------------"""
 def logistica(event,values):
-    global difficulty
-    difficulty = "Media"
+
     match event:
         case '-FACIL-':
-            difficulty = "Facil"
+            guardar_dato("Facil",'dificultad')
             return False
         case '-MEDIA-':
-            difficulty = "Media"
+            guardar_dato("Media",'dificultad')
             return False
         case '-DIFICIL-':
-            difficulty = "Dificil"
+            guardar_dato("Dificil",'dificultad')
             return False
         case '-VOLVER-':
             return False
@@ -34,4 +34,3 @@ def logistica(event,values):
 def ejecutar():
     layout=interface()
     crear_ventana("Selección de dificultad", layout,acciones=logistica)
-    return difficulty
