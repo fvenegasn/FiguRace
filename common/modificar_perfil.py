@@ -1,22 +1,21 @@
 import os
 import json
 from common.usuario import Usuario
-from common.validar_numeros import validate_integer
 
-def editar_perfil(valor_1:str,valor_2:str,valor_3:str,valor_4:str):
+def editar_perfil(nick:str,edad:str,genero:str,contraseña:str):
     """
-        Edita los datos del perfil (valor_2,valor_3,valor_4) 
-        si el nick ingresado existe (valor_1)
+        Edita los datos del perfil si el nick ingresado existe y la contraseña es correcta
     """
     
-    usuario = Usuario(valor_1,valor_3,valor_4,valor_2)
-    if (not validate_integer(valor_2)):
+    usuario = Usuario(nick,edad,genero,contraseña)
+    if (not edad.isnumeric()):
         return False
     ruta=os.path.join(os.getcwd(),'data','json','usuarios_datos')
     try:
         arch_usuarios = open(ruta, "r+",encoding='utf-8')
         datos_arch = json.load(arch_usuarios)
         exito,datos_arch = modificar(datos_arch,usuario)
+
         if exito:
             arch_usuarios.seek(0)
             json.dump(datos_arch, arch_usuarios,indent=4)
@@ -31,13 +30,23 @@ def modificar(datos_arch:list,usuario:Usuario):
         Devuelve True si el nick a ingresar existe y modifica  y devuelve los respectivos datos. 
         Caso contrario devuelve False
     """
-    
-    for dato in datos_arch:
-        if dato['nick']== usuario.nick:
-            if dato['contraseña'] == usuario.contraseña:
-                dato['edad'] = usuario.edad
-                dato['genero'] = usuario.genero
-                return True,datos_arch
-            else:
-                return False,datos_arch
-    return False,datos_arch
+    x = filter(
+        lambda x: x['nick']==usuario.nick and x['contraseña'] == usuario.contraseña,datos_arch
+        )
+
+    usuario_buscado = list(x)
+    exito = usuario_buscado !=[]
+
+    if exito:
+        usuario_buscado[0]['edad'] = usuario.edad
+        usuario_buscado[0]['genero'] = usuario.genero
+
+        datos_arch = list(
+            filter(
+            lambda x: x['nick']!=usuario.nick or x['contraseña'] != usuario.contraseña,datos_arch
+            )
+        )
+
+        datos_arch.append(usuario_buscado[0])
+
+    return exito,datos_arch

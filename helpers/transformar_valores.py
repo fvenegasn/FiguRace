@@ -1,13 +1,12 @@
 #Esta función pasa los valores ingresados en pantalla por el usuario a la configuración del juego
-from common.validar_numeros import validate_integer
 
 
-def values_to_options(options_copy:dict, values:dict, difficulty:str) -> None:
+def values_to_options(parametros:dict, values:dict, difficulty:str) -> None:
     """
     función 'values_to_options'
 
     Def:
-        Modifica el diccionario con los parámetros de configuración predeterminado con los valores
+        Modifica el diccionario con los parámetros de configuración actuales con los valores
         ingresados por el usuario en pantalla.
     
     Args:
@@ -15,10 +14,13 @@ def values_to_options(options_copy:dict, values:dict, difficulty:str) -> None:
         - values (dict): Diccionario que contiene los parámetros de juego ingresado por el usuario en pantalla
         - difficulty (str): String que contiene la dificultad elegida por el usuario en pantalla
     """
-    x = 0
-    print(options_copy[difficulty])
+    
+    son_numeros = list(filter(lambda x: x!='' and x.isnumeric(),values.values()))
 
-    for elem in options_copy[difficulty]:
-        if (values[x] != "" and validate_integer(values[x])):
-            options_copy[difficulty][elem] = int(values[x])
-        x = x + 1
+    if (len(son_numeros) == len(values)):
+        
+        claves = parametros[difficulty].keys()
+
+        actualizado = dict(zip(claves,values.values()))
+
+        parametros[difficulty].update(actualizado)

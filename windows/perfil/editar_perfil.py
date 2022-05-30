@@ -9,11 +9,11 @@ def logistica(event,values):
         case '-CANCELAR-':
             return False
         case '-ACEPTAR-':
-            exito = editar_perfil(values[0],values[1],values[2],values[3])
+            exito = editar_perfil(values[0],values[2],values[3],values[1])
             if exito:
                 sg.Popup('Perfil editado con éxito!')
             else:
-                sg.Popup('El nick ingresado no existe o no se ingresó una edad válida')
+                sg.Popup('Datos ingresados incorrectos')
             return False
     return True
 

@@ -6,12 +6,6 @@
         "contrase\u00f1a": "jc19"
     },
     {
-        "nick": "Pepe",
-        "edad": "28",
-        "genero": "No-binario",
-        "contrase\u00f1a": "789"
-    },
-    {
         "nick": "Juliuss",
         "edad": "27",
         "genero": "Femenino",
@@ -26,7 +20,13 @@
     {
         "nick": "Tebi",
         "edad": "21",
-        "genero": "Transg\u00e9nero",
+        "genero": "Transgenero",
         "contrase\u00f1a": "asdasd"
+    },
+    {
+        "nick": "Juan",
+        "edad": "25",
+        "genero": "Transgenero",
+        "contrase\u00f1a": "123"
     }
 ]

@@ -1,8 +1,5 @@
-from encodings import utf_8
 import os
 import json
-from common.guardar_perfil import existe
-
 
 def verificar_perfil(nick:str,contraseña:str):
     """
@@ -16,9 +13,10 @@ def verificar_perfil(nick:str,contraseña:str):
         with open(ruta, "r",encoding='utf-8') as arch_usuarios:
             datos_arch = json.load(arch_usuarios)
 
-            for usuario in datos_arch:
-                if usuario['nick']==nick:
-                    return usuario['contraseña']==contraseña
-            return False
+            x = filter(
+            lambda x: x['nick']==nick and x['contraseña'] == contraseña,datos_arch
+            )
+            return list(x)!=[]
+
     except FileNotFoundError:
         return False

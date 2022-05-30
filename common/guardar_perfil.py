@@ -1,12 +1,11 @@
 import os
 import json
 from common.usuario import Usuario
-from common.validar_numeros import validate_integer
 
 def guardar_perfil(valor_1:str,valor_2:str,valor_3:str,valor_4:str):
     """Retorna True si se pudo guardar con exito el nuevo usuario"""
     
-    if (not validate_integer(valor_2)):
+    if (not valor_2.isnumeric()):
         return False
     else:
         usuario = Usuario(valor_1,valor_2,valor_3,valor_4)
@@ -46,8 +45,7 @@ def existe(datos_arch:list,nick:str):
         Caso contrario devuelve False
     """
     
-    for usuario in datos_arch:
-        if usuario['nick']==nick:
-            return True
-    return False
+    x = filter(lambda x: x['nick']==nick,datos_arch)
+
+    return list(x)!=[]
 
