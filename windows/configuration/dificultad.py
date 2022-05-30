@@ -16,14 +16,8 @@ def interface():
 def logistica(event,values):
 
     match event:
-        case '-FACIL-':
-            guardar_dato("Facil",'dificultad')
-            return False
-        case '-MEDIA-':
-            guardar_dato("Media",'dificultad')
-            return False
-        case '-DIFICIL-':
-            guardar_dato("Dificil",'dificultad')
+        case '-FACIL-'|'-MEDIA-'|'-DIFICIL-':
+            guardar_dato(event.replace('-','').title(),'dificultad')
             return False
         case '-VOLVER-':
             return False

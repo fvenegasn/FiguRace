@@ -10,7 +10,7 @@ def values_to_options(parametros:dict, values:dict, difficulty:str) -> None:
         ingresados por el usuario en pantalla.
     
     Args:
-        - options (dict): Diccionario que contiene los parámetros de juego para cada dificultad
+        - parametros (dict): Diccionario que contiene los parámetros de juego para cada dificultad
         - values (dict): Diccionario que contiene los parámetros de juego ingresado por el usuario en pantalla
         - difficulty (str): String que contiene la dificultad elegida por el usuario en pantalla
     """
