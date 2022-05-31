@@ -13,6 +13,8 @@ Los directorios se encuentran orientados de la siguiente manera:
 * `windows`: Contiene los archivos en los que se dividen las pantallas del juego
 * `figurace.py`: Es el archivo main del proyecto
 
+### Para utilizar este juego se requiere contar con Python 3.10.4
+
 #
 
 ## ¿Cómo jugar?
