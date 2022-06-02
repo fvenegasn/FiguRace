@@ -35,7 +35,7 @@ def ejecutar():
             sg.Combo(values=lista_generos)
             ],
         [
-            sg.Text('Contraseña', size =(17, 1)), sg.InputText()
+            sg.Text('Contraseña', size =(17, 1)), sg.InputText(password_char="*")
             ],
         [
             sg.Button("Crear", key="-CREAR-"), 

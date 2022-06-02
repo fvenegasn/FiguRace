@@ -11,7 +11,7 @@ from windows.puntaje import puntajes
 """-------------------------INTERFAZ------------------------------"""
 def interfaz():
     ruta_imagen = os.path.join(os.getcwd(),'static','figurace_logo.png')
-    ruta_nick = os.path.join(os.getcwd(),'data','txt','perfil_seleccionado.txt')
+    
     perfiles = [
             [
                 sg.Text("Figuracer: ",font=('Arial',15)),
@@ -34,7 +34,7 @@ def interfaz():
             [sg.Button("Puntaje",key='-PUNTAJES-',font=('Arial',20))],
             [sg.Button("Configuración",key='-CONFIGURACION-',font=('Arial',20))],
             [sg.Button("Como Jugar",key='-COMO-JUGAR-',font=('Arial',20))],
-            [sg.Button("Actualizar",key='-ACTUALIZAR-',font=('Arial',10))]  
+            [sg.Button("Salir",key='-SALIR-',font=('Arial',10))]  
     ]
 
     config =[
@@ -69,18 +69,18 @@ def logica_ventana(event,values):
         case '-COMO-JUGAR-':
             como_jugar.ejecutar()
 
-        case '-ACTUALIZAR-':
-            ejecutar()
-            return False 
-
-        case None | sg.WIN_CLOSED:
+        case None | sg.WIN_CLOSED | '-SALIR-':
             return False
     return True
-    
+
+def update_windows(window):
+    window['-MOSTRAR_NICK-'].update(mostrar_seleccionado('perfil'))
+    window['-MOSTRAR_DIFICULTAD-'].update(mostrar_seleccionado('dificultad'))
+    window['-MOSTRAR_DATASET-'].update(mostrar_seleccionado('dataset'))
 
 """-------------------------EJECUCIÓN------------------------------"""
 def ejecutar():
     sg.theme('BrightColors')
     layout=interfaz()
-    crear_ventana("Menú Principal",layout=layout,acciones=logica_ventana)
+    crear_ventana("Menú Principal",layout=layout,acciones=logica_ventana,update_windows=update_windows)
 

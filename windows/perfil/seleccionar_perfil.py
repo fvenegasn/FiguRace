@@ -5,6 +5,7 @@ from common.manejo_datos_juego import guardar_dato
 
 """-------------------------LOGÍSTICA------------------------------"""
 def logistica(event,values):
+    load_user=False
     match event:
         case '-CANCELAR-':
             return False
@@ -13,10 +14,11 @@ def logistica(event,values):
             if exito:
                 sg.Popup('Perfil seleccionado con éxito!')
                 guardar_dato(values[0],'perfil')
+                load_user=True
             else:
                 sg.Popup('Los datos ingresados son incorrectos :(')
             return False
-    return True
+    return True,load_user
 
 """-------------------------EJECUCIÓN------------------------------"""
 def ejecutar():

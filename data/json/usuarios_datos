@@ -28,5 +28,11 @@
         "edad": "25",
         "genero": "Transgenero",
         "contrase\u00f1a": "123"
+    },
+    {
+        "nick": "PEpe",
+        "edad": "23",
+        "genero": "Otro",
+        "contrase\u00f1a": "123456"
     }
 ]

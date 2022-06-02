@@ -1,7 +1,10 @@
 from typing import Any
 import PySimpleGUI as sg
 
-def crear_ventana(name:str,layout:list,acciones:Any):
+def default_update(*args):
+    pass
+
+def crear_ventana(name:str,layout:list,acciones:Any,evaluate_extra=default_update,update_windows=default_update,*args,**kwargs):
     """
     funcion crear_ventana
     
@@ -15,7 +18,6 @@ def crear_ventana(name:str,layout:list,acciones:Any):
     """
     
     window = sg.Window(name,layout,finalize=True)
-    
     loop = True
     while loop:
         event,values = window.read()
@@ -25,5 +27,6 @@ def crear_ventana(name:str,layout:list,acciones:Any):
         window.Hide()
         loop = acciones(event,values)
         window.UnHide()
+        update_windows(window)
     window.close()   
 
