@@ -16,11 +16,12 @@ def values_to_options(parametros:dict, values:dict, difficulty:str) -> None:
     """
     
     son_numeros = list(filter(lambda x: x!='' and x.isnumeric(),values.values()))
-
-    if (len(son_numeros) == len(values)):
+    exito = len(son_numeros) == len(values)
+    if exito:
         
         claves = parametros[difficulty].keys()
 
         actualizado = dict(zip(claves,values.values()))
 
         parametros[difficulty].update(actualizado)
+    return exito

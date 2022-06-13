@@ -40,5 +40,11 @@
         "edad": "29",
         "genero": "Transgenero",
         "contrase\u00f1a": "258"
+    },
+    {
+        "nick": "J8",
+        "edad": "30",
+        "genero": "Femenino",
+        "contrase\u00f1a": "12r"
     }
 ]

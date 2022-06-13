@@ -2,7 +2,7 @@ import os
 import PySimpleGUI as sg
 from common.hacer_ventana import crear_ventana 
 from windows import jugar, como_jugar
-from windows.configuration import configuracion
+from windows import configuracion
 from windows.perfil import perfil
 from common.manejo_datos_juego import mostrar_seleccionado
 from windows.puntaje import puntajes
