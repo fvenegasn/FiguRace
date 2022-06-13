@@ -12,7 +12,7 @@ from windows.puntaje import puntajes
 def interfaz():
     ruta_imagen = os.path.join(os.getcwd(),'static','figurace_logo.png')
     
-    perfiles = [
+    perfil = [
             [
                 sg.Text("Figuracer: ",font=('Arial',15)),
                 sg.Text(mostrar_seleccionado('perfil'),key='-MOSTRAR_NICK-',font=('Arial',15),background_color='LavenderBlush3')
@@ -38,7 +38,7 @@ def interfaz():
     ]
 
     config =[
-            [sg.Column(perfiles)],
+            [sg.Column(perfil)],
             [sg.Column(dificultad)],
             [sg.Column(dataset)]
     ]

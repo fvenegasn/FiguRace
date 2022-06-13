@@ -24,7 +24,7 @@ def logistica(event,values):
 def ejecutar():
     layout = [
         [sg.Text('Nick',size =(17, 1)), sg.InputText()],
-        [sg.Text('Contraseña', size =(17, 1)), sg.InputText()],
+        [sg.Text('Contraseña', size =(17, 1)), sg.InputText(password_char="*")],
         [sg.Button("Aceptar", key="-ACEPTAR-"), sg.Button("Cancelar", key="-CANCELAR-")]
         ]
     crear_ventana("Seleccionar perfil", layout,logistica)

@@ -1,11 +1,5 @@
 [
     {
-        "nick": "Juli",
-        "edad": "27",
-        "genero": "Femenino",
-        "contrase\u00f1a": "jc19"
-    },
-    {
         "nick": "Juliuss",
         "edad": "27",
         "genero": "Femenino",
@@ -30,9 +24,21 @@
         "contrase\u00f1a": "123"
     },
     {
+        "nick": "Juli",
+        "edad": "27",
+        "genero": "Femenino",
+        "contrase\u00f1a": "jc19"
+    },
+    {
         "nick": "PEpe",
-        "edad": "23",
+        "edad": "29",
         "genero": "Otro",
         "contrase\u00f1a": "123456"
+    },
+    {
+        "nick": "L19",
+        "edad": "29",
+        "genero": "Transgenero",
+        "contrase\u00f1a": "258"
     }
 ]
