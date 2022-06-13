@@ -1,7 +1,7 @@
 #Esta función pasa los valores ingresados en pantalla por el usuario a la configuración del juego
 
 
-def values_to_options(parametros:dict, values:dict, difficulty:str) -> None:
+def values_to_options(parametros:dict, valores_ingresados:dict, difficulty:str) -> None:
     """
     función 'values_to_options'
 
@@ -15,13 +15,14 @@ def values_to_options(parametros:dict, values:dict, difficulty:str) -> None:
         - difficulty (str): String que contiene la dificultad elegida por el usuario en pantalla
     """
     
-    son_numeros = list(filter(lambda x: x!='' and x.isnumeric(),values.values()))
-    exito = len(son_numeros) == len(values)
+    son_numeros = list(filter(lambda x: x!='' and x.isnumeric(),valores_ingresados.values()))
+    exito = len(son_numeros) == len(valores_ingresados)
     if exito:
         
         claves = parametros[difficulty].keys()
+        string_a_entero = map(lambda x: int(x), valores_ingresados.values())
 
-        actualizado = dict(zip(claves,values.values()))
-
+        actualizado = dict(zip(claves,string_a_entero))
+        
         parametros[difficulty].update(actualizado)
     return exito

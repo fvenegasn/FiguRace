@@ -8,6 +8,7 @@ from common.parametros import options
 import copy
 options_copy = copy.deepcopy(options)
 
+
 """-------------------------INTERFAZ-------------------------------"""
 def interface():
     layout_dataset = [
@@ -71,7 +72,7 @@ def logistica(event,values):
                 sg.Popup('Dificultad ' + mostrar_seleccionado('dificultad') + ' modificada con exito')
             else:
                 sg.Popup('Ingrese datos válidos')
-                
+
         case '-DEFAULT-':
             guardar_parametros(options)
             sg.Popup('Se seleccionó la configuración de dificultad por defecto')
