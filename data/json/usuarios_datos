@@ -5,9 +5,9 @@
         "genero": "Femenino",
         "contrase\u00f1a": "asd",
         "puntaje": {
-            "facil": 0,
-            "media": 0,
-            "dificil": 0
+            "Facil": 0,
+            "Media": 0,
+            "Dificil": 0
         }
     },
     {
@@ -16,9 +16,9 @@
         "genero": "No-binario",
         "contrase\u00f1a": "asdasd",
         "puntaje": {
-            "facil": 0,
-            "media": 0,
-            "dificil": 0
+            "Facil": 0,
+            "Media": 0,
+            "Dificil": 0
         }
     },
     {
@@ -27,9 +27,9 @@
         "genero": "Transgenero",
         "contrase\u00f1a": "asdasd",
         "puntaje": {
-            "facil": 0,
-            "media": 0,
-            "dificil": 0
+            "Facil": 0,
+            "Media": 0,
+            "Dificil": 0
         }
     },
     {
@@ -38,9 +38,9 @@
         "genero": "Femenino",
         "contrase\u00f1a": "jc19",
         "puntaje": {
-            "facil": 0,
-            "media": 0,
-            "dificil": 0
+            "Facil": 0,
+            "Media": 0,
+            "Dificil": 0
         }
     },
     {
@@ -49,9 +49,9 @@
         "genero": "Otro",
         "contrase\u00f1a": "123456",
         "puntaje": {
-            "facil": 0,
-            "media": 0,
-            "dificil": 0
+            "Facil": 0,
+            "Media": 0,
+            "Dificil": 0
         }
     },
     {
@@ -60,9 +60,9 @@
         "genero": "Masculino",
         "contrase\u00f1a": "123",
         "puntaje": {
-            "facil": 0,
-            "media": 0,
-            "dificil": 0
+            "Facil": 0,
+            "Media": 0,
+            "Dificil": 0
         }
     },
     {
@@ -71,9 +71,9 @@
         "genero": "Masculino",
         "contrase\u00f1a": "123",
         "puntaje": {
-            "facil": 0,
-            "media": 0,
-            "dificil": 0
+            "Facil": 0,
+            "Media": 0,
+            "Dificil": 0
         }
     }
 ]

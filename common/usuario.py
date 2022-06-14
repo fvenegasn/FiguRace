@@ -5,7 +5,7 @@ class Usuario():
         self._edad = edad
         self._genero = genero
         self._contraseña = contraseña
-        self._puntaje = {"facil":0,"media":0,"dificil":0}
+        self._puntaje = {"Facil":0,"Media":0,"Dificil":0}
     
     def generar_dicci(self):
         return {

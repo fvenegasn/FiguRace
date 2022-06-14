@@ -1,6 +1,7 @@
 import json
 import os
 from typing import Any
+from helpers.apertura_de_archivos import ruta_usuarios_datos, ruta_configuracion, obtener_datos
 
 def guardar_dato(dato:str,clave:str) -> None:
     """
@@ -43,3 +44,23 @@ def mostrar_seleccionado(clave:str) -> Any:
             return datos[clave]
     except FileNotFoundError:
         return f"No hay {clave} seleccionado"
+
+
+def parametros_configuracion(dificultad:str):
+    
+    """
+        Retorna diccionario de la configuración de la dificultad pasada como parámetro
+    """
+
+    datos = obtener_datos(ruta_configuracion)
+    return datos[dificultad] if datos else False
+    
+def puntaje_usuario(nick:str,dificultad:str):
+
+    """Retorna puntaje del usuario según la dificultad pasada como parámetro"""
+
+    datos = obtener_datos(ruta_usuarios_datos)
+
+    if datos:
+        usuario = list(filter(lambda x: x['nick'] == nick,datos))[0]
+        return usuario['puntaje'][dificultad]
