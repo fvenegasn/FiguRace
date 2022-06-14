@@ -1,35 +1,43 @@
 import os
 from random import choices,shuffle
 import csv
+from helpers.apertura_de_archivos import ruta_csv
 
-def opciones_random(nombre:str,correcta:str) -> list:
+def opciones_random(nombre:str,cant_caracteristicas:int):
     """
      funcion opciones_random
     
     Def:
         Esta funcion retorna las 5 opciones a escribir en la tarjeta, entre las que esta la correcta
+        y sus características
 
     Args:
         nombre(str): nombre del csv del cual se leen las opciones
-        correcta(str): es la opcion correcta de entre todas las otras opciones a retornar
+        cant_caracteristicas(int): cantidad de características de la opción correcta a mostrar
     Ret:
-        retorna una lista de las opciones elegidas de manera aleatoria, mas la opcion correcta
+        retorna una lista de las opciones elegidas de manera aleatoria, la opción correcta
+        y la lista de sus características
     """
     
-    archivo=os.path.join(os.getcwd(),'data','csv','data_set_'+nombre.lower()+'.csv')
+    ruta_csv_actual = os.path.join(ruta_csv,'data_set_'+nombre.lower()+'.csv')
     try:
-        data = open(archivo,'r',encoding='UTF-8')
-    except FileNotFoundError:
-        exit(1)
-    else:
-        reader = csv.reader(data,delimiter =',')
-        next(reader)
-        opciones = list(map(lambda x: x[5],reader))
-        data.close()
+        with open(ruta_csv_actual,'r',encoding='UTF-8') as archivo:
+            reader = csv.reader(archivo,delimiter =',')
+            next(reader)
+            data = list(map(lambda x: x,reader))
+        
 
-        opciones.remove(correcta)
-        opciones = choices(opciones,weights=None, cum_weights=None, k=4)
-        opciones.append(correcta)
+       
+        opciones = choices(data, k=5)
+        incorrectas = opciones[1:5]
+        correcta = opciones[0]
+        caracteristicas = correcta[0:cant_caracteristicas]
+        nombre_correcta = correcta[5]
+        nombre_incorrectas = list(map(lambda x: x[5],incorrectas))
+        
         shuffle(opciones)
 
-        return opciones
+        return caracteristicas,nombre_correcta,nombre_incorrectas
+    
+    except FileNotFoundError:
+        return False

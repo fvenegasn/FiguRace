@@ -1,42 +1,43 @@
-from textwrap import indent
 import PySimpleGUI as sg
+from common.generar_tarjeta import generar_tarjeta
 from common.hacer_ventana import crear_ventana
-from helpers.elegir_opciones import opciones_random
 import os
+from common.manejo_datos_juego import mostrar_seleccionado, parametros_configuracion,puntaje_usuario
+
 
 def interfaz():
-    ruta_imagen = os.path.join(os.getcwd(),'static','lagos.png')
+
+    #"----------------Variables del juego------------------"
+    nick = mostrar_seleccionado('perfil')
+    dataset_actual = mostrar_seleccionado('dataset')
+    dificultad_actual = mostrar_seleccionado('dificultad')
+    puntaje = puntaje_usuario(nick,dificultad_actual)
+
+    parametro = parametros_configuracion(dificultad_actual)
+    tiempo_limite = parametro["tiempo_limite"]
+    cant_rondas = parametro["cant_rondas"]
+    rta_correcta = parametro["rta_correcta"]
+    rta_incorrecta = parametro["rta_incorrecta"]
+    cant_caracteristicas = parametro["cant_caracteristicas"]
+    #"-------------------------------------------------------"
+
+    ruta_imagen = os.path.join(os.getcwd(),'static','lagos.png') #dependera del dataset elegido
  
-    categorias = [
-        [sg.Text("Ubicación: ",font=('Arial',12)),sg.Text("Santa Cruz",font=('Arial',12),justification="right")],
-        [sg.Text("Superficie (km²): ",font=('Arial',12)),sg.Text("1435 ",font=('Arial',12))],
-        [sg.Text("Profundidad máxima (m): ",font=('Arial',12)),sg.Text("500",font=('Arial',12))],
-        [sg.Text("Profundidad media (m): ",font=('Arial',12)),sg.Text("150",font=('Arial',12))],
-        [sg.Text("Coordenadas: ",font=('Arial',12)),sg.Text("-50.248 / -72.645",font=('Arial',12))],
-        [sg.Text("Nombre: ",font=('Arial',12))]
-    ]
+    opciones,pistas = generar_tarjeta(dataset_actual,cant_caracteristicas)
 
-
-    lista_opciones = opciones_random('Lagos',correcta='Lago Cardiel')
-    
-    opciones = [
-        *[[sg.Button(x,key=x,border_width=2,button_color='LavenderBlush3',size=(20,1))]for x in lista_opciones],
-    ]
-    
-    
     layout_tarjeta = [
-        [sg.Column(categorias,element_justification='left')],
+        [sg.Column(pistas,element_justification='left')],
         [sg.Column(opciones,element_justification='center',background_color='grey')],
-        [sg.Button('OK'),sg.Button('PASAR')]
+        [sg.Button('PASAR')]
         ]
     
     columna1 = [
         [sg.Text('Categoria',font=('Arial',20))],
-        [sg.Text('Lagos',font=('Arial',15))],
+        [sg.Text(dataset_actual,font=('Arial',15))],
         [sg.Image(filename = ruta_imagen)],
         [sg.Text('Temporizador',font=('Arial',20))],
         [sg.Text('00:30',font=('Arial',20))],
-        [sg.Button('Volver al menú',font=('Arial',15),key='-VOLVER-',border_width=2,size=(12,1))]
+        [sg.Button('Abandonar juego',font=('Arial',10),key='-VOLVER-',border_width=2,size=(12,1))]
     ]
 
     layout=[[sg.Column(columna1),sg.Column(layout_tarjeta,element_justification='center',background_color='grey')]]
@@ -45,6 +46,12 @@ def interfaz():
 """-------------------------LOGÍSTICA------------------------------"""
 def logistica(event,values):
     match event:
+        case "ok":
+            sg.Popup('Es la correcta')
+            #actualizar la tarjeta
+        case "error" | "error0" | "error1" | "error2":
+            sg.Popup('Esa no es')
+            #actualizar la tarjeta
         case '-VOLVER-':
             return False
     return True

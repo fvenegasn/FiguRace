@@ -14,8 +14,8 @@ def interface():
     layout_dataset = [
             sg.Text("Seleccionar data set: ",font=('Arial',12)),
             sg.Button("Spotify", key="-SPOTIFY-",font=('Arial',12)),
-            sg.Button("Lagos Argentina", key="-LAGOS ARGENTINA-",font=('Arial',12)),
-            sg.Button("Películas", key="-PELÍCULAS-",font=('Arial',12))
+            sg.Button("Lagos", key="-LAGOS-",font=('Arial',12)),
+            sg.Button("Peliculas", key="-PELICULAS-",font=('Arial',12))
         ]
     
 
@@ -77,7 +77,7 @@ def logistica(event,values):
             guardar_parametros(options)
             sg.Popup('Se seleccionó la configuración de dificultad por defecto')
         
-        case '-SPOTIFY-'|'-LAGOS ARGENTINA-'| '-PELÍCULAS-':
+        case '-SPOTIFY-'|'-LAGOS-'| '-PELICULAS-':
             guardar_dato(evento.title(),'dataset')
             sg.Popup('Dataset ' + evento + ' seleccionado')
         
