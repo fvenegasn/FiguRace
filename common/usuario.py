@@ -5,13 +5,15 @@ class Usuario():
         self._edad = edad
         self._genero = genero
         self._contraseña = contraseña
+        self._puntaje = {"facil":0,"media":0,"dificil":0}
     
     def generar_dicci(self):
         return {
             "nick": self._nick, 
             "edad": self._edad,
             "genero": self._genero,
-            "contraseña": self._contraseña
+            "contraseña": self._contraseña,
+            "puntaje": self._puntaje,
         }
     
     @property
@@ -46,4 +48,10 @@ class Usuario():
     def contraseña(self,value):
         self._contraseña = value
     
-    
+    @property
+    def puntaje(self):
+        return self._puntaje
+
+    @puntaje.setter
+    def contraseña(self,value):
+        self._puntaje = value

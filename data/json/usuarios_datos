@@ -3,48 +3,77 @@
         "nick": "Juliuss",
         "edad": "27",
         "genero": "Femenino",
-        "contrase\u00f1a": "asd"
+        "contrase\u00f1a": "asd",
+        "puntaje": {
+            "facil": 0,
+            "media": 0,
+            "dificil": 0
+        }
     },
     {
         "nick": "El negro",
         "edad": "20",
         "genero": "No-binario",
-        "contrase\u00f1a": "asdasd"
+        "contrase\u00f1a": "asdasd",
+        "puntaje": {
+            "facil": 0,
+            "media": 0,
+            "dificil": 0
+        }
     },
     {
         "nick": "Tebi",
         "edad": "21",
         "genero": "Transgenero",
-        "contrase\u00f1a": "asdasd"
-    },
-    {
-        "nick": "Juan",
-        "edad": "25",
-        "genero": "Transgenero",
-        "contrase\u00f1a": "123"
+        "contrase\u00f1a": "asdasd",
+        "puntaje": {
+            "facil": 0,
+            "media": 0,
+            "dificil": 0
+        }
     },
     {
         "nick": "Juli",
         "edad": "27",
         "genero": "Femenino",
-        "contrase\u00f1a": "jc19"
+        "contrase\u00f1a": "jc19",
+        "puntaje": {
+            "facil": 0,
+            "media": 0,
+            "dificil": 0
+        }
     },
     {
         "nick": "PEpe",
         "edad": "29",
         "genero": "Otro",
-        "contrase\u00f1a": "123456"
+        "contrase\u00f1a": "123456",
+        "puntaje": {
+            "facil": 0,
+            "media": 0,
+            "dificil": 0
+        }
     },
     {
-        "nick": "L19",
-        "edad": "29",
-        "genero": "Transgenero",
-        "contrase\u00f1a": "258"
+        "nick": "Charly",
+        "edad": "25",
+        "genero": "Masculino",
+        "contrase\u00f1a": "123",
+        "puntaje": {
+            "facil": 0,
+            "media": 0,
+            "dificil": 0
+        }
     },
     {
-        "nick": "J8",
-        "edad": "30",
-        "genero": "Femenino",
-        "contrase\u00f1a": "12r"
+        "nick": "Juan",
+        "edad": "25",
+        "genero": "Masculino",
+        "contrase\u00f1a": "123",
+        "puntaje": {
+            "facil": 0,
+            "media": 0,
+            "dificil": 0
+        }
     }
 ]

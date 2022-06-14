@@ -7,7 +7,7 @@ def editar_perfil(nick:str,edad:str,genero:str):
         Edita los datos del perfil si el nick ingresado existe
     """
     
-    usuario = Usuario(nick,edad,genero,'0')
+    usuario = Usuario(nick,edad,genero,contraseña='0')
     if (not edad.isnumeric()):
         return False
     ruta=os.path.join(os.getcwd(),'data','json','usuarios_datos')

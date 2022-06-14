@@ -1,6 +1,5 @@
 import os
 import json
-from common.parametros import options
 
 
 def guardar_parametros(datos:dict) -> None:

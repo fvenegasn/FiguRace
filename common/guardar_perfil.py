@@ -2,13 +2,13 @@ import os
 import json
 from common.usuario import Usuario
 
-def guardar_perfil(valor_1:str,valor_2:str,valor_3:str,valor_4:str):
+def guardar_perfil(nick:str, edad:str, genero:str, contraseña:str):
     """Retorna True si se pudo guardar con exito el nuevo usuario"""
     
-    if (not valor_2.isnumeric()):
+    if (not edad.isnumeric()):
         return False
     else:
-        usuario = Usuario(valor_1,valor_2,valor_3,valor_4)
+        usuario = Usuario(nick,edad,genero,contraseña)
         dato_ingresar = usuario.generar_dicci()
         return guardar_en_archivo(dato_ingresar)
 
