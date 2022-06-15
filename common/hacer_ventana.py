@@ -16,7 +16,7 @@ def crear_ventana(name:str,layout:list,acciones:Any,evaluate_extra=default_updat
         layout(list): contenido de la ventana a crear
         acciones(funcion): funcion que contiene la logistica de la ventana a crear
     """
-    tiempo = 900 if name == "Pantalla de Juego"  else 100000
+    tiempo = 900 if name == "Pantalla de Juego"  else None
 
     window = sg.Window(name,layout,finalize=True)
     loop = True
