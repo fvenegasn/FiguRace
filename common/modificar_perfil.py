@@ -1,6 +1,7 @@
-import os
-import json
+from common.archivo import escribir_json_data,leer_json_data
+from common.paths import ruta_usuarios_datos
 from common.usuario import Usuario
+
 
 def editar_perfil(nick:str,edad:str,genero:str):
     """
@@ -10,23 +11,20 @@ def editar_perfil(nick:str,edad:str,genero:str):
     usuario = Usuario(nick,edad,genero,contraseña='0')
     if (not edad.isnumeric()):
         return False
-    ruta=os.path.join(os.getcwd(),'data','json','usuarios_datos')
-    try:
-        with open(ruta, "r",encoding='utf-8') as arch_usuarios:
-            datos_arch = json.load(arch_usuarios)
 
+    try:
+        datos_arch = leer_json_data(ruta_usuarios_datos)
         exito,datos_arch = modificar(datos_arch,usuario)
 
         if exito:
-            with open(ruta, "w",encoding='utf-8') as arch_usuarios:
-                json.dump(datos_arch, arch_usuarios,indent=4)
-
+            escribir_json_data(datos_arch,ruta_usuarios_datos)
         return exito
+
     except FileNotFoundError:
         return False
     
 
-def modificar(datos_arch:list,usuario:Usuario):
+def modificar(datos_arch:list[dict],usuario:Usuario):
     """
         Devuelve True si el nick a ingresar existe y modifica  y devuelve los respectivos datos. 
         Caso contrario devuelve False

@@ -1,7 +1,8 @@
 import json
 import os
 from typing import Any
-from helpers.apertura_de_archivos import ruta_usuarios_datos, ruta_configuracion, obtener_datos
+from common.paths import ruta_usuarios_datos, ruta_configuracion, ruta_datos_juego
+from common.archivo import leer_json_data,escribir_json_data
 
 def guardar_dato(dato:str,clave:str) -> None:
     """
@@ -14,15 +15,9 @@ def guardar_dato(dato:str,clave:str) -> None:
             dato(str): dato a guardar
             clave(str): tipo de dato (perfil,dificultad,dataset)
     """
-    ruta=os.path.join(os.getcwd(),'data','json','datos_juego.json')
-    with open(ruta,"r+",encoding='utf-8') as archivo:
-        
-        datos = json.load(archivo)
-        datos[clave] = dato
-        datos = json.dumps(datos,indent=4) 
-        archivo.seek(0)
-        archivo.write(datos)
-        archivo.truncate()
+    datos=leer_json_data(ruta_datos_juego)
+    datos[clave] = dato
+    escribir_json_data(datos,ruta_datos_juego)
 
 
 def mostrar_seleccionado(clave:str) -> Any:
@@ -39,9 +34,9 @@ def mostrar_seleccionado(clave:str) -> Any:
     """
     ruta=os.path.join(os.getcwd(),'data','json','datos_juego.json')
     try:
-        with open(ruta,"r") as archivo:
-            datos = json.load(archivo)
-            return datos[clave]
+        datos = leer_json_data(ruta_datos_juego)
+        return datos[clave]
+
     except FileNotFoundError:
         return f"No hay {clave} seleccionado"
 
@@ -52,14 +47,14 @@ def parametros_configuracion(dificultad:str):
         Retorna diccionario de la configuración de la dificultad pasada como parámetro
     """
 
-    datos = obtener_datos(ruta_configuracion)
+    datos = leer_json_data(ruta_configuracion)
     return datos[dificultad] if datos else False
     
 def puntaje_usuario(nick:str,dificultad:str):
 
     """Retorna puntaje del usuario según la dificultad pasada como parámetro"""
 
-    datos = obtener_datos(ruta_usuarios_datos)
+    datos = leer_json_data(ruta_usuarios_datos)
 
     if datos:
         usuario = list(filter(lambda x: x['nick'] == nick,datos))[0]

@@ -1,7 +1,7 @@
 import os
 from random import choices,shuffle
 import csv
-from helpers.apertura_de_archivos import ruta_csv
+from common.paths import ruta_csv
 
 def opciones_random(nombre:str,cant_caracteristicas:int):
     """
