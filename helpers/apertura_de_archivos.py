@@ -11,6 +11,7 @@ ruta_datos_juego = os.path.join(ruta_json,'datos_juego.json')
 
 ruta_csv = os.path.join(os.getcwd(),'data','csv')
 
+
 def obtener_datos(ruta:str):
     
     """
