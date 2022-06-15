@@ -22,8 +22,8 @@ def interfaz(tiempo_inicial):
     cant_caracteristicas = parametro["cant_caracteristicas"]
 
     id_partida ="33ff0802-e53f-11ec-8fea-0242ac120002" # debo generar id aleatorio
-    datos_partida_inicio = Partida(id_partida,'inicio_partida',nick,' ','-','-',dificultad_actual)
-    #estos datos de la partida se deben guardar en archivo csv
+    datos_partida_inicio = Partida(time.time(),id_partida,'inicio_partida',nick,' ','-','-',dificultad_actual)
+    #estos datos de la partida se deben guardar en archivo panda
 
     #"-------------------------------------------------------"
 
@@ -43,7 +43,7 @@ def interfaz(tiempo_inicial):
         [sg.Image(filename = ruta_imagen)],
         [sg.Text('Tiempo restante',font=('Arial',20))],
         [sg.Text(int(tiempo_limite - (time.time() - tiempo_inicial)),key='-TEMPORIZADOR-',font=('Arial',20))],
-        [sg.Button('Abandonar juego',font=('Arial',10),key='finalizada,-,fin',border_width=2,size=(12,1))]
+        [sg.Button('Abandonar juego',font=('Arial',10),key='cancelada,-,fin',border_width=2,size=(12,1))]
     ]
 
     layout=[[sg.Column(columna1),sg.Column(layout_tarjeta,element_justification='center',background_color='grey')]]
@@ -53,24 +53,26 @@ def interfaz(tiempo_inicial):
 def logistica(event,values):
 
     eventos = event.split(',')
-    estado = eventos[0]
+    estado = eventos[0].strip('012')
     texto_ingresado = eventos[1] if len(eventos) > 1 else " "
     evento = eventos[2] if len(eventos) > 2 else " "
-    dato_evento = Partida('id_partida',evento,'nick',estado,texto_ingresado,'nombre_correcta','nivel')
+    dato_evento = Partida(time.time(),'id_partida',evento,'nick',estado,texto_ingresado,'nombre_correcta','nivel')
 
     # ver como pasar los parametros id,nick,nombre_correcta y nivel que estan en funcion interfaz
-
     match estado:
         case "ok":
             sg.Popup('Es la correcta')
-            #actualizar la tarjeta
-        case "error" | "error0" | "error1" | "error2":
+            #actualizar la tarjeta, tiempo por ronda y puntaje
+        case "error":
             sg.Popup('Esa no es')
-            #actualizar la tarjeta
+            #actualizar la tarjeta, tiempo por ronda y puntaje
         case '-PASAR-':
-            #actualizar la tarjeta
+            #actualizar la tarjeta, tiempo por ronda y puntaje
             sg.Popup('Pasa a la siguiente')
-        case 'finalizada':
+        #case 'finalizada':
+            #finalizaron todas las rondas, se actualiza puntaje
+        case 'cancelada':
+            #no registrar puntaje si la partida se abandono
             return False
     return True
 

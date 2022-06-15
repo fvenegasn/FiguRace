@@ -2,10 +2,10 @@ import random
 
 class Partida():
 
-    def __init__(self,id_partida, evento, usuarie,estado,texto_ingresado,respuesta,nivel):
+    def __init__(self,timestamp,id_partida, evento, usuarie,estado,texto_ingresado,respuesta,nivel):
 
         self._id = id_partida
-        self._timestamp = random.randrange(1000000000,9999999999)
+        self._timestamp = timestamp
         self._evento = evento
         self._usuarie = usuarie
         self._estado = estado
