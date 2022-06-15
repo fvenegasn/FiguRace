@@ -1,5 +1,5 @@
-import os
-import json
+from common.paths import ruta_configuracion,ruta_usuarios_datos
+from common.archivo import escribir_json_data, leer_json_data
 from common.usuario import Usuario
 
 def guardar_perfil(nick:str, edad:str, genero:str, contraseña:str):
@@ -19,23 +19,22 @@ def guardar_en_archivo(dato_in:dict):
         Caso contrario devuelve False
     """
     
-    ruta=os.path.join(os.getcwd(),'data','json','usuarios_datos')
+    
     exito = False
     try:
-        arch_usuarios = open(ruta, "r+",encoding='utf-8')
-        datos_arch = json.load(arch_usuarios)
+        datos_arch = leer_json_data(ruta_usuarios_datos)
+        
         #Me fijo si el nick ya existe
         nick = dato_in['nick']
         if not existe(datos_arch,nick):
             exito = True
             datos_arch.append(dato_in)
-            arch_usuarios.seek(0)
-            json.dump(datos_arch, arch_usuarios,indent=4)
+            escribir_json_data([dato_in],ruta_usuarios_datos)
+
     except FileNotFoundError:
         exito = True
-        arch_usuarios = open(ruta,'x')
-        json.dump([dato_in],arch_usuarios,indent=4)
-    arch_usuarios.close()
+        escribir_json_data([dato_in],ruta_usuarios_datos)
+
     return exito
 
 def existe(datos_arch:list,nick:str):
@@ -47,5 +46,5 @@ def existe(datos_arch:list,nick:str):
     
     x = filter(lambda x: x['nick']==nick,datos_arch)
 
-    return list(x)!=[]
+    return list(x)
 

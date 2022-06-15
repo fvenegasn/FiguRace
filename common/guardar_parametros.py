@@ -1,7 +1,5 @@
-import os
-import json
-
-
+from common.paths import ruta_configuracion
+from common.archivo import escribir_json_data
 def guardar_parametros(datos:dict) -> None:
     """
     funcion 'to_default'
@@ -9,6 +7,4 @@ def guardar_parametros(datos:dict) -> None:
     Def:
         Escribe el archivo que contiene los parámetros de la configuración del juego a su configuración por defecto
     """
-    ruta = os.path.join(os.getcwd(), 'data','json',"configuracion.json")
-    with open (ruta, "w", encoding="UTF-8") as archivo:
-        json.dump (datos, archivo, indent=4)
+    escribir_json_data(datos,ruta_configuracion)
