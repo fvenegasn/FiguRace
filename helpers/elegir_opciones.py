@@ -23,21 +23,17 @@ def opciones_random(nombre:str,cant_caracteristicas:int):
     try:
         with open(ruta_csv_actual,'r',encoding='UTF-8') as archivo:
             reader = csv.reader(archivo,delimiter =',')
-            next(reader)
+            columnas=next(reader)
             data = list(map(lambda x: x,reader))
         
-
-       
         opciones = choices(data, k=5)
-        incorrectas = opciones[1:5]
-        correcta = opciones[0]
-        caracteristicas = correcta[0:cant_caracteristicas]
-        nombre_correcta = correcta[5]
-        nombre_incorrectas = list(map(lambda x: x[5],incorrectas))
-        
-        shuffle(opciones)
+        descartadas = opciones[1:5]
+        elegida = opciones[0]
+        caracteristicas = elegida[0:cant_caracteristicas]
+        opcion_correcta = elegida[5]
+        opciones_incorrectas = list(map(lambda x: x[5],descartadas))
 
-        return caracteristicas,nombre_correcta,nombre_incorrectas
-    
+        return columnas,caracteristicas,opcion_correcta,opciones_incorrectas
+        
     except FileNotFoundError:
         return False

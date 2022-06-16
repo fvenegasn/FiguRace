@@ -16,8 +16,8 @@ def actualizar_parametros(window,dificultad):
     
     window['-TIEMPO-'].update(parametros[dificultad]['tiempo_limite'])
     window['-RONDAS-'].update(parametros[dificultad]["cant_rondas"])
-    window['-CORRECTAs-'].update(parametros[dificultad]["rta_correcta"])
-    window['-INCORRECTAs-'].update(parametros[dificultad]["rta_incorrecta"])
+    window['-CORRECTAS-'].update(parametros[dificultad]["rta_correcta"])
+    window['-INCORRECTAS-'].update(parametros[dificultad]["rta_incorrecta"])
     window['-CANT_CARACT-'].update(parametros[dificultad]["cant_caracteristicas"])
 
 """-------------------------INTERFAZ-------------------------------"""
@@ -50,11 +50,11 @@ def interface():
         ],
         [
             sg.Text('Ingrese el puntaje sumado por cada respuesta correcta'), 
-            sg.InputText(parametros[dificultad_elegida]["rta_correcta"],key='-CORRECTAs-')
+            sg.InputText(parametros[dificultad_elegida]["rta_correcta"],key='-CORRECTAS-')
         ],
         [
             sg.Text('Ingrese el puntaje sumado por cada respuesta incorrecta'), 
-            sg.InputText(parametros[dificultad_elegida]["rta_incorrecta"],key='-INCORRECTAs-')
+            sg.InputText(parametros[dificultad_elegida]["rta_incorrecta"],key='-INCORRECTAS-')
         ],
         [
             sg.Text('Ingrese la cantidad de características a mostrar'), 
