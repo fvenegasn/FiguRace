@@ -14,23 +14,18 @@ def interfaz():
     nick = mostrar_seleccionado('perfil')
     dataset_actual = mostrar_seleccionado('dataset')
     dificultad_actual = mostrar_seleccionado('dificultad')
-    puntaje = puntaje_usuario(nick,dificultad_actual)
-
     parametro = parametros_configuracion(dificultad_actual)
     tiempo_limite = parametro["tiempo_limite"]
-    cant_rondas = parametro["cant_rondas"]
-    rta_correcta = parametro["rta_correcta"]
-    rta_incorrecta = parametro["rta_incorrecta"]
     cant_caracteristicas = parametro["cant_caracteristicas"]
 
     #"-------------------------------------------------------"
 
     ruta_imagen = os.path.join(os.getcwd(),'static','lagos.png') #dependera del dataset elegido
  
-    opciones,pistas = generar_tarjeta(dataset_actual,cant_caracteristicas)
+    opciones,pistas,respuesta = generar_tarjeta(dataset_actual,cant_caracteristicas)
 
     layout_tarjeta = [
-        [sg.Column(pistas,element_justification='left',key='holis')],
+        [sg.Column(pistas,element_justification='left')],
         [sg.Column(opciones,element_justification='center',background_color='grey',key='-OPCIONES-')],
         ]
     
@@ -48,56 +43,80 @@ def interfaz():
 
 """-------------------------LOGÍSTICA------------------------------"""
 def logistica(event,values,**kwargs):
+    data=kwargs['data']
+    termino_el_juego = data['ronda'] == data['cant_rondas']
+    id_partida = data["id_partida"]
+    usuarie = mostrar_seleccionado('perfil')
+    nivel = mostrar_seleccionado('dificultad')
+    genero = data["genero"]
+
     #--------------ACTUALIZACION--TEMPORIZADOR------------#
     window = kwargs['window']
-    data=kwargs['data']
-    window['-TEMPORIZADOR-'].update(int(data['tiempo_limite'] - (time.time() - data['tiempo_inicial'])))
+    tiempo_restante = int(data['tiempo_limite'] - (time.time() - data['tiempo_inicial']))
+    window['-TEMPORIZADOR-'].update(tiempo_restante)
+
+    if tiempo_restante <= 0:
+        sg.Popup('Se acabo el tiempo!')
+        partida = Partida(int(time.time()),id_partida,'intento',usuarie,'timeout','-','respuesta',nivel,genero)
+        # ver como pasar parametro respuesta=nombre_correcta en casa de que no se cliquee ningun boton
+        #partida se guarda en pandas --> llamar funcion que lo haga
+        pasar_ventana(window,siguiente_tarjeta.ejecutar)
+        return False
+
     #-------------------EVENTOS---------------------#
     #event = key = estado,evento,texto_ingresado,respuesta
+
     eventos = event.split(',')
     estado = eventos[0]
     if len(eventos) > 3:
         evento = eventos[1].strip('012')
         texto_ingresado = eventos[2]
         respuesta = eventos[3]
-        id_partida = data["id_partida"]
-        usuarie = mostrar_seleccionado('perfil')
-        nivel = mostrar_seleccionado('dificultad')
-        dato_evento = Partida(int(time.time()),id_partida,evento,usuarie,estado,texto_ingresado,respuesta,nivel)
-        #dato_evento se guarda en pandas
+
+        partida = Partida(int(time.time()),id_partida,evento,usuarie,estado,texto_ingresado,respuesta,nivel,genero)
+        #partida se guarda en pandas --> llamar funcion que lo haga
 
     match estado:
         case "ok":
-            sg.Popup('Es la correcta')
-            #actualizar la tarjeta, tiempo por ronda y puntaje
-            pasar_ventana(window,siguiente_tarjeta.ejecutar)
-            return False
+            sg.Popup('Muy bien!')
+            data['puntaje'] = data['puntaje'] + data["rta_correcta"]
         case "error":
-            sg.Popup('Esa no es')
-            #actualizar la tarjeta, tiempo por ronda y puntaje
-            pasar_ventana(window,siguiente_tarjeta.ejecutar)
+            sg.Popup('Incorrecto :(')
+            data['puntaje'] = data['puntaje'] - data["rta_incorrecta"]
+
+    match estado:
+        case "ok" | "error":
+            if not termino_el_juego:
+                pasar_ventana(window,siguiente_tarjeta.ejecutar)
+            else:
+                partida = Partida(int(time.time()),id_partida,'fin',usuarie,'finalizada','-','-',nivel,genero)
+                # partida se guarda en panda --> llamar funcion que lo haga
+                sg.Popup(f"Terminaste la partida con un puntaje de {data['puntaje']}")
+                # if data['puntaje'] > data['puntaje_max'] guardar en el json
             return False
-        #case 'finalizada':
-            #finalizaron todas las rondas, se actualiza puntaje
         case 'cancelada':
-            #no registrar puntaje si la partida se abandono
+            sg.Popup('Abandona')
             return False
     return True
 
 
 def initialize(data):
-    data["id_partida"] = gen_id()
-    
+    data["ronda"] = 1
     data["tiempo_inicial"] = time.time()
-    
+    data["id_partida"] = gen_id()
     usuarie = mostrar_seleccionado('perfil')
     nivel = mostrar_seleccionado('dificultad')
+    data["genero"] = mostrar_seleccionado('dataset')
+    data["puntaje_max"] = puntaje_usuario(usuarie,nivel)
+    data["puntaje"] = 0
     parametro = parametros_configuracion(nivel)
     data["tiempo_limite"] = parametro["tiempo_limite"]
-
-    datos_partida_inicio = Partida(data["tiempo_inicial"],data["id_partida"],'inicio_partida',usuarie,' ','-','-',nivel)
-    #datos_partida_inicio se debe guardar en pandas
-
+    data["cant_rondas"] = parametro["cant_rondas"]
+    data["rta_correcta"] = parametro["rta_correcta"]
+    data["rta_incorrecta"] = parametro["rta_incorrecta"]
+    partida_inicio = Partida(data["tiempo_inicial"],data["id_partida"],'inicio_partida',usuarie,' ','-','-',nivel,data["genero"])
+    #partida_inicio se debe guardar en pandas --> llamar funcion que lo haga
+    data['nombre_correcta'] = ' '
 """-------------------------EJECUCIÓN------------------------------"""
 def ejecutar():
     layout = interfaz()

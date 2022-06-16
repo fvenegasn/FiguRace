@@ -19,4 +19,4 @@ def generar_tarjeta(dataset_actual,cant_caracteristicas):
     for i,pista in enumerate(caracteristicas):
         pistas.append([sg.Text(columnas[i]+':',font=('Arial',14)),sg.Text(pista,font=('Arial',12))])
 
-    return opciones,pistas
+    return opciones,pistas,nombre_correcta
