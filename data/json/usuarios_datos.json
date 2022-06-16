@@ -97,5 +97,16 @@
             "Media": 0,
             "Dificil": 0
         }
+    },
+    {
+        "nick": "ismael",
+        "edad": "23",
+        "genero": "sds",
+        "contraseña": "asd",
+        "puntaje": {
+            "Facil": 0,
+            "Media": 0,
+            "Dificil": 0
+        }
     }
 ]

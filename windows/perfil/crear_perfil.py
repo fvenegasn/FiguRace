@@ -17,7 +17,7 @@ def logistica(event,values,**kwargs):
                 guardar_dato(values[0],'perfil')
                 load_user=True
             else:
-                sg.Popup('El nick ingresado ya existe o no se ingresó una edad válida')
+                sg.Popup('El nick ingresado ya existe o no se ingresó una dato no válido')
             return False
     return True,load_user
 

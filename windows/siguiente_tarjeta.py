@@ -5,7 +5,6 @@ import os
 from common.manejo_datos_juego import mostrar_seleccionado, parametros_configuracion,puntaje_usuario
 import time
 from common.partida import Partida
-from helpers.generar_id import gen_id
 from windows import siguiente_tarjeta
 
 def interfaz():
@@ -77,6 +76,7 @@ def logistica(event,values,**kwargs):
             #actualizar la tarjeta, tiempo por ronda y puntaje
             pasar_ventana(window,siguiente_tarjeta.ejecutar)
             return False
+
         #case 'finalizada':
             #finalizaron todas las rondas, se actualiza puntaje
         case 'cancelada':
@@ -86,20 +86,12 @@ def logistica(event,values,**kwargs):
 
 
 def initialize(data):
-    data["id_partida"] = gen_id()
-    
     data["tiempo_inicial"] = time.time()
-    
-    usuarie = mostrar_seleccionado('perfil')
     nivel = mostrar_seleccionado('dificultad')
     parametro = parametros_configuracion(nivel)
     data["tiempo_limite"] = parametro["tiempo_limite"]
-
-    datos_partida_inicio = Partida(data["tiempo_inicial"],data["id_partida"],'inicio_partida',usuarie,' ','-','-',nivel)
-    #datos_partida_inicio se debe guardar en pandas
 
 """-------------------------EJECUCIÓN------------------------------"""
 def ejecutar():
     layout = interfaz()
     crear_ventana("Pantalla de Juego", layout,logistica,initialize=initialize)
-    

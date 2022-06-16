@@ -1,3 +1,4 @@
+from common import generos
 from common.paths import ruta_configuracion,ruta_usuarios_datos
 from common.archivo import escribir_json_data, leer_json_data
 from common.usuario import Usuario
@@ -5,7 +6,7 @@ from common.usuario import Usuario
 def guardar_perfil(nick:str, edad:str, genero:str, contraseña:str):
     """Retorna True si se pudo guardar con exito el nuevo usuario"""
     
-    if (not edad.isnumeric()):
+    if (not edad.isnumeric()) or (not nick.isalnum()) or (genero not in generos.lista_generos):
         return False
     else:
         usuario = Usuario(nick,edad,genero,contraseña)
