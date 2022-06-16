@@ -8,5 +8,5 @@ def initialize(data):
 """-------------------------EJECUCIÓN------------------------------"""
 def ejecutar():
     from windows.jugar import interfaz,logistica
-    layout = interfaz()
-    crear_ventana("Pantalla de Juego", layout,logistica,initialize=initialize)
+    layout,respuesta = interfaz()
+    crear_ventana("Pantalla de Juego", layout,logistica,initialize=initialize,respuesta=respuesta)

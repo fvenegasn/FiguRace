@@ -19,7 +19,8 @@ def interfaz():
     cant_caracteristicas = parametro["cant_caracteristicas"]
 
     #"-------------------------------------------------------"
-
+    
+    #mostrar en pantalla nick,data_set y dificultad_actual
     ruta_imagen = os.path.join(os.getcwd(),'static','lagos.png') #dependera del dataset elegido
  
     opciones,pistas,respuesta = generar_tarjeta(dataset_actual,cant_caracteristicas)
@@ -35,14 +36,14 @@ def interfaz():
         [sg.Image(filename = ruta_imagen)],
         [sg.Text('Tiempo restante',font=('Arial',20))],
         [sg.Text(tiempo_limite,key='-TEMPORIZADOR-',font=('Arial',20))],
-        [sg.Button('Abandonar juego',font=('Arial',10),key='cancelada,fin,-,-',border_width=2,size=(12,1))]
+        [sg.Button('Abandonar juego',font=('Arial',10),key='cancelada,fin,-',border_width=2,size=(12,1))]
     ]
 
     layout=[[sg.Column(columna1),sg.Column(layout_tarjeta,element_justification='center',background_color='grey')]]
-    return layout
+    return layout,respuesta
 
 """-------------------------LOGÍSTICA------------------------------"""
-def logistica(event,values,**kwargs):
+def logistica(event,values,respuesta,**kwargs):
     data=kwargs['data']
     termino_el_juego = data['ronda'] == data['cant_rondas']
     id_partida = data["id_partida"]
@@ -57,8 +58,7 @@ def logistica(event,values,**kwargs):
 
     if tiempo_restante <= 0:
         sg.Popup('Se acabo el tiempo!')
-        partida = Partida(int(time.time()),id_partida,'intento',usuarie,'timeout','-','respuesta',nivel,genero)
-        # ver como pasar parametro respuesta=nombre_correcta en casa de que no se cliquee ningun boton
+        partida = Partida(int(time.time()),id_partida,'intento',usuarie,'timeout','-',respuesta,nivel,genero)
         #partida se guarda en pandas --> llamar funcion que lo haga
         pasar_ventana(window,siguiente_tarjeta.ejecutar)
         return False
@@ -68,10 +68,9 @@ def logistica(event,values,**kwargs):
 
     eventos = event.split(',')
     estado = eventos[0]
-    if len(eventos) > 3:
+    if len(eventos) > 2: #casos en el que se clickea alguna opcion o se abandona el juego
         evento = eventos[1].strip('012')
         texto_ingresado = eventos[2]
-        respuesta = eventos[3]
 
         partida = Partida(int(time.time()),id_partida,evento,usuarie,estado,texto_ingresado,respuesta,nivel,genero)
         #partida se guarda en pandas --> llamar funcion que lo haga
@@ -81,7 +80,7 @@ def logistica(event,values,**kwargs):
             sg.Popup('Muy bien!')
             data['puntaje'] = data['puntaje'] + data["rta_correcta"]
         case "error":
-            sg.Popup('Incorrecto :(')
+            sg.Popup(f"Incorrecto :( La respuesta correcta es {respuesta}")
             data['puntaje'] = data['puntaje'] - data["rta_incorrecta"]
 
     match estado:
@@ -114,11 +113,10 @@ def initialize(data):
     data["cant_rondas"] = parametro["cant_rondas"]
     data["rta_correcta"] = parametro["rta_correcta"]
     data["rta_incorrecta"] = parametro["rta_incorrecta"]
-    partida_inicio = Partida(data["tiempo_inicial"],data["id_partida"],'inicio_partida',usuarie,' ','-','-',nivel,data["genero"])
+    partida_inicio = Partida(int(data["tiempo_inicial"]),data["id_partida"],'inicio_partida',usuarie,' ','-','-',nivel,data["genero"])
     #partida_inicio se debe guardar en pandas --> llamar funcion que lo haga
-    data['nombre_correcta'] = ' '
 """-------------------------EJECUCIÓN------------------------------"""
 def ejecutar():
-    layout = interfaz()
-    crear_ventana("Pantalla de Juego", layout,logistica,initialize=initialize)
+    layout,respuesta = interfaz()
+    crear_ventana("Pantalla de Juego", layout,logistica,initialize=initialize,respuesta= respuesta)
     

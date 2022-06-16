@@ -6,7 +6,7 @@ from common.sessions import sessions
 def default_update(*args,**kwargs):
     pass
 
-def crear_ventana(name:str,layout:list,acciones:Any,evaluate_extra=default_update,update_windows=default_update,initialize=default_update,*args,**kwargs):
+def crear_ventana(name:str,layout:list,acciones:Any,evaluate_extra=default_update,update_windows=default_update,initialize=default_update,respuesta=default_update,*args,**kwargs):
     """
     funcion crear_ventana
     
@@ -27,7 +27,7 @@ def crear_ventana(name:str,layout:list,acciones:Any,evaluate_extra=default_updat
         match event:
             case None |sg.WIN_CLOSED:
                 break
-        loop = acciones(event,values,data=sessions,window=window)
+        loop = acciones(event,values,data=sessions,window=window,respuesta=respuesta)
         update_windows(window,data=sessions)
     window.close()   
 
