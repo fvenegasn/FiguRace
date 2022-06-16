@@ -1,3 +1,5 @@
 # acá van las librerias instaladas
 
 PySimpleGUI==4.59.0
+pandas==1.4.2 
+

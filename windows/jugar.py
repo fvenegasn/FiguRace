@@ -76,15 +76,19 @@ def logistica(event,values):
             return False
     return True
 
-def update_windows(window):
+def update_windows(window,data,**kwargs):
+    import pdb
+    pdb.set_trace()
     window['-TEMPORIZADOR-'].update(int(time.time())) 
     #preguntar como pasar parametro del tiempo inicial
     #window['-TEMPORIZADOR-'].update(int(time.time() - tiempo_inicial)) 
 
+def initialize(data):
+    data["tiempo_inicial"] = time.time()
 """-------------------------EJECUCIÓN------------------------------"""
-def ejecutar():
+def ejecutar(data):
     tiempo_inicial = time.time()
 
     layout = interfaz(tiempo_inicial)
-    crear_ventana("Pantalla de Juego", layout,logistica,update_windows=update_windows)
+    crear_ventana("Pantalla de Juego", layout,logistica,update_windows=update_windows,initialize=initialize)
     

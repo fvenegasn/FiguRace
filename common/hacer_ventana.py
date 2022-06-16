@@ -1,10 +1,12 @@
 from typing import Any
 import PySimpleGUI as sg
 
-def default_update(*args):
+from common.sessions import sessions
+
+def default_update(*args,**kwargs):
     pass
 
-def crear_ventana(name:str,layout:list,acciones:Any,evaluate_extra=default_update,update_windows=default_update,*args,**kwargs):
+def crear_ventana(name:str,layout:list,acciones:Any,evaluate_extra=default_update,update_windows=default_update,initialize=default_update,*args,**kwargs):
     """
     funcion crear_ventana
     
@@ -17,7 +19,7 @@ def crear_ventana(name:str,layout:list,acciones:Any,evaluate_extra=default_updat
         acciones(funcion): funcion que contiene la logistica de la ventana a crear
     """
     tiempo = 900 if name == "Pantalla de Juego"  else None
-
+    initialize(data=sessions)
     window = sg.Window(name,layout,finalize=True)
     loop = True
     while loop:
@@ -26,8 +28,8 @@ def crear_ventana(name:str,layout:list,acciones:Any,evaluate_extra=default_updat
             case None |sg.WIN_CLOSED:
                 break
         window.Hide()
-        loop = acciones(event,values)
+        loop = acciones(event,values,data=sessions)
         window.UnHide()
-        update_windows(window)
+        update_windows(window,data=sessions)
     window.close()   
 
