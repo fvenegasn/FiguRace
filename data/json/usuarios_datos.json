@@ -3,7 +3,7 @@
         "nick": "Juliuss",
         "edad": "27",
         "genero": "Femenino",
-        "contrase\u00f1a": "asd",
+        "contraseña": "asd",
         "puntaje": {
             "Facil": 0,
             "Media": 0,
@@ -14,7 +14,7 @@
         "nick": "El negro",
         "edad": "20",
         "genero": "No-binario",
-        "contrase\u00f1a": "asdasd",
+        "contraseña": "asdasd",
         "puntaje": {
             "Facil": 0,
             "Media": 0,
@@ -25,7 +25,7 @@
         "nick": "Tebi",
         "edad": "21",
         "genero": "Transgenero",
-        "contrase\u00f1a": "asdasd",
+        "contraseña": "asdasd",
         "puntaje": {
             "Facil": 0,
             "Media": 0,
@@ -36,7 +36,7 @@
         "nick": "Juli",
         "edad": "27",
         "genero": "Femenino",
-        "contrase\u00f1a": "jc19",
+        "contraseña": "jc19",
         "puntaje": {
             "Facil": 0,
             "Media": 0,
@@ -47,7 +47,7 @@
         "nick": "PEpe",
         "edad": "29",
         "genero": "Otro",
-        "contrase\u00f1a": "123456",
+        "contraseña": "123456",
         "puntaje": {
             "Facil": 0,
             "Media": 0,
@@ -58,7 +58,7 @@
         "nick": "Charly",
         "edad": "25",
         "genero": "Masculino",
-        "contrase\u00f1a": "123",
+        "contraseña": "123",
         "puntaje": {
             "Facil": 0,
             "Media": 0,
@@ -69,7 +69,18 @@
         "nick": "Juan",
         "edad": "25",
         "genero": "Masculino",
-        "contrase\u00f1a": "123",
+        "contraseña": "123",
+        "puntaje": {
+            "Facil": 0,
+            "Media": 0,
+            "Dificil": 0
+        }
+    },
+    {
+        "nick": "Emi",
+        "edad": "19",
+        "genero": "Femenino",
+        "contraseña": "1234",
         "puntaje": {
             "Facil": 0,
             "Media": 0,

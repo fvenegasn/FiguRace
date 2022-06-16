@@ -29,7 +29,7 @@ def guardar_en_archivo(dato_in:dict):
         if not existe(datos_arch,nick):
             exito = True
             datos_arch.append(dato_in)
-            escribir_json_data([dato_in],ruta_usuarios_datos)
+            escribir_json_data(datos_arch,ruta_usuarios_datos)
 
     except FileNotFoundError:
         exito = True
