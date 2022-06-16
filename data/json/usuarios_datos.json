@@ -86,5 +86,16 @@
             "Media": 0,
             "Dificil": 0
         }
+    },
+    {
+        "nick": "Jason",
+        "edad": "21",
+        "genero": "Masculino",
+        "contraseña": "3698e21",
+        "puntaje": {
+            "Facil": 0,
+            "Media": 0,
+            "Dificil": 0
+        }
     }
 ]

@@ -1,6 +1,6 @@
 import os
 import PySimpleGUI as sg
-from common.hacer_ventana import crear_ventana 
+from common.hacer_ventana import crear_ventana,pasar_ventana 
 from windows import jugar, como_jugar
 from windows import configuracion
 from windows.perfil import perfil
@@ -51,29 +51,24 @@ def interfaz():
 
 
 """-------------------------LOGISTICA------------------------------"""
-def logica_ventana(event,values):
-    
+def logica_ventana(event,values,**kwargs):
+    window = kwargs['window']
     match event:
         case '-JUGAR-':
-            jugar.ejecutar()
-
+            pasar_ventana(window,jugar.ejecutar)
         case '-PUNTAJES-':
-            puntajes.ejecutar()
-
+            pasar_ventana(window,puntajes.ejecutar)
         case '-PERFIL-':
-            perfil.ejecutar()
-        
+            pasar_ventana(window,perfil.ejecutar)
         case '-CONFIGURACION-':
-            configuracion.ejecutar()
-        
+            pasar_ventana(window,configuracion.ejecutar)
         case '-COMO-JUGAR-':
-            como_jugar.ejecutar()
-
+            pasar_ventana(window,como_jugar.ejecutar)
         case None | sg.WIN_CLOSED | '-SALIR-':
             return False
     return True
 
-def update_windows(window):
+def update_windows(window,**kwargs):
     window['-MOSTRAR_NICK-'].update(mostrar_seleccionado('perfil'))
     window['-MOSTRAR_DIFICULTAD-'].update(mostrar_seleccionado('dificultad'))
     window['-MOSTRAR_DATASET-'].update(mostrar_seleccionado('dataset'))

@@ -4,7 +4,7 @@ from common.verificar_perfil import verificar_perfil
 from common.manejo_datos_juego import guardar_dato
 
 """-------------------------LOGÍSTICA------------------------------"""
-def logistica(event,values):
+def logistica(event,values,**kwargs):
     load_user=False
     match event:
         case '-CANCELAR-':

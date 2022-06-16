@@ -5,7 +5,7 @@ from common.generos import lista_generos
 from common.manejo_datos_juego import mostrar_seleccionado
 
 """-------------------------LOGÍSTICA------------------------------"""
-def logistica(event,values):
+def logistica(event,values,**kwargs):
     match event:
         case '-CANCELAR-':
             return False

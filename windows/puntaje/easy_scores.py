@@ -16,7 +16,7 @@ def interface():
     return layout
 
 """-------------------------LOGÍSTICA------------------------------"""
-def logistica(event,values):
+def logistica(event,values,**kwargs):
     match event:
         case '-VOLVER-':
             return False

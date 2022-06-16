@@ -6,7 +6,7 @@ from common.manejo_datos_juego import mostrar_seleccionado, parametros_configura
 import time
 from common.partida import Partida
 
-def interfaz(tiempo_inicial):
+def interfaz():
 
     #"----------------Variables del juego------------------"
     nick = mostrar_seleccionado('perfil')
@@ -42,7 +42,7 @@ def interfaz(tiempo_inicial):
         [sg.Text(dataset_actual,font=('Arial',15))],
         [sg.Image(filename = ruta_imagen)],
         [sg.Text('Tiempo restante',font=('Arial',20))],
-        [sg.Text(int(tiempo_limite - (time.time() - tiempo_inicial)),key='-TEMPORIZADOR-',font=('Arial',20))],
+        [sg.Text(tiempo_limite,key='-TEMPORIZADOR-',font=('Arial',20))],
         [sg.Button('Abandonar juego',font=('Arial',10),key='cancelada,-,fin',border_width=2,size=(12,1))]
     ]
 
@@ -50,8 +50,10 @@ def interfaz(tiempo_inicial):
     return layout
 
 """-------------------------LOGÍSTICA------------------------------"""
-def logistica(event,values):
-
+def logistica(event,values,**kwargs):
+    window = kwargs['window']
+    data=kwargs['data']
+    window['-TEMPORIZADOR-'].update(int(data['tiempo_limite'] - (time.time() - data['tiempo_inicial'])))
     eventos = event.split(',')
     estado = eventos[0].strip('012')
     texto_ingresado = eventos[1] if len(eventos) > 1 else " "
@@ -76,19 +78,20 @@ def logistica(event,values):
             return False
     return True
 
-def update_windows(window,data,**kwargs):
-    import pdb
-    pdb.set_trace()
-    window['-TEMPORIZADOR-'].update(int(time.time())) 
+#def update_windows(window,data,**kwargs):
+    
+    #window['-TEMPORIZADOR-'].update(int(time.time())) 
     #preguntar como pasar parametro del tiempo inicial
     #window['-TEMPORIZADOR-'].update(int(time.time() - tiempo_inicial)) 
 
 def initialize(data):
     data["tiempo_inicial"] = time.time()
-"""-------------------------EJECUCIÓN------------------------------"""
-def ejecutar(data):
-    tiempo_inicial = time.time()
+    dificultad_actual = mostrar_seleccionado('dificultad')
+    parametro = parametros_configuracion(dificultad_actual)
+    data["tiempo_limite"] = parametro["tiempo_limite"]
 
-    layout = interfaz(tiempo_inicial)
-    crear_ventana("Pantalla de Juego", layout,logistica,update_windows=update_windows,initialize=initialize)
+"""-------------------------EJECUCIÓN------------------------------"""
+def ejecutar():
+    layout = interfaz()
+    crear_ventana("Pantalla de Juego", layout,logistica,initialize=initialize)
     

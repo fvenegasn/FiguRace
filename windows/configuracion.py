@@ -57,7 +57,7 @@ def interface():
     return layout
 
 """-------------------------LOGÍSTICA------------------------------"""
-def logistica(event,values):
+def logistica(event,values,**kwargs):
     evento = event.replace('-','')
     match event:
         
@@ -85,7 +85,7 @@ def logistica(event,values):
             return False
     return True
 
-def update_windows(window):
+def update_windows(window,**kwargs):
     window['-MOSTRAR_DIFICULTAD-'].update(mostrar_seleccionado('dificultad'))
 
 """-------------------------EJECUCIÓN------------------------------"""

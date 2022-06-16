@@ -6,7 +6,7 @@ from common.manejo_datos_juego import guardar_dato
 
 
 """-------------------------LOGÍSTICA------------------------------"""
-def logistica(event,values):
+def logistica(event,values,**kwargs):
     match event:
         case '-CANCELAR-':
             return False
