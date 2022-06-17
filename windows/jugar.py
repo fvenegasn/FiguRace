@@ -21,7 +21,7 @@ def interfaz():
     #"-------------------------------------------------------"
     
     #mostrar en pantalla nick,data_set y dificultad_actual
-    ruta_imagen = os.path.join(os.getcwd(),'static','lagos.png') #dependera del dataset elegido
+    ruta_imagen = os.path.join(os.getcwd(),'static',dataset_actual.lower()+'.png') #dependera del dataset elegido
  
     opciones,pistas,respuesta = generar_tarjeta(dataset_actual,cant_caracteristicas)
 
