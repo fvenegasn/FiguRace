@@ -53,5 +53,16 @@
             "Media": 0,
             "Dificil": 1
         }
+    },
+    {
+        "nick": "Fran",
+        "edad": "20",
+        "genero": "Masculino",
+        "contraseña": "holamundo",
+        "puntaje": {
+            "Facil": 5,
+            "Media": 0,
+            "Dificil": 3
+        }
     }
 ]
