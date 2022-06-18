@@ -3,7 +3,7 @@ from common.archivo import leer_json_data
 from common.paths import ruta_configuracion
 from common.hacer_ventana import crear_ventana
 from common.manejo_datos_juego import guardar_dato,mostrar_seleccionado
-from common.guardar_parametros import guardar_parametros
+from helpers.guardar_parametros import guardar_parametros
 from helpers.transformar_valores import values_to_options
 from common.parametros import options
 import copy

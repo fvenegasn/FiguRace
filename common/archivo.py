@@ -1,7 +1,7 @@
 import json
 from typing import Any
 
-def leer_json_data(name:str,encoding:str='utf8') -> dict:
+def leer_json_data(name:str,encoding:str='utf8'):
     with open(name,encoding=encoding) as file:
         datos = json.load(file)
     return datos
