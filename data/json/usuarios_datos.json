@@ -1,27 +1,5 @@
 [
     {
-        "nick": "Juliuss",
-        "edad": "27",
-        "genero": "Femenino",
-        "contraseña": "asd",
-        "puntaje": {
-            "Facil": 0,
-            "Media": 0,
-            "Dificil": 0
-        }
-    },
-    {
-        "nick": "El negro",
-        "edad": "20",
-        "genero": "No-binario",
-        "contraseña": "asdasd",
-        "puntaje": {
-            "Facil": 0,
-            "Media": 0,
-            "Dificil": 0
-        }
-    },
-    {
         "nick": "Tebi",
         "edad": "21",
         "genero": "Transgenero",
@@ -37,28 +15,6 @@
         "edad": "27",
         "genero": "Femenino",
         "contraseña": "jc19",
-        "puntaje": {
-            "Facil": 0,
-            "Media": 0,
-            "Dificil": 0
-        }
-    },
-    {
-        "nick": "PEpe",
-        "edad": "29",
-        "genero": "Otro",
-        "contraseña": "123456",
-        "puntaje": {
-            "Facil": 0,
-            "Media": 0,
-            "Dificil": 0
-        }
-    },
-    {
-        "nick": "Charly",
-        "edad": "25",
-        "genero": "Masculino",
-        "contraseña": "123",
         "puntaje": {
             "Facil": 0,
             "Media": 0,
@@ -92,17 +48,6 @@
         "edad": "21",
         "genero": "Masculino",
         "contraseña": "3698e21",
-        "puntaje": {
-            "Facil": 0,
-            "Media": 0,
-            "Dificil": 0
-        }
-    },
-    {
-        "nick": "ismael",
-        "edad": "23",
-        "genero": "sds",
-        "contraseña": "asd",
         "puntaje": {
             "Facil": 0,
             "Media": 0,

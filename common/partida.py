@@ -1,5 +1,3 @@
-import random
-
 class Partida():
 
     def __init__(self,timestamp,id_partida, evento, usuarie,estado,texto_ingresado,respuesta,nivel,genero):
@@ -14,6 +12,18 @@ class Partida():
         self._nivel = nivel
         self._genero = genero
 
+    def devolver_valores(self):
+        return {
+            'Timestamp': self._timestamp,
+            'Id': self._id,
+            'Evento': self._evento,
+            'Usuarie': self._usuarie,
+            'Estado': self._estado,
+            'Texto Ingresado': self._texto_ingresado,
+            'Respuesta': self._respuesta,
+            'Nivel': self._nivel,
+            'Genero': self._genero,
+        }
 
     @property
     def id_partida(self):
