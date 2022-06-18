@@ -1,3 +1,4 @@
+from tkinter import CENTER
 from typing import Any
 import PySimpleGUI as sg
 
@@ -29,7 +30,7 @@ def crear_ventana(name:str,layout:list,acciones:Any,update_windows=default_updat
     """
     tiempo = 900 if name == "Pantalla de Juego"  else None
     initialize(data=sessions)
-    window = sg.Window(name,layout,finalize=True)
+    window = sg.Window(name,layout,finalize=True, size=(750, 500), element_justification=CENTER)
     loop = True
     while loop:
         event,values = window.read(timeout=tiempo)
