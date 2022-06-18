@@ -5,3 +5,34 @@ Timestamp,Id,Evento,Usuarie,Estado,Texto Ingresado,Respuesta,Nivel,Genero
 1655561916,nnrxv3g0-x6sp-8st0-457r2c6qv50avpf5,inicio_partida,Jason,-,-,-,Dificil,Masculino
 1655561921,nnrxv3g0-x6sp-8st0-457r2c6qv50avpf5,intento,Jason,ok,Selena Gomez,Selena Gomez,Dificil,Masculino
 1655561922,nnrxv3g0-x6sp-8st0-457r2c6qv50avpf5,fin,Jason,finalizada,-,-,Dificil,Masculino
+1655566652,1uu8c013-wwvp-6kkv-wmv93sgnrm9lwskx,inicio_partida,Jason,-,-,-,Dificil,Masculino
+1655566668,1uu8c013-wwvp-6kkv-wmv93sgnrm9lwskx,intento,Jason,timeout,-,Professor Green,Dificil,Masculino
+1655566671,1uu8c013-wwvp-6kkv-wmv93sgnrm9lwskx,intento,Jason,error,Daya,6ix9ine,Dificil,Masculino
+1655566677,1uu8c013-wwvp-6kkv-wmv93sgnrm9lwskx,intento,Jason,ok,Bad Bunny,Bad Bunny,Dificil,Masculino
+1655566691,1uu8c013-wwvp-6kkv-wmv93sgnrm9lwskx,intento,Jason,error,Clean Bandit,Naughty Boy,Dificil,Masculino
+1655566698,1uu8c013-wwvp-6kkv-wmv93sgnrm9lwskx,intento,Jason,error,Hailee Steinfeld,Cher Lloyd,Dificil,Masculino
+1655566705,1uu8c013-wwvp-6kkv-wmv93sgnrm9lwskx,intento,Jason,error,Katy Perry,DJ Snake,Dificil,Masculino
+1655566710,1uu8c013-wwvp-6kkv-wmv93sgnrm9lwskx,intento,Jason,error,Post Malone,Travis Scott,Dificil,Masculino
+1655566719,1uu8c013-wwvp-6kkv-wmv93sgnrm9lwskx,intento,Jason,ok,One Direction,One Direction,Dificil,Masculino
+1655566722,1uu8c013-wwvp-6kkv-wmv93sgnrm9lwskx,intento,Jason,ok,Justin Bieber,Justin Bieber,Dificil,Masculino
+1655566725,1uu8c013-wwvp-6kkv-wmv93sgnrm9lwskx,intento,Jason,error,Dua Lipa,Nicki Minaj,Dificil,Masculino
+1655566726,1uu8c013-wwvp-6kkv-wmv93sgnrm9lwskx,fin,Jason,finalizada,-,-,Dificil,Masculino
+1655566843,makh0lgy-6duz-wk48-drwk7ld787gggnwf,inicio_partida,Juli,-,-,-,Dificil,Femenino
+1655566856,makh0lgy-6duz-wk48-drwk7ld787gggnwf,intento,Juli,error,Fetty Wap,Swedish House Mafia,Dificil,Femenino
+1655566862,makh0lgy-6duz-wk48-drwk7ld787gggnwf,intento,Juli,ok,Britney Spears,Britney Spears,Dificil,Femenino
+1655566872,makh0lgy-6duz-wk48-drwk7ld787gggnwf,intento,Juli,ok,DJ Khaled,DJ Khaled,Dificil,Femenino
+1655566878,makh0lgy-6duz-wk48-drwk7ld787gggnwf,intento,Juli,ok,Calvin Harris,Calvin Harris,Dificil,Femenino
+1655566884,makh0lgy-6duz-wk48-drwk7ld787gggnwf,intento,Juli,error,Pitbull,Megan Thee Stallion,Dificil,Femenino
+1655566890,makh0lgy-6duz-wk48-drwk7ld787gggnwf,intento,Juli,ok,Drake,Drake,Dificil,Femenino
+1655566894,makh0lgy-6duz-wk48-drwk7ld787gggnwf,intento,Juli,ok,One Direction,One Direction,Dificil,Femenino
+1655566901,makh0lgy-6duz-wk48-drwk7ld787gggnwf,intento,Juli,ok,Demi Lovato,Demi Lovato,Dificil,Femenino
+1655566907,makh0lgy-6duz-wk48-drwk7ld787gggnwf,intento,Juli,ok,Daya,Daya,Dificil,Femenino
+1655566912,makh0lgy-6duz-wk48-drwk7ld787gggnwf,intento,Juli,error,Kehlani,Janelle Monáe,Dificil,Femenino
+1655566913,makh0lgy-6duz-wk48-drwk7ld787gggnwf,fin,Juli,finalizada,-,-,Dificil,Femenino
+1655566931,d4r24tyf-22ss-5rgd-dyac2oz2vhs2ipbq,inicio_partida,Juli,-,-,-,Facil,Femenino
+1655566948,d4r24tyf-22ss-5rgd-dyac2oz2vhs2ipbq,intento,Juli,error,Drive,Joshua Tree,Facil,Femenino
+1655566980,d4r24tyf-22ss-5rgd-dyac2oz2vhs2ipbq,intento,Juli,error,Haunting of the Mary Celeste,The 5th Wave,Facil,Femenino
+1655566996,d4r24tyf-22ss-5rgd-dyac2oz2vhs2ipbq,intento,Juli,error,The Dinner,Fellini Satyricon,Facil,Femenino
+1655567003,d4r24tyf-22ss-5rgd-dyac2oz2vhs2ipbq,intento,Juli,error,Revolutionary Road,RoboCop,Facil,Femenino
+1655567015,d4r24tyf-22ss-5rgd-dyac2oz2vhs2ipbq,intento,Juli,error,My Super Ex-Girlfriend,Bram Stoker's Van Helsing,Facil,Femenino
+1655567021,d4r24tyf-22ss-5rgd-dyac2oz2vhs2ipbq,fin,Juli,cancelada,-,Tales of Halloween,Facil,Femenino
