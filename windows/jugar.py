@@ -2,7 +2,8 @@ import PySimpleGUI as sg
 from common.generar_tarjeta import generar_tarjeta
 from common.hacer_ventana import crear_ventana,pasar_ventana
 import os
-from common.manejo_datos_juego import guardar_partida, mostrar_seleccionado, parametros_configuracion,puntaje_usuario
+from common.manejo_datos_juego import guardar_partida, guardar_puntaje, guardar_puntaje_maximo 
+from common.manejo_datos_juego import buscar_usuario, mostrar_seleccionado, parametros_configuracion
 import time
 from common.partida import Partida
 from helpers.generar_id import gen_id
@@ -108,11 +109,14 @@ def logistica(event,values,respuesta,**kwargs):
                 pasar_ventana(window,siguiente_tarjeta.ejecutar)
             else:
                 partida = Partida(int(time.time()),id_partida,'fin',usuarie,'finalizada','-','-',nivel,genero)
-                # partida se guarda en panda --> llamar funcion que lo haga
                 guardar_partida(partida)
-                
+
+                puntaje_final=data['puntaje']
+                guardar_puntaje(usuarie,puntaje_final,nivel)
+                if puntaje_final > data['puntaje_max']:
+                    guardar_puntaje_maximo(usuarie,puntaje_final,nivel)
                 sg.Popup(f"Terminaste la partida con un puntaje de {data['puntaje']}")
-                # if data['puntaje'] > data['puntaje_max'] guardar en el json
+
             return False
         case 'cancelada':
             sg.Popup('Abandona')
@@ -126,9 +130,12 @@ def initialize(data):
     data["id_partida"] = gen_id()
     usuarie = mostrar_seleccionado('perfil')
     nivel = mostrar_seleccionado('dificultad')
-    data["genero"] = mostrar_seleccionado('dataset')
-    data["puntaje_max"] = puntaje_usuario(usuarie,nivel)
+
+    datos_usuario=buscar_usuario(usuarie)
+    data["genero"] = datos_usuario['genero']
+    data["puntaje_max"] = datos_usuario['puntaje'][nivel]
     data["puntaje"] = 0
+
     parametro = parametros_configuracion(nivel)
     data["tiempo_limite"] = parametro["tiempo_limite"]
     data["cant_rondas"] = parametro["cant_rondas"]

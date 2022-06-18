@@ -6,7 +6,7 @@ from common.sessions import sessions
 def default_update(*args,**kwargs):
     pass
 
-def crear_ventana(name:str,layout:list,acciones:Any,evaluate_extra=default_update,update_windows=default_update,initialize=default_update,respuesta=default_update,*args,**kwargs):
+def crear_ventana(name:str,layout:list,acciones:Any,update_windows=default_update,initialize=default_update,respuesta=default_update,*args,**kwargs):
     """
     funcion crear_ventana
     
@@ -15,8 +15,17 @@ def crear_ventana(name:str,layout:list,acciones:Any,evaluate_extra=default_updat
 
     Args:
         name(str): nombre de la ventana a crear
+        
         layout(list): contenido de la ventana a crear
-        acciones(funcion): funcion que contiene la logistica de la ventana a crear
+
+        acciones(function): función que contiene la logistica de la ventana a crear
+
+        update_windows(function): función que actualiza la ventana en caso de ser necesario
+
+        initialize(function):funcion que iniciliaza los datos de la session actual
+
+        respuesta: en caso de que sea la "Pantalla jugar", es la opción correcta de la tarjeta.
+        En cualquier otro caso, es la funcion 'dafault'
     """
     tiempo = 900 if name == "Pantalla de Juego"  else None
     initialize(data=sessions)

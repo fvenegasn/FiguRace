@@ -1,0 +1,7 @@
+Timestamp,Id,Evento,Usuarie,Estado,Texto Ingresado,Respuesta,Nivel,Genero
+1655561844,k8dcl54h-uvzl-98n1-ibkpate8pd4czkzd,inicio_partida,Jason,-,-,-,Dificil,Masculino
+1655561849,k8dcl54h-uvzl-98n1-ibkpate8pd4czkzd,intento,Jason,ok,Florence + The Machine,Florence + The Machine,Dificil,Masculino
+1655561850,k8dcl54h-uvzl-98n1-ibkpate8pd4czkzd,fin,Jason,finalizada,-,-,Dificil,Masculino
+1655561916,nnrxv3g0-x6sp-8st0-457r2c6qv50avpf5,inicio_partida,Jason,-,-,-,Dificil,Masculino
+1655561921,nnrxv3g0-x6sp-8st0-457r2c6qv50avpf5,intento,Jason,ok,Selena Gomez,Selena Gomez,Dificil,Masculino
+1655561922,nnrxv3g0-x6sp-8st0-457r2c6qv50avpf5,fin,Jason,finalizada,-,-,Dificil,Masculino
