@@ -12,19 +12,20 @@ Al ejecutar el juego, se mostrarán la pantalla inicial del menú, con las opcio
 ### Jugar
 
 play_button = """Cuando se elige esta opción, inicia el juego. La pantalla mostrará, por un lado,
-la dificultad y nickname elegidos por el usuario. Por el otro, presentará la tarjeta con carácterísticas
-de lo que el usuario debe adivinar, con opciones para que pueda marcar según cual crea que sea la
-correcta. Esto puede ser un lago, una película o una canción de acuerdo a lo que el mismo elija.
-Adicionalmente, contará con opciones para seleccionar la correcta, pasar o abandonar el juego de acuerdo a
-lo que desee el usuario."""
+la dificultad y nickname elegidos por el usuario. Por el otro, presentará la tarjeta
+con carácterísticas de lo que el usuario debe adivinar, con opciones para que pueda
+marcar según cual crea que sea la correcta. Esto puede ser un lago, una película o
+una canción de acuerdo a lo que el mismo elija. Adicionalmente, contará con opciones
+para seleccionar la correcta, pasar o abandonar el juego de acuerdo a lo que desee
+el usuario."""
 
 ### Perfil
 
 profile_button = """La selección de esta ventana permitirá al usuario crear y/o editar perfiles.
-En la misma, en caso de 'crear un nuevo perfil', se deberá indicar Nick (Apodo), Edad, Género
-autopercibido y Contraseña de la persona que jugará. Adicionalmente, si se selecciona la opción
-de 'edición de perfil', se deberá indicar el Nick del usuario a modificar y el usuario deberá
-ingresar los nuevos datos."""
+En la misma, en caso de 'crear un nuevo perfil', se deberá indicar Nick (Apodo),
+Edad, Género autopercibido y Contraseña de la persona que jugará. Adicionalmente,
+si se selecciona la opción de 'edición de perfil', se deberá indicar el Nick del
+usuario a modificar y el usuario deberá ingresar los nuevos datos."""
 
 ### Puntajes
 

@@ -35,10 +35,10 @@ def interface():
 
     layout=[
             [sg.Image(filename=ruta_imagen,key='-IMAGEN-')],
-            [sg.Column(about_jugar)],
-            [sg.Column(about_perfil)],
-            [sg.Column(about_puntajes)],
-            [sg.Column(about_config)],
+            [sg.Column(about_jugar, scrollable=True,  vertical_scroll_only=True)],
+            [sg.Column(about_perfil, scrollable=True,  vertical_scroll_only=True)],
+            [sg.Column(about_puntajes, scrollable=True,  vertical_scroll_only=True)],
+            [sg.Column(about_config, scrollable=True,  vertical_scroll_only=True)],
             [sg.Button("Volver al menú", key="-VOLVER-",font=('Arial',13))],
         ]
     return layout
