@@ -67,6 +67,7 @@ def logistica(event,values,respuesta,**kwargs):
     usuarie = mostrar_seleccionado('perfil')
     nivel = mostrar_seleccionado('dificultad')
     genero = data["genero"]
+    dataset = mostrar_seleccionado('dataset')
 
     #--------------ACTUALIZACION--TEMPORIZADOR------------#
     window = kwargs['window']
@@ -91,7 +92,7 @@ def logistica(event,values,respuesta,**kwargs):
         evento = eventos[1].strip('012')
         texto_ingresado = eventos[2]
 
-        partida = Partida(int(time.time()),id_partida,evento,usuarie,estado,texto_ingresado,respuesta,nivel,genero)
+        partida = Partida(int(time.time()),id_partida,evento,usuarie,estado,texto_ingresado,respuesta,nivel,genero, dataset)
         #partida se guarda en pandas --> llamar funcion que lo haga
         guardar_partida(partida)
 
@@ -108,7 +109,7 @@ def logistica(event,values,respuesta,**kwargs):
             if not termino_el_juego:
                 pasar_ventana(window,siguiente_tarjeta.ejecutar)
             else:
-                partida = Partida(int(time.time()),id_partida,'fin',usuarie,'finalizada','-','-',nivel,genero)
+                partida = Partida(int(time.time()),id_partida,'fin',usuarie,'finalizada','-','-',nivel,genero, dataset)
                 guardar_partida(partida)
 
                 puntaje_final=data['puntaje']
@@ -130,6 +131,7 @@ def initialize(data):
     data["id_partida"] = gen_id()
     usuarie = mostrar_seleccionado('perfil')
     nivel = mostrar_seleccionado('dificultad')
+    dataset = mostrar_seleccionado('dataset')
 
     datos_usuario=buscar_usuario(usuarie)
     data["genero"] = datos_usuario['genero']
@@ -142,7 +144,7 @@ def initialize(data):
     data["rta_correcta"] = parametro["rta_correcta"]
     data["rta_incorrecta"] = parametro["rta_incorrecta"]
     
-    partida_inicio = Partida(int(data["tiempo_inicial"]),data["id_partida"],'inicio_partida',usuarie,'-','-','-',nivel,data["genero"])
+    partida_inicio = Partida(int(data["tiempo_inicial"]),data["id_partida"],'inicio_partida',usuarie,'-','-','-',nivel,data["genero"],dataset)
     guardar_partida(partida_inicio)
 
 """-------------------------EJECUCIÓN------------------------------"""

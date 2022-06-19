@@ -1,6 +1,6 @@
 class Partida():
 
-    def __init__(self,timestamp,id_partida, evento, usuarie,estado,texto_ingresado,respuesta,nivel,genero):
+    def __init__(self,timestamp,id_partida, evento, usuarie,estado,texto_ingresado,respuesta,nivel,genero, dataset):
 
         self._id = id_partida
         self._timestamp = timestamp
@@ -11,6 +11,7 @@ class Partida():
         self._respuesta = respuesta
         self._nivel = nivel
         self._genero = genero
+        self._dataset = dataset
 
     def devolver_valores(self):
         return {
@@ -23,6 +24,7 @@ class Partida():
             'Respuesta': self._respuesta,
             'Nivel': self._nivel,
             'Genero': self._genero,
+            'Dataset': self._dataset
         }
 
     @property

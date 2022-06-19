@@ -92,7 +92,7 @@ def guardar_partida(partida:Partida):
 
     ruta=os.path.join(ruta_csv,'informacion_partidas.csv')
     fila= pd.Series(partida.devolver_valores())
-    columnas= ['Timestamp', 'Id', 'Evento', 'Usuarie', 'Estado', 'Texto Ingresado', 'Respuesta', 'Nivel','Genero']
+    columnas= ['Timestamp', 'Id', 'Evento', 'Usuarie', 'Estado', 'Texto Ingresado', 'Respuesta', 'Nivel','Genero', 'Dataset']
     guardar_en_csv(ruta,fila,columnas)
 
 def guardar_puntaje(nick:str,puntaje:int,nivel:str):
