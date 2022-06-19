@@ -1,26 +1,94 @@
 Timestamp,Id,Evento,Usuarie,Estado,Texto Ingresado,Respuesta,Nivel,Genero,Dataset
+1655561844,k8dcl54h-uvzl-98n1-ibkpate8pd4czkzd,inicio_partida,Jason,-,-,-,Dificil,Masculino,
+1655561849,k8dcl54h-uvzl-98n1-ibkpate8pd4czkzd,intento,Jason,ok,Florence + The Machine,Florence + The Machine,Dificil,Masculino,
+1655561850,k8dcl54h-uvzl-98n1-ibkpate8pd4czkzd,fin,Jason,finalizada,-,-,Dificil,Masculino,
+1655561916,nnrxv3g0-x6sp-8st0-457r2c6qv50avpf5,inicio_partida,Jason,-,-,-,Dificil,Masculino,
+1655561921,nnrxv3g0-x6sp-8st0-457r2c6qv50avpf5,intento,Jason,ok,Selena Gomez,Selena Gomez,Dificil,Masculino,
+1655561922,nnrxv3g0-x6sp-8st0-457r2c6qv50avpf5,fin,Jason,finalizada,-,-,Dificil,Masculino,
+1655566652,1uu8c013-wwvp-6kkv-wmv93sgnrm9lwskx,inicio_partida,Jason,-,-,-,Dificil,Masculino,
+1655566668,1uu8c013-wwvp-6kkv-wmv93sgnrm9lwskx,intento,Jason,timeout,-,Professor Green,Dificil,Masculino,
+1655566671,1uu8c013-wwvp-6kkv-wmv93sgnrm9lwskx,intento,Jason,error,Daya,6ix9ine,Dificil,Masculino,
+1655566677,1uu8c013-wwvp-6kkv-wmv93sgnrm9lwskx,intento,Jason,ok,Bad Bunny,Bad Bunny,Dificil,Masculino,
+1655566691,1uu8c013-wwvp-6kkv-wmv93sgnrm9lwskx,intento,Jason,error,Clean Bandit,Naughty Boy,Dificil,Masculino,
+1655566698,1uu8c013-wwvp-6kkv-wmv93sgnrm9lwskx,intento,Jason,error,Hailee Steinfeld,Cher Lloyd,Dificil,Masculino,
+1655566705,1uu8c013-wwvp-6kkv-wmv93sgnrm9lwskx,intento,Jason,error,Katy Perry,DJ Snake,Dificil,Masculino,
+1655566710,1uu8c013-wwvp-6kkv-wmv93sgnrm9lwskx,intento,Jason,error,Post Malone,Travis Scott,Dificil,Masculino,
+1655566719,1uu8c013-wwvp-6kkv-wmv93sgnrm9lwskx,intento,Jason,ok,One Direction,One Direction,Dificil,Masculino,
+1655566722,1uu8c013-wwvp-6kkv-wmv93sgnrm9lwskx,intento,Jason,ok,Justin Bieber,Justin Bieber,Dificil,Masculino,
+1655566725,1uu8c013-wwvp-6kkv-wmv93sgnrm9lwskx,intento,Jason,error,Dua Lipa,Nicki Minaj,Dificil,Masculino,
+1655566726,1uu8c013-wwvp-6kkv-wmv93sgnrm9lwskx,fin,Jason,finalizada,-,-,Dificil,Masculino,
+1655566843,makh0lgy-6duz-wk48-drwk7ld787gggnwf,inicio_partida,Juli,-,-,-,Dificil,Femenino,
+1655566856,makh0lgy-6duz-wk48-drwk7ld787gggnwf,intento,Juli,error,Fetty Wap,Swedish House Mafia,Dificil,Femenino,
+1655566862,makh0lgy-6duz-wk48-drwk7ld787gggnwf,intento,Juli,ok,Britney Spears,Britney Spears,Dificil,Femenino,
+1655566872,makh0lgy-6duz-wk48-drwk7ld787gggnwf,intento,Juli,ok,DJ Khaled,DJ Khaled,Dificil,Femenino,
+1655566878,makh0lgy-6duz-wk48-drwk7ld787gggnwf,intento,Juli,ok,Calvin Harris,Calvin Harris,Dificil,Femenino,
+1655566884,makh0lgy-6duz-wk48-drwk7ld787gggnwf,intento,Juli,error,Pitbull,Megan Thee Stallion,Dificil,Femenino,
+1655566890,makh0lgy-6duz-wk48-drwk7ld787gggnwf,intento,Juli,ok,Drake,Drake,Dificil,Femenino,
+1655566894,makh0lgy-6duz-wk48-drwk7ld787gggnwf,intento,Juli,ok,One Direction,One Direction,Dificil,Femenino,
+1655566901,makh0lgy-6duz-wk48-drwk7ld787gggnwf,intento,Juli,ok,Demi Lovato,Demi Lovato,Dificil,Femenino,
+1655566907,makh0lgy-6duz-wk48-drwk7ld787gggnwf,intento,Juli,ok,Daya,Daya,Dificil,Femenino,
+1655566912,makh0lgy-6duz-wk48-drwk7ld787gggnwf,intento,Juli,error,Kehlani,Janelle Monáe,Dificil,Femenino,
+1655566913,makh0lgy-6duz-wk48-drwk7ld787gggnwf,fin,Juli,finalizada,-,-,Dificil,Femenino,
+1655566931,d4r24tyf-22ss-5rgd-dyac2oz2vhs2ipbq,inicio_partida,Juli,-,-,-,Facil,Femenino,
+1655566948,d4r24tyf-22ss-5rgd-dyac2oz2vhs2ipbq,intento,Juli,error,Drive,Joshua Tree,Facil,Femenino,
+1655566980,d4r24tyf-22ss-5rgd-dyac2oz2vhs2ipbq,intento,Juli,error,Haunting of the Mary Celeste,The 5th Wave,Facil,Femenino,
+1655566996,d4r24tyf-22ss-5rgd-dyac2oz2vhs2ipbq,intento,Juli,error,The Dinner,Fellini Satyricon,Facil,Femenino,
+1655567003,d4r24tyf-22ss-5rgd-dyac2oz2vhs2ipbq,intento,Juli,error,Revolutionary Road,RoboCop,Facil,Femenino,
+1655567015,d4r24tyf-22ss-5rgd-dyac2oz2vhs2ipbq,intento,Juli,error,My Super Ex-Girlfriend,Bram Stoker's Van Helsing,Facil,Femenino,
+1655567021,d4r24tyf-22ss-5rgd-dyac2oz2vhs2ipbq,fin,Juli,cancelada,-,Tales of Halloween,Facil,Femenino,
+1655570676,aswlmrve-taku-2ccr-4y4l91lxzvjuc6sk,inicio_partida,Juli,-,-,-,Facil,Femenino,
+1655570681,aswlmrve-taku-2ccr-4y4l91lxzvjuc6sk,fin,Juli,cancelada,-,1492: Conquest of Paradise,Facil,Femenino,
+1655570748,t2kzrb3r-kr5f-z94o-nps6vmbw1l7kzcts,inicio_partida,Fran,-,-,-,Dificil,Masculino,
+1655570752,t2kzrb3r-kr5f-z94o-nps6vmbw1l7kzcts,intento,Fran,error,Ed Sheeran,Liam Payne,Dificil,Masculino,
+1655570759,t2kzrb3r-kr5f-z94o-nps6vmbw1l7kzcts,intento,Fran,error,Ariana Grande,Trey Songz,Dificil,Masculino,
+1655570765,t2kzrb3r-kr5f-z94o-nps6vmbw1l7kzcts,intento,Fran,ok,Macklemore,Macklemore,Dificil,Masculino,
+1655570770,t2kzrb3r-kr5f-z94o-nps6vmbw1l7kzcts,intento,Fran,ok,Gorgon City,Gorgon City,Dificil,Masculino,
+1655570776,t2kzrb3r-kr5f-z94o-nps6vmbw1l7kzcts,intento,Fran,ok,Taylor Swift,Taylor Swift,Dificil,Masculino,
+1655570780,t2kzrb3r-kr5f-z94o-nps6vmbw1l7kzcts,intento,Fran,error,One Direction,Olly Murs,Dificil,Masculino,
+1655570787,t2kzrb3r-kr5f-z94o-nps6vmbw1l7kzcts,intento,Fran,error,Rihanna,Storm Queen,Dificil,Masculino,
+1655570795,t2kzrb3r-kr5f-z94o-nps6vmbw1l7kzcts,intento,Fran,ok,Linkin Park,Linkin Park,Dificil,Masculino,
+1655570799,t2kzrb3r-kr5f-z94o-nps6vmbw1l7kzcts,intento,Fran,ok,Britney Spears,Britney Spears,Dificil,Masculino,
+1655570805,t2kzrb3r-kr5f-z94o-nps6vmbw1l7kzcts,intento,Fran,error,Tove Lo,benny blanco,Dificil,Masculino,
+1655570806,t2kzrb3r-kr5f-z94o-nps6vmbw1l7kzcts,fin,Fran,finalizada,-,-,Dificil,Masculino,
+1655570848,pqn66rye-4a3l-fxfb-datle52bq2nq1sfn,inicio_partida,Fran,-,-,-,Dificil,Masculino,
+1655570850,pqn66rye-4a3l-fxfb-datle52bq2nq1sfn,intento,Fran,error,OneRepublic,Gotye,Dificil,Masculino,
+1655570855,pqn66rye-4a3l-fxfb-datle52bq2nq1sfn,intento,Fran,ok,Logic,Logic,Dificil,Masculino,
+1655570858,pqn66rye-4a3l-fxfb-datle52bq2nq1sfn,intento,Fran,error,Selena Gomez,SZA,Dificil,Masculino,
+1655570862,pqn66rye-4a3l-fxfb-datle52bq2nq1sfn,intento,Fran,ok,Marshmello,Marshmello,Dificil,Masculino,
+1655570866,pqn66rye-4a3l-fxfb-datle52bq2nq1sfn,intento,Fran,error,Usher,Hailee Steinfeld,Dificil,Masculino,
+1655570867,pqn66rye-4a3l-fxfb-datle52bq2nq1sfn,fin,Fran,finalizada,-,-,Dificil,Masculino,
+1655570873,2q3ecnsh-r3nm-tdd3-ris4jd9a298c8x25,inicio_partida,Fran,-,-,-,Dificil,Masculino,
+1655570875,2q3ecnsh-r3nm-tdd3-ris4jd9a298c8x25,intento,Fran,ok,Carrie Underwood,Carrie Underwood,Dificil,Masculino,
+1655570878,2q3ecnsh-r3nm-tdd3-ris4jd9a298c8x25,intento,Fran,ok,Daft Punk,Daft Punk,Dificil,Masculino,
+1655570881,2q3ecnsh-r3nm-tdd3-ris4jd9a298c8x25,intento,Fran,ok,Zedd,Zedd,Dificil,Masculino,
+1655570885,2q3ecnsh-r3nm-tdd3-ris4jd9a298c8x25,intento,Fran,error,The Band Perry,FINNEAS,Dificil,Masculino,
+1655570888,2q3ecnsh-r3nm-tdd3-ris4jd9a298c8x25,intento,Fran,error,B.o.B,Hailee Steinfeld,Dificil,Masculino,
+1655570888,2q3ecnsh-r3nm-tdd3-ris4jd9a298c8x25,fin,Fran,finalizada,-,-,Dificil,Masculino,
+1655570957,l3o3njbm-i6fu-nomf-7hqc1sh25ilrw8ab,inicio_partida,Fran,-,-,-,Dificil,Masculino,
+1655570959,l3o3njbm-i6fu-nomf-7hqc1sh25ilrw8ab,fin,Fran,cancelada,-,Doja Cat,Dificil,Masculino,
+1655571697,was5r9gn-wuay-tn0j-h262oig8vm2d40js,inicio_partida,Fran,-,-,-,Dificil,Masculino,
+1655571699,was5r9gn-wuay-tn0j-h262oig8vm2d40js,fin,Fran,cancelada,-,Natalie La Rose,Dificil,Masculino,
+1655571724,ma92c3lw-kn0s-8793-dbs67lolq8a1q0b6,inicio_partida,Fran,-,-,-,Dificil,Masculino,
+1655571742,ygd93zp5-gu59-c9yd-vocdjs18zinddwqm,inicio_partida,Fran,-,-,-,Dificil,Masculino,
+1655571745,ygd93zp5-gu59-c9yd-vocdjs18zinddwqm,fin,Fran,cancelada,-,Rihanna,Dificil,Masculino,
+1655571845,u6r2l3pu-vh6a-nkea-zfvuhsg653przwsb,inicio_partida,Fran,-,-,-,Dificil,Masculino,
+1655571848,u6r2l3pu-vh6a-nkea-zfvuhsg653przwsb,intento,Fran,error,Wiz Khalifa,Daft Punk,Dificil,Masculino,
+1655571849,u6r2l3pu-vh6a-nkea-zfvuhsg653przwsb,fin,Fran,cancelada,-,Jeremih,Dificil,Masculino,
+1655573130,m2lweapo-i9kf-7bam-mu6oy7k7h3idu6oz,inicio_partida,Fran,-,-,-,Dificil,Masculino,
+1655573132,m2lweapo-i9kf-7bam-mu6oy7k7h3idu6oz,fin,Fran,cancelada,-,M.O,Dificil,Masculino,
+1655573142,kwta7d7q-mwj2-huxx-r0nlduc02429pht3,inicio_partida,Fran,-,-,-,Facil,Masculino,
+1655573154,kwta7d7q-mwj2-huxx-r0nlduc02429pht3,intento,Fran,error,The Chainsmokers,Jason Derulo,Facil,Masculino,
+1655573167,kwta7d7q-mwj2-huxx-r0nlduc02429pht3,intento,Fran,error,Justin Bieber,Mark Ronson,Facil,Masculino,
+1655573171,kwta7d7q-mwj2-huxx-r0nlduc02429pht3,intento,Fran,ok,Chris Brown,Chris Brown,Facil,Masculino,
+1655573177,kwta7d7q-mwj2-huxx-r0nlduc02429pht3,intento,Fran,error,Bruno Mars,Hailee Steinfeld,Facil,Masculino,
+1655573181,kwta7d7q-mwj2-huxx-r0nlduc02429pht3,intento,Fran,ok,Shelley FKA DRAM,Shelley FKA DRAM,Facil,Masculino,
+1655573185,kwta7d7q-mwj2-huxx-r0nlduc02429pht3,intento,Fran,ok,Fall Out Boy,Fall Out Boy,Facil,Masculino,
+1655573188,kwta7d7q-mwj2-huxx-r0nlduc02429pht3,intento,Fran,error,Maroon 5,Sam Smith,Facil,Masculino,
+1655573191,kwta7d7q-mwj2-huxx-r0nlduc02429pht3,intento,Fran,ok,Selena Gomez,Selena Gomez,Facil,Masculino,
+1655573202,kwta7d7q-mwj2-huxx-r0nlduc02429pht3,intento,Fran,ok,Flo Rida,Flo Rida,Facil,Masculino,
+1655573206,kwta7d7q-mwj2-huxx-r0nlduc02429pht3,intento,Fran,error,Tove Lo,Ed Sheeran,Facil,Masculino,
+1655573206,kwta7d7q-mwj2-huxx-r0nlduc02429pht3,fin,Fran,finalizada,-,-,Facil,Masculino,
 1655617813,58iok06o-epjd-78m2-6ljlilkid13tcwat,inicio_partida,Fran,-,-,-,Facil,Masculino,Spotify
 1655617815,58iok06o-epjd-78m2-6ljlilkid13tcwat,intento,Fran,error,Bruno Mars,Bruno Mars,Facil,Masculino,Spotify
 1655617817,58iok06o-epjd-78m2-6ljlilkid13tcwat,intento,Fran,error,Aloe Blacc,Lorde,Facil,Masculino,Spotify
 1655617818,58iok06o-epjd-78m2-6ljlilkid13tcwat,fin,Fran,cancelada,-,Kanye West,Facil,Masculino,Spotify
-1655641977,dqsbqwdb-sy2h-txbt-mtwj8kjubsxbfl15,inicio_partida,Emi,-,-,-,Facil,Femenino,Spotify
-1655641986,dqsbqwdb-sy2h-txbt-mtwj8kjubsxbfl15,intento,Emi,error,Vance Joy,Trey Songz,Facil,Femenino,Spotify
-1655641994,dqsbqwdb-sy2h-txbt-mtwj8kjubsxbfl15,intento,Emi,ok,ScHoolboy Q,ScHoolboy Q,Facil,Femenino,Spotify
-1655642002,dqsbqwdb-sy2h-txbt-mtwj8kjubsxbfl15,intento,Emi,ok,Jason Derulo,Jason Derulo,Facil,Femenino,Spotify
-1655642011,dqsbqwdb-sy2h-txbt-mtwj8kjubsxbfl15,intento,Emi,error,Petit Biscuit,The Chainsmokers,Facil,Femenino,Spotify
-1655642016,dqsbqwdb-sy2h-txbt-mtwj8kjubsxbfl15,intento,Emi,ok,George Ezra,George Ezra,Facil,Femenino,Spotify
-1655642026,dqsbqwdb-sy2h-txbt-mtwj8kjubsxbfl15,intento,Emi,error,Miley Cyrus,Calvin Harris,Facil,Femenino,Spotify
-1655642035,dqsbqwdb-sy2h-txbt-mtwj8kjubsxbfl15,intento,Emi,error,Bruno Mars,Ariana Grande,Facil,Femenino,Spotify
-1655642044,dqsbqwdb-sy2h-txbt-mtwj8kjubsxbfl15,intento,Emi,ok,CHVRCHES,CHVRCHES,Facil,Femenino,Spotify
-1655642056,dqsbqwdb-sy2h-txbt-mtwj8kjubsxbfl15,intento,Emi,error,Alessia Cara,Flo Rida,Facil,Femenino,Spotify
-1655642061,dqsbqwdb-sy2h-txbt-mtwj8kjubsxbfl15,intento,Emi,error,Rae Sremmurd,Selena Gomez,Facil,Femenino,Spotify
-1655642063,dqsbqwdb-sy2h-txbt-mtwj8kjubsxbfl15,fin,Emi,finalizada,-,-,Facil,Femenino,Spotify
-1655642353,qptcruhd-aism-125o-hs4ky54vv3anqplp,inicio_partida,Emi,-,-,-,Facil,Femenino,Spotify
-1655642355,qptcruhd-aism-125o-hs4ky54vv3anqplp,fin,Emi,cancelada,-,Foals,Facil,Femenino,Spotify
-1655642384,r9gs830k-7vrb-ry9n-rub1f1ra4msjucwe,inicio_partida,Emi,-,-,-,Dificil,Femenino,Lagos
-1655642389,r9gs830k-7vrb-ry9n-rub1f1ra4msjucwe,intento,Emi,error,Lago Quillén,Lago Lolog,Dificil,Femenino,Lagos
-1655642402,r9gs830k-7vrb-ry9n-rub1f1ra4msjucwe,intento,Emi,error,Lago Nahuel Huapi,Lago Viedma,Dificil,Femenino,Lagos
-1655642408,r9gs830k-7vrb-ry9n-rub1f1ra4msjucwe,intento,Emi,ok,Lago Quillén,Lago Quillén,Dificil,Femenino,Lagos
-1655642414,r9gs830k-7vrb-ry9n-rub1f1ra4msjucwe,intento,Emi,ok,Lago Pellegrini,Lago Pellegrini,Dificil,Femenino,Lagos
-1655642420,r9gs830k-7vrb-ry9n-rub1f1ra4msjucwe,intento,Emi,error,Lago Río Chico,Lago Yehuin,Dificil,Femenino,Lagos
-1655642422,r9gs830k-7vrb-ry9n-rub1f1ra4msjucwe,fin,Emi,finalizada,-,-,Dificil,Femenino,Lagos
