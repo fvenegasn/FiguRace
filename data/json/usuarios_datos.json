@@ -27,7 +27,7 @@
         "genero": "Masculino",
         "contraseña": "123",
         "puntaje": {
-            "Facil": 0,
+            "Facil": 2,
             "Media": 0,
             "Dificil": 0
         }

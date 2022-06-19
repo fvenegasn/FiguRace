@@ -178,3 +178,25 @@ Timestamp,Id,Evento,Usuarie,Estado,Texto Ingresado,Respuesta,Nivel,Genero,Datase
 1655650992,ytvymo2z-2j33-iru5-li0plmyo3fz0ymx7,intento,Emi,error,BTS,Coldplay,Media,Femenino,Spotify
 1655650998,ytvymo2z-2j33-iru5-li0plmyo3fz0ymx7,intento,Emi,error,Trey Songz,Russ,Media,Femenino,Spotify
 1655650999,ytvymo2z-2j33-iru5-li0plmyo3fz0ymx7,fin,Emi,finalizada,-,-,Media,Femenino,Spotify
+1655656963,gyzo6cf0-qndk-pzms-n926vl9kja5ba00f,inicio_partida,Juan,-,-,-,Facil,Masculino,Spotify
+1655656971,gyzo6cf0-qndk-pzms-n926vl9kja5ba00f,intento,Juan,error,Lil Peep,Chris Brown,Facil,Masculino,Spotify
+1655656977,gyzo6cf0-qndk-pzms-n926vl9kja5ba00f,intento,Juan,error,Bruno Mars,Beyoncé,Facil,Masculino,Spotify
+1655656982,gyzo6cf0-qndk-pzms-n926vl9kja5ba00f,intento,Juan,error,Tom Odell,Waka Flocka Flame,Facil,Masculino,Spotify
+1655656986,gyzo6cf0-qndk-pzms-n926vl9kja5ba00f,intento,Juan,error,The Wanted,Cheat Codes,Facil,Masculino,Spotify
+1655656992,gyzo6cf0-qndk-pzms-n926vl9kja5ba00f,intento,Juan,error,Cardi B,Miley Cyrus,Facil,Masculino,Spotify
+1655656998,gyzo6cf0-qndk-pzms-n926vl9kja5ba00f,intento,Juan,ok,Sean Kingston,Sean Kingston,Facil,Masculino,Spotify
+1655657001,gyzo6cf0-qndk-pzms-n926vl9kja5ba00f,intento,Juan,error,Kiiara,Luke Christopher,Facil,Masculino,Spotify
+1655657005,gyzo6cf0-qndk-pzms-n926vl9kja5ba00f,intento,Juan,error,Khalid,Maroon 5,Facil,Masculino,Spotify
+1655657013,gyzo6cf0-qndk-pzms-n926vl9kja5ba00f,intento,Juan,ok,Kesha,Kesha,Facil,Masculino,Spotify
+1655657017,gyzo6cf0-qndk-pzms-n926vl9kja5ba00f,intento,Juan,error,Selena Gomez,Liam Payne,Facil,Masculino,Spotify
+1655657018,gyzo6cf0-qndk-pzms-n926vl9kja5ba00f,fin,Juan,finalizada,-,-,Facil,Masculino,Spotify
+1655657029,vr6yu9bj-6nlm-imgq-fbrl93f3aqpey2zv,inicio_partida,Juan,-,-,-,Facil,Masculino,Spotify
+1655657033,vr6yu9bj-6nlm-imgq-fbrl93f3aqpey2zv,intento,Juan,error,Young Thug,Flo Rida,Facil,Masculino,Spotify
+1655657034,vr6yu9bj-6nlm-imgq-fbrl93f3aqpey2zv,intento,Juan,error,will.i.am,Jack Ü,Facil,Masculino,Spotify
+1655657036,vr6yu9bj-6nlm-imgq-fbrl93f3aqpey2zv,intento,Juan,error,Kendrick Lamar,The Chainsmokers,Facil,Masculino,Spotify
+1655657039,vr6yu9bj-6nlm-imgq-fbrl93f3aqpey2zv,intento,Juan,error,Linkin Park,ScHoolboy Q,Facil,Masculino,Spotify
+1655657041,vr6yu9bj-6nlm-imgq-fbrl93f3aqpey2zv,intento,Juan,error,Becky G,Logic,Facil,Masculino,Spotify
+1655657042,vr6yu9bj-6nlm-imgq-fbrl93f3aqpey2zv,intento,Juan,ok,Niall Horan,Niall Horan,Facil,Masculino,Spotify
+1655657044,vr6yu9bj-6nlm-imgq-fbrl93f3aqpey2zv,intento,Juan,error,Drake,OneRepublic,Facil,Masculino,Spotify
+1655657046,vr6yu9bj-6nlm-imgq-fbrl93f3aqpey2zv,intento,Juan,error,Blueface,Steve Aoki,Facil,Masculino,Spotify
+1655657049,vr6yu9bj-6nlm-imgq-fbrl93f3aqpey2zv,fin,Juan,finalizada,-,-,Facil,Masculino,Spotify

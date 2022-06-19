@@ -1,6 +1,6 @@
 import PySimpleGUI as sg
 from common.generar_tarjeta import generar_tarjeta
-from common.hacer_ventana import crear_ventana,pasar_ventana
+from common.hacer_ventana import crear_ventana
 import os
 from common.manejo_datos_juego import guardar_partida, guardar_puntaje, guardar_puntaje_maximo 
 from common.manejo_datos_juego import buscar_usuario, mostrar_seleccionado, parametros_configuracion
@@ -9,7 +9,7 @@ from common.partida import Partida
 from helpers.generar_id import gen_id
 from windows import siguiente_tarjeta
 
-def interfaz():
+def interfaz(puntaje_actual):
 
     #"----------------Variables del juego------------------"
     nick = mostrar_seleccionado('perfil')
@@ -34,7 +34,7 @@ def interfaz():
     config =[
             [sg.Column(perfil)],
             [sg.Column(dificultad)],
-            [sg.Text('Puntaje Actual:',font=('Arial',15)),sg.Text('',key='-PUNTAJE-',font=('Arial',15),background_color='LavenderBlush3')],
+            [sg.Text('Puntaje Actual:',font=('Arial',15)),sg.Text(puntaje_actual,key='-PUNTAJE-',font=('Arial',15),background_color='LavenderBlush3')],
     ]
     ruta_imagen = os.path.join(os.getcwd(),'static',dataset_actual.lower()+'.png') 
     opciones,pistas,respuesta = generar_tarjeta(dataset_actual,cant_caracteristicas)
@@ -70,7 +70,7 @@ def logistica(event,values,respuesta,**kwargs):
 
     #--------------ACTUALIZACION--TEMPORIZADOR/PUNTAJE------------#
     window = kwargs['window']
-    window['-PUNTAJE-'].update(data['puntaje'])
+    #window['-PUNTAJE-'].update(data['puntaje'])
     tiempo_restante = int(data['tiempo_limite'] - (time.time() - data['tiempo_inicial']))
     tiempo = '0'+str(tiempo_restante) if tiempo_restante<10 else str(tiempo_restante)
     window['-TEMPORIZADOR-'].update('00:'+tiempo)
@@ -79,7 +79,7 @@ def logistica(event,values,respuesta,**kwargs):
         sg.Popup('Se acabo el tiempo!')
         partida = Partida(int(time.time()),id_partida,'intento',usuarie,'timeout','-',respuesta,nivel,genero,dataset)
         guardar_partida(partida)
-        siguiente_tarjeta.ejecutar(window)
+        siguiente_tarjeta.ejecutar(window,data['puntaje'])
         return False
 
     #-------------------EVENTOS---------------------#
@@ -107,7 +107,7 @@ def logistica(event,values,respuesta,**kwargs):
     match estado:
         case "ok" | "error"|'-PASAR-':
             if not termino_el_juego:
-                siguiente_tarjeta.ejecutar(window)
+                siguiente_tarjeta.ejecutar(window,data['puntaje'])
             else:
                 partida = Partida(int(time.time()),id_partida,'fin',usuarie,'finalizada','-','-',nivel,genero, dataset)
                 guardar_partida(partida)
@@ -149,6 +149,6 @@ def initialize(data):
 
 """-------------------------EJECUCIÓN------------------------------"""
 def ejecutar():
-    layout,respuesta = interfaz()
+    layout,respuesta = interfaz(0)
     crear_ventana("Pantalla de Juego", layout,logistica,initialize=initialize,respuesta= respuesta)
     
