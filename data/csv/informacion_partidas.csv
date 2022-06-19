@@ -200,3 +200,37 @@ Timestamp,Id,Evento,Usuarie,Estado,Texto Ingresado,Respuesta,Nivel,Genero,Datase
 1655657044,vr6yu9bj-6nlm-imgq-fbrl93f3aqpey2zv,intento,Juan,error,Drake,OneRepublic,Facil,Masculino,Spotify
 1655657046,vr6yu9bj-6nlm-imgq-fbrl93f3aqpey2zv,intento,Juan,error,Blueface,Steve Aoki,Facil,Masculino,Spotify
 1655657049,vr6yu9bj-6nlm-imgq-fbrl93f3aqpey2zv,fin,Juan,finalizada,-,-,Facil,Masculino,Spotify
+1655657353,revrzcpz-o4t5-9amg-q1yv1byrb94kg0mf,inicio_partida,Juan,-,-,-,Facil,Masculino,Spotify
+1655657361,revrzcpz-o4t5-9amg-q1yv1byrb94kg0mf,intento,Juan,error,Skrillex,Marshmello,Facil,Masculino,Spotify
+1655657363,revrzcpz-o4t5-9amg-q1yv1byrb94kg0mf,intento,Juan,error,David Guetta,P!nk,Facil,Masculino,Spotify
+1655657364,revrzcpz-o4t5-9amg-q1yv1byrb94kg0mf,intento,Juan,error,Kesha,EO,Facil,Masculino,Spotify
+1655657366,revrzcpz-o4t5-9amg-q1yv1byrb94kg0mf,intento,Juan,ok,Logic,Logic,Facil,Masculino,Spotify
+1655657367,revrzcpz-o4t5-9amg-q1yv1byrb94kg0mf,intento,Juan,error,One Direction0,Drake,Facil,Masculino,Spotify
+1655657369,revrzcpz-o4t5-9amg-q1yv1byrb94kg0mf,intento,Juan,error,Taylor Swift,Maggie Rogers,Facil,Masculino,Spotify
+1655657371,revrzcpz-o4t5-9amg-q1yv1byrb94kg0mf,intento,Juan,error,Tyler,Duke Dumont,Facil,Masculino,Spotify
+1655657374,revrzcpz-o4t5-9amg-q1yv1byrb94kg0mf,fin,Juan,cancelada,-,Of Monsters and Men,Facil,Masculino,Spotify
+1655657384,24g9weug-g3lu-s0d3-s6cw4jbigb86vhfc,inicio_partida,Juan,-,-,-,Dificil,Masculino,Spotify
+1655657385,24g9weug-g3lu-s0d3-s6cw4jbigb86vhfc,intento,Juan,error,Martin Garrix,Phillip Phillips,Dificil,Masculino,Spotify
+1655657387,24g9weug-g3lu-s0d3-s6cw4jbigb86vhfc,intento,Juan,error,girl in red,Fifth Harmony,Dificil,Masculino,Spotify
+1655657389,24g9weug-g3lu-s0d3-s6cw4jbigb86vhfc,intento,Juan,ok,Paramore,Paramore,Dificil,Masculino,Spotify
+1655657391,24g9weug-g3lu-s0d3-s6cw4jbigb86vhfc,intento,Juan,error,Shelley FKA DRAM,Kendrick Lamar,Dificil,Masculino,Spotify
+1655657393,24g9weug-g3lu-s0d3-s6cw4jbigb86vhfc,intento,Juan,error,Paloma Faith,Taylor Swift,Dificil,Masculino,Spotify
+1655657394,24g9weug-g3lu-s0d3-s6cw4jbigb86vhfc,fin,Juan,finalizada,-,-,Dificil,Masculino,Spotify
+1655657401,9uruv4uw-73wb-xmya-96apqlcu3benuv6i,inicio_partida,Juan,-,-,-,Dificil,Masculino,Spotify
+1655657403,9uruv4uw-73wb-xmya-96apqlcu3benuv6i,intento,Juan,error,Baauer,Lewis Capaldi,Dificil,Masculino,Spotify
+1655657405,9uruv4uw-73wb-xmya-96apqlcu3benuv6i,intento,Juan,error,Young Money,Lizzo,Dificil,Masculino,Spotify
+1655657407,9uruv4uw-73wb-xmya-96apqlcu3benuv6i,fin,Juan,cancelada,-,Iyaz,Dificil,Masculino,Spotify
+1655657574,oxmu4juz-qntq-3qi2-kfqznxjp3ie5rxzj,inicio_partida,Juan,-,-,-,Dificil,Masculino,Spotify
+1655657575,oxmu4juz-qntq-3qi2-kfqznxjp3ie5rxzj,fin,Juan,cancelada,-,Paramore,Dificil,Masculino,Spotify
+1655657590,8y5fbud5-mgvi-2dm5-626haeayqm3ro44h,inicio_partida,Juan,-,-,-,Media,Masculino,Lagos
+1655657590,8y5fbud5-mgvi-2dm5-626haeayqm3ro44h,intento,Juan,ok,Lago Belgrano,Lago Belgrano,Media,Masculino,Lagos
+1655657592,8y5fbud5-mgvi-2dm5-626haeayqm3ro44h,intento,Juan,ok,Lago Quiroga Chico,Lago Quiroga Chico,Media,Masculino,Lagos
+1655657593,8y5fbud5-mgvi-2dm5-626haeayqm3ro44h,intento,Juan,error,Lago Aluminé,Lago San Martín,Media,Masculino,Lagos
+1655657595,8y5fbud5-mgvi-2dm5-626haeayqm3ro44h,intento,Juan,ok,Lago Perito Moreno,Lago Perito Moreno,Media,Masculino,Lagos
+1655657597,8y5fbud5-mgvi-2dm5-626haeayqm3ro44h,intento,Juan,ok,Lago Argentino,Lago Argentino,Media,Masculino,Lagos
+1655657598,8y5fbud5-mgvi-2dm5-626haeayqm3ro44h,intento,Juan,ok,Lago Epecuén,Lago Epecuén,Media,Masculino,Lagos
+1655657600,8y5fbud5-mgvi-2dm5-626haeayqm3ro44h,intento,Juan,error,Lago Tar,Lago Chepelmut,Media,Masculino,Lagos
+1655657602,8y5fbud5-mgvi-2dm5-626haeayqm3ro44h,intento,Juan,ok,Lago Rosario,Lago Rosario,Media,Masculino,Lagos
+1655657604,8y5fbud5-mgvi-2dm5-626haeayqm3ro44h,intento,Juan,error,Lago Puelo,Lago Falkner,Media,Masculino,Lagos
+1655657606,8y5fbud5-mgvi-2dm5-626haeayqm3ro44h,intento,Juan,error,Lago General Vintter,Lago Gutiérrez,Media,Masculino,Lagos
+1655657607,8y5fbud5-mgvi-2dm5-626haeayqm3ro44h,fin,Juan,finalizada,-,-,Media,Masculino,Lagos

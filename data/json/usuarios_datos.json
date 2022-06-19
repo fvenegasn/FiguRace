@@ -28,8 +28,8 @@
         "contraseña": "123",
         "puntaje": {
             "Facil": 2,
-            "Media": 0,
-            "Dificil": 0
+            "Media": 4.0,
+            "Dificil": 1
         }
     },
     {
