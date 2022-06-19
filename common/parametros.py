@@ -1,4 +1,4 @@
-#El juego tiene, por default, una configuración determinada para cada dificultad
+#Configuración por default de las dificultades
 options = {
     "Facil":{"tiempo_limite" : 60,
     "cant_rondas": 10,

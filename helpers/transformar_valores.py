@@ -1,7 +1,5 @@
-#Esta función pasa los valores ingresados en pantalla por el usuario a la configuración del juego
 
-
-def values_to_options(parametros:dict, valores_ingresados:dict, difficulty:str) -> None:
+def values_to_options(parametros:dict, valores_ingresados:dict, difficulty:str) -> bool:
     """
     función 'values_to_options'
 

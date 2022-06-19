@@ -53,5 +53,5 @@ class Usuario():
         return self._puntaje
 
     @puntaje.setter
-    def contraseña(self,value):
+    def puntaje(self,value):
         self._puntaje = value
