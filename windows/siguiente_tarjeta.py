@@ -6,7 +6,8 @@ def initialize(data):
     data["tiempo_inicial"] = time.time()
 
 """-------------------------EJECUCIÓN------------------------------"""
-def ejecutar():
+def ejecutar(tarjeta_actual):
     from windows.jugar import interfaz,logistica
+    tarjeta_actual.close()
     layout,respuesta = interfaz()
     crear_ventana("Pantalla de Juego", layout,logistica,initialize=initialize,respuesta=respuesta)

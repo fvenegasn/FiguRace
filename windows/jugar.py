@@ -20,7 +20,7 @@ def interfaz():
     cant_caracteristicas = parametro["cant_caracteristicas"]
 
     #"-------------------------------------------------------"
-    #mostrar en pantalla nick y dificultad_actual
+
     perfil = [
             [sg.Text("Figuracer: ",font=('Arial',15)),
             sg.Text(nick,font=('Arial',15),background_color='LavenderBlush3')
@@ -34,16 +34,15 @@ def interfaz():
     config =[
             [sg.Column(perfil)],
             [sg.Column(dificultad)],
+            [sg.Text('Puntaje Actual:',font=('Arial',15)),sg.Text('',key='-PUNTAJE-',font=('Arial',15),background_color='LavenderBlush3')],
     ]
-
-    #mostrar en pantalla nick,data_set y dificultad_actual
-    ruta_imagen = os.path.join(os.getcwd(),'static',dataset_actual.lower()+'.png') #dependera del dataset elegido
- 
+    ruta_imagen = os.path.join(os.getcwd(),'static',dataset_actual.lower()+'.png') 
     opciones,pistas,respuesta = generar_tarjeta(dataset_actual,cant_caracteristicas)
 
     layout_tarjeta = [
         [sg.Column(pistas,element_justification='left')],
         [sg.Column(opciones,element_justification='center',background_color='grey',key='-OPCIONES-')],
+        [sg.Button('PASAR',font=('Arial',10),key='-PASAR-',border_width=2,size=(12,1))]
         ]
     
     columna1 = [
@@ -69,18 +68,18 @@ def logistica(event,values,respuesta,**kwargs):
     genero = data["genero"]
     dataset = mostrar_seleccionado('dataset')
 
-    #--------------ACTUALIZACION--TEMPORIZADOR------------#
+    #--------------ACTUALIZACION--TEMPORIZADOR/PUNTAJE------------#
     window = kwargs['window']
+    window['-PUNTAJE-'].update(data['puntaje'])
     tiempo_restante = int(data['tiempo_limite'] - (time.time() - data['tiempo_inicial']))
     tiempo = '0'+str(tiempo_restante) if tiempo_restante<10 else str(tiempo_restante)
     window['-TEMPORIZADOR-'].update('00:'+tiempo)
 
     if tiempo_restante <= 0:
         sg.Popup('Se acabo el tiempo!')
-        partida = Partida(int(time.time()),id_partida,'intento',usuarie,'timeout','-',respuesta,nivel,genero)
-        #partida se guarda en pandas --> llamar funcion que lo haga
+        partida = Partida(int(time.time()),id_partida,'intento',usuarie,'timeout','-',respuesta,nivel,genero,dataset)
         guardar_partida(partida)
-        pasar_ventana(window,siguiente_tarjeta.ejecutar)
+        siguiente_tarjeta.ejecutar(window)
         return False
 
     #-------------------EVENTOS---------------------#
@@ -93,21 +92,22 @@ def logistica(event,values,respuesta,**kwargs):
         texto_ingresado = eventos[2]
 
         partida = Partida(int(time.time()),id_partida,evento,usuarie,estado,texto_ingresado,respuesta,nivel,genero, dataset)
-        #partida se guarda en pandas --> llamar funcion que lo haga
         guardar_partida(partida)
 
     match estado:
         case "ok":
             sg.Popup('Muy bien!')
             data['puntaje'] = data['puntaje'] + data["rta_correcta"]
-        case "error":
-            sg.Popup(f"Incorrecto :( La respuesta correcta es {respuesta}")
+        case "error"|'-PASAR-':
+            texto="Incorrecto" if estado=="error" else "Ronda perdida"
+            sg.Popup(f"{texto} :( La respuesta correcta es {respuesta}")
             data['puntaje'] = data['puntaje'] - data["rta_incorrecta"]
+    
 
     match estado:
-        case "ok" | "error":
+        case "ok" | "error"|'-PASAR-':
             if not termino_el_juego:
-                pasar_ventana(window,siguiente_tarjeta.ejecutar)
+                siguiente_tarjeta.ejecutar(window)
             else:
                 partida = Partida(int(time.time()),id_partida,'fin',usuarie,'finalizada','-','-',nivel,genero, dataset)
                 guardar_partida(partida)
