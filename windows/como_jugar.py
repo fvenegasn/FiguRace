@@ -1,4 +1,5 @@
 import PySimpleGUI as sg
+from numpy import size
 from common.hacer_ventana import crear_ventana
 import os
 from static import explicacion_juego 
@@ -34,11 +35,11 @@ def interface():
         ]
 
     layout=[
-            [sg.Image(filename=ruta_imagen,key='-IMAGEN-')],
-            [sg.Column(about_jugar, scrollable=True,  vertical_scroll_only=True)],
-            [sg.Column(about_perfil, scrollable=True,  vertical_scroll_only=True)],
-            [sg.Column(about_puntajes, scrollable=True,  vertical_scroll_only=True)],
-            [sg.Column(about_config, scrollable=True,  vertical_scroll_only=True)],
+            [sg.Image(filename=ruta_imagen,key='-IMAGEN-', size=(336,137))],
+            [sg.Column(about_jugar, scrollable=True,  vertical_scroll_only=True, size=(750,75))],
+            [sg.Column(about_perfil, scrollable=True,  vertical_scroll_only=True, size=(750,75))],
+            [sg.Column(about_puntajes, scrollable=True,  vertical_scroll_only=True, size=(750,50))],
+            [sg.Column(about_config, scrollable=True,  vertical_scroll_only=True, size=(750,75))],
             [sg.Button("Volver al menú", key="-VOLVER-",font=('Arial',13))],
         ]
     return layout

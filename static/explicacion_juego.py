@@ -34,11 +34,12 @@ junto con el Nick del jugador que lo obtuvo."""
 
 ### Configuración
 
-config_button = """El programa permitirá seleccionar la dificultad del juego, entre 'Fácil',
-'Media' y 'Dificil'. Adicionalmente, se listarán una serie de parámetros en las que el usuario
-podrá modificar a su gusto vinculados con la jugabilidad, como el tiempo límite por ronda,
-cantidad de rondas, cantidad de características a mostrar, entre otros. Por último, una vez
-elegida la dificultad y establecidos los parámetros, el usuario, a su vez, podrá seleccionar el 
-set de datos con el que quiera jugar.  
+config_button = """El programa permitirá seleccionar la dificultad del juego, entre 'Fácil', 'Media'
+y 'Dificil'. Adicionalmente, se listarán una serie de parámetros en las
+que el usuario podrá modificar a su gusto vinculados con la jugabilidad, como el
+tiempo límite por ronda, cantidad de rondas, cantidad de características a 
+mostrar, entre otros. Por último, una vez elegida la dificultad y establecidos
+los parámetros, el usuario, a su vez, podrá seleccionar el set de datos con el
+que quiera jugar.  
 """
 #
