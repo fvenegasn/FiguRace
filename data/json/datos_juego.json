@@ -1,10 +1,6 @@
 {
-<<<<<<< HEAD
     "perfil": "Luqita",
-=======
-    "perfil": "Juli",
->>>>>>> 2056d6f1c2a208f3ce996f5abf8cb5c3995731b9
     "dificultad": "Facil",
     "puntaje": "",
-    "dataset": "Spotify"
+    "dataset": "Peliculas"
 }
