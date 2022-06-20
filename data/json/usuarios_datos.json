@@ -64,5 +64,16 @@
             "Media": 0,
             "Dificil": 3
         }
+    },
+    {
+        "nick": "Luqita",
+        "edad": "22",
+        "genero": "Otro",
+        "contraseña": "123456",
+        "puntaje": {
+            "Facil": 0,
+            "Media": 0,
+            "Dificil": 1
+        }
     }
 ]

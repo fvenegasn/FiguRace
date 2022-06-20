@@ -234,3 +234,10 @@ Timestamp,Id,Evento,Usuarie,Estado,Texto Ingresado,Respuesta,Nivel,Genero,Datase
 1655657604,8y5fbud5-mgvi-2dm5-626haeayqm3ro44h,intento,Juan,error,Lago Puelo,Lago Falkner,Media,Masculino,Lagos
 1655657606,8y5fbud5-mgvi-2dm5-626haeayqm3ro44h,intento,Juan,error,Lago General Vintter,Lago Gutiérrez,Media,Masculino,Lagos
 1655657607,8y5fbud5-mgvi-2dm5-626haeayqm3ro44h,fin,Juan,finalizada,-,-,Media,Masculino,Lagos
+1655689736,2vh8oiho-t0o7-28cw-h7l0ri6mi66qs9wq,inicio_partida,Luqita,-,-,-,Dificil,Otro,Peliculas
+1655689752,2vh8oiho-t0o7-28cw-h7l0ri6mi66qs9wq,intento,Luqita,timeout,-,El Siete Machos,Dificil,Otro,Peliculas
+1655689763,2vh8oiho-t0o7-28cw-h7l0ri6mi66qs9wq,intento,Luqita,error,God of War,Immortals,Dificil,Otro,Peliculas
+1655689772,2vh8oiho-t0o7-28cw-h7l0ri6mi66qs9wq,intento,Luqita,error,Meet the Parents,The Descendants,Dificil,Otro,Peliculas
+1655689780,2vh8oiho-t0o7-28cw-h7l0ri6mi66qs9wq,intento,Luqita,ok,The Forever Purge,The Forever Purge,Dificil,Otro,Peliculas
+1655689788,2vh8oiho-t0o7-28cw-h7l0ri6mi66qs9wq,intento,Luqita,error,Live by Night,Bring the Soul: The Movie,Dificil,Otro,Peliculas
+1655689791,2vh8oiho-t0o7-28cw-h7l0ri6mi66qs9wq,fin,Luqita,finalizada,-,-,Dificil,Otro,Peliculas
