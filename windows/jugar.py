@@ -88,10 +88,14 @@ def logistica(event,values,respuesta,**kwargs):
     eventos = event.split(',')
     estado = eventos[0]
     if len(eventos) > 2: #casos en el que se clickea alguna opcion o se abandona el juego
-        evento = eventos[1].strip('012')
+        evento = eventos[1]
         texto_ingresado = eventos[2]
 
         partida = Partida(int(time.time()),id_partida,evento,usuarie,estado,texto_ingresado,respuesta,nivel,genero, dataset)
+        guardar_partida(partida)
+    
+    if (estado=='-PASAR-'):
+        partida = Partida(int(time.time()),id_partida,'pasar',usuarie,'error','-',respuesta,nivel,genero, dataset)
         guardar_partida(partida)
 
     match estado:

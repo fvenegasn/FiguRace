@@ -341,3 +341,15 @@ Timestamp,Id,Evento,Usuarie,Estado,Texto Ingresado,Respuesta,Nivel,Genero,Datase
 1655755297,ax3f22ws-saio-6b36-4wndbot0c4khxp16,intento,Luqita,ok,Slumber,Slumber,Facil,Otro,Peliculas
 1655755298,ax3f22ws-saio-6b36-4wndbot0c4khxp16,intento,Luqita,error,Chances Are,Batman: Hush,Facil,Otro,Peliculas
 1655755299,ax3f22ws-saio-6b36-4wndbot0c4khxp16,fin,Luqita,finalizada,-,-,Facil,Otro,Peliculas
+1655760698,jzt035sj-wiii-3te3-j2y1bgk2kbjt8ixz,inicio_partida,Luqita,-,-,-,Facil,Otro,Peliculas
+1655760701,jzt035sj-wiii-3te3-j2y1bgk2kbjt8ixz,pasar,Luqita,error,-,The Manchurian Candidate,Facil,Otro,Peliculas
+1655760713,jzt035sj-wiii-3te3-j2y1bgk2kbjt8ixz,intento,Luqita,error,Dilwale Dulhania Le Jayenge,The Enforcer,Facil,Otro,Peliculas
+1655760715,jzt035sj-wiii-3te3-j2y1bgk2kbjt8ixz,intento,Luqita,ok,Deadpool,Deadpool,Facil,Otro,Peliculas
+1655760716,jzt035sj-wiii-3te3-j2y1bgk2kbjt8ixz,intento,Luqita,error,The Jurassic Games,Dragnet,Facil,Otro,Peliculas
+1655760717,jzt035sj-wiii-3te3-j2y1bgk2kbjt8ixz,intento,Luqita,ok,The Way Home,The Way Home,Facil,Otro,Peliculas
+1655760719,jzt035sj-wiii-3te3-j2y1bgk2kbjt8ixz,intento,Luqita,error,Snow White: A Tale of Terror,Lake Mungo,Facil,Otro,Peliculas
+1655760720,jzt035sj-wiii-3te3-j2y1bgk2kbjt8ixz,intento,Luqita,error,Mortal,Alibi.com,Facil,Otro,Peliculas
+1655760722,jzt035sj-wiii-3te3-j2y1bgk2kbjt8ixz,pasar,Luqita,error,-,Westworld,Facil,Otro,Peliculas
+1655760790,jzt035sj-wiii-3te3-j2y1bgk2kbjt8ixz,intento,Luqita,timeout,-,Trolls Holiday,Facil,Otro,Peliculas
+1655760791,jzt035sj-wiii-3te3-j2y1bgk2kbjt8ixz,intento,Luqita,ok,Power/Rangers,Power/Rangers,Facil,Otro,Peliculas
+1655760792,jzt035sj-wiii-3te3-j2y1bgk2kbjt8ixz,fin,Luqita,finalizada,-,-,Facil,Otro,Peliculas
