@@ -17,7 +17,7 @@
         "tiempo_limite": 15,
         "cant_rondas": 5,
         "rta_correcta": 1,
-        "rta_incorrecta": 0,
+        "rta_incorrecta": 1.5,
         "cant_caracteristicas": 2
     }
 }

@@ -241,3 +241,103 @@ Timestamp,Id,Evento,Usuarie,Estado,Texto Ingresado,Respuesta,Nivel,Genero,Datase
 1655689780,2vh8oiho-t0o7-28cw-h7l0ri6mi66qs9wq,intento,Luqita,ok,The Forever Purge,The Forever Purge,Dificil,Otro,Peliculas
 1655689788,2vh8oiho-t0o7-28cw-h7l0ri6mi66qs9wq,intento,Luqita,error,Live by Night,Bring the Soul: The Movie,Dificil,Otro,Peliculas
 1655689791,2vh8oiho-t0o7-28cw-h7l0ri6mi66qs9wq,fin,Luqita,finalizada,-,-,Dificil,Otro,Peliculas
+1655745760,z1mfcjg1-x140-1vx0-6v3sxfqv54hka6ny,inicio_partida,Tebi,-,-,-,Dificil,Transgenero,Peliculas
+1655745777,z1mfcjg1-x140-1vx0-6v3sxfqv54hka6ny,intento,Tebi,timeout,-,Sexo contra sexo,Dificil,Transgenero,Peliculas
+1655745794,z1mfcjg1-x140-1vx0-6v3sxfqv54hka6ny,intento,Tebi,timeout,-,Mobile Suit Gundam: Char's Counterattack,Dificil,Transgenero,Peliculas
+1655745812,z1mfcjg1-x140-1vx0-6v3sxfqv54hka6ny,intento,Tebi,timeout,-,The Final,Dificil,Transgenero,Peliculas
+1655745813,z1mfcjg1-x140-1vx0-6v3sxfqv54hka6ny,intento,Tebi,ok,The Hunt,The Hunt,Dificil,Transgenero,Peliculas
+1655745817,z1mfcjg1-x140-1vx0-6v3sxfqv54hka6ny,fin,Tebi,finalizada,-,-,Dificil,Transgenero,Peliculas
+1655745869,3ga76y5j-ov6m-j4z6-47pz2tmbqeufhbub,inicio_partida,Tebi,-,-,-,Dificil,Transgenero,Peliculas
+1655745875,3ga76y5j-ov6m-j4z6-47pz2tmbqeufhbub,fin,Tebi,cancelada,-,The Captain,Dificil,Transgenero,Peliculas
+1655753955,9av2jsym-u060-w950-gx3jd3ui7kr27myi,inicio_partida,Tebi,-,-,-,Facil,Transgenero,Peliculas
+1655753958,9av2jsym-u060-w950-gx3jd3ui7kr27myi,intento,Tebi,error,Private Valentine: Blonde & Dangerous,E.T. the Extra-Terrestrial,Facil,Transgenero,Peliculas
+1655753960,9av2jsym-u060-w950-gx3jd3ui7kr27myi,intento,Tebi,error,Rolling to You,The Northman,Facil,Transgenero,Peliculas
+1655753962,9av2jsym-u060-w950-gx3jd3ui7kr27myi,intento,Tebi,error,Cats,Messi,Facil,Transgenero,Peliculas
+1655753964,9av2jsym-u060-w950-gx3jd3ui7kr27myi,intento,Tebi,error,AEW Revolution,The Dukes of Hazzard,Facil,Transgenero,Peliculas
+1655753970,9av2jsym-u060-w950-gx3jd3ui7kr27myi,intento,Tebi,error,Legend,Collateral Damage,Facil,Transgenero,Peliculas
+1655753972,9av2jsym-u060-w950-gx3jd3ui7kr27myi,intento,Tebi,error,War Dogs,King Kong vs. Godzilla,Facil,Transgenero,Peliculas
+1655753973,9av2jsym-u060-w950-gx3jd3ui7kr27myi,intento,Tebi,error,The Virgin Suicides,Grumpy Christmas,Facil,Transgenero,Peliculas
+1655753975,9av2jsym-u060-w950-gx3jd3ui7kr27myi,intento,Tebi,error,Curious George: A Very Monkey Christmas,Pollyanna,Facil,Transgenero,Peliculas
+1655753977,9av2jsym-u060-w950-gx3jd3ui7kr27myi,intento,Tebi,error,Tales of Halloween,Premium Rush,Facil,Transgenero,Peliculas
+1655753978,9av2jsym-u060-w950-gx3jd3ui7kr27myi,intento,Tebi,error,Class,The Taking of Pelham 1 2 3,Facil,Transgenero,Peliculas
+1655753979,9av2jsym-u060-w950-gx3jd3ui7kr27myi,fin,Tebi,finalizada,-,-,Facil,Transgenero,Peliculas
+1655754116,o0bzhxzx-y97v-4udt-wmzww5oe3rz51d7b,inicio_partida,Luqita,-,-,-,Dificil,Otro,Peliculas
+1655754117,o0bzhxzx-y97v-4udt-wmzww5oe3rz51d7b,intento,Luqita,error,Death Note: The Last Name,Up and Away,Dificil,Otro,Peliculas
+1655754119,o0bzhxzx-y97v-4udt-wmzww5oe3rz51d7b,intento,Luqita,error,Best Sellers,Ghost in the Shell: The New Movie,Dificil,Otro,Peliculas
+1655754120,o0bzhxzx-y97v-4udt-wmzww5oe3rz51d7b,intento,Luqita,error,Police Story 2,I'm Gonna Git You Sucka,Dificil,Otro,Peliculas
+1655754122,o0bzhxzx-y97v-4udt-wmzww5oe3rz51d7b,intento,Luqita,ok,Guns Akimbo,Guns Akimbo,Dificil,Otro,Peliculas
+1655754124,o0bzhxzx-y97v-4udt-wmzww5oe3rz51d7b,intento,Luqita,error,Scarface,Gotti,Dificil,Otro,Peliculas
+1655754125,o0bzhxzx-y97v-4udt-wmzww5oe3rz51d7b,fin,Luqita,finalizada,-,-,Dificil,Otro,Peliculas
+1655754136,0624q1gy-44ch-xp7b-xtn99yupi88agaer,inicio_partida,Luqita,-,-,-,Facil,Otro,Peliculas
+1655754136,0624q1gy-44ch-xp7b-xtn99yupi88agaer,intento,Luqita,error,My Little Pony: Equestria Girls: Friendship Games,We Own the Night,Facil,Otro,Peliculas
+1655754137,0624q1gy-44ch-xp7b-xtn99yupi88agaer,intento,Luqita,error,Dragged Across Concrete,The Miracle of Marcelino,Facil,Otro,Peliculas
+1655754139,0624q1gy-44ch-xp7b-xtn99yupi88agaer,intento,Luqita,error,Winter on Fire: Ukraine's Fight for Freedom,Fatal Affair,Facil,Otro,Peliculas
+1655754140,0624q1gy-44ch-xp7b-xtn99yupi88agaer,intento,Luqita,error,Bosomy Mom,The Medallion,Facil,Otro,Peliculas
+1655754141,0624q1gy-44ch-xp7b-xtn99yupi88agaer,intento,Luqita,error,Child's Play,The Double,Facil,Otro,Peliculas
+1655754143,0624q1gy-44ch-xp7b-xtn99yupi88agaer,intento,Luqita,error,Crows Zero II,Hard to Kill,Facil,Otro,Peliculas
+1655754144,0624q1gy-44ch-xp7b-xtn99yupi88agaer,intento,Luqita,error,White Fang,Mother's Job,Facil,Otro,Peliculas
+1655754146,0624q1gy-44ch-xp7b-xtn99yupi88agaer,intento,Luqita,ok,The Night Eats the World,The Night Eats the World,Facil,Otro,Peliculas
+1655754148,0624q1gy-44ch-xp7b-xtn99yupi88agaer,intento,Luqita,ok,Scooby-Doo! WrestleMania Mystery,Scooby-Doo! WrestleMania Mystery,Facil,Otro,Peliculas
+1655754150,0624q1gy-44ch-xp7b-xtn99yupi88agaer,intento,Luqita,error,Hummingbird,Everything Everywhere All at Once,Facil,Otro,Peliculas
+1655754151,0624q1gy-44ch-xp7b-xtn99yupi88agaer,fin,Luqita,finalizada,-,-,Facil,Otro,Peliculas
+1655754351,8kfoe0j3-jcbj-tli8-lj1xz302e108396q,inicio_partida,Luqita,-,-,-,Media,Otro,Peliculas
+1655754352,8kfoe0j3-jcbj-tli8-lj1xz302e108396q,intento,Luqita,error,Be Somebody,Batman Beyond: The Movie,Media,Otro,Peliculas
+1655754353,8kfoe0j3-jcbj-tli8-lj1xz302e108396q,intento,Luqita,error,Julia's Eyes,Acrimony,Media,Otro,Peliculas
+1655754355,8kfoe0j3-jcbj-tli8-lj1xz302e108396q,intento,Luqita,ok,Angelique,Angelique,Media,Otro,Peliculas
+1655754356,8kfoe0j3-jcbj-tli8-lj1xz302e108396q,intento,Luqita,error,Everybody Knows,Jeepers Creepers: Reborn,Media,Otro,Peliculas
+1655754361,8kfoe0j3-jcbj-tli8-lj1xz302e108396q,intento,Luqita,ok,Brothers,Brothers,Media,Otro,Peliculas
+1655754363,8kfoe0j3-jcbj-tli8-lj1xz302e108396q,intento,Luqita,error,Long Shot,Serena,Media,Otro,Peliculas
+1655754365,8kfoe0j3-jcbj-tli8-lj1xz302e108396q,intento,Luqita,error,Star Wars,Elite Squad,Media,Otro,Peliculas
+1655754366,8kfoe0j3-jcbj-tli8-lj1xz302e108396q,intento,Luqita,error,Gringo,Crimson Tide,Media,Otro,Peliculas
+1655754368,8kfoe0j3-jcbj-tli8-lj1xz302e108396q,intento,Luqita,ok,Dagon,Dagon,Media,Otro,Peliculas
+1655754371,8kfoe0j3-jcbj-tli8-lj1xz302e108396q,intento,Luqita,error,Parasyte: Part 2,Jungle Beat: The Movie,Media,Otro,Peliculas
+1655754372,8kfoe0j3-jcbj-tli8-lj1xz302e108396q,fin,Luqita,finalizada,-,-,Media,Otro,Peliculas
+1655754579,oxv3nria-znci-pp6z-u3v8plrzmqnvb2tv,inicio_partida,Luqita,-,-,-,Media,Otro,Peliculas
+1655754580,oxv3nria-znci-pp6z-u3v8plrzmqnvb2tv,intento,Luqita,error,Little Giants,I Believe,Media,Otro,Peliculas
+1655754582,oxv3nria-znci-pp6z-u3v8plrzmqnvb2tv,fin,Luqita,cancelada,-,Minari,Media,Otro,Peliculas
+1655754821,602ypcc5-if3l-e5at-7k90zo0bft2knd2f,inicio_partida,Luqita,-,-,-,Dificil,Otro,Peliculas
+1655754822,602ypcc5-if3l-e5at-7k90zo0bft2knd2f,intento,Luqita,error,Open Range,A Lonely Place to Die,Dificil,Otro,Peliculas
+1655754824,602ypcc5-if3l-e5at-7k90zo0bft2knd2f,intento,Luqita,error,Desperados,National Lampoon's European Vacation,Dificil,Otro,Peliculas
+1655754826,602ypcc5-if3l-e5at-7k90zo0bft2knd2f,intento,Luqita,error,Free Birds,The Tailor of Panama,Dificil,Otro,Peliculas
+1655754827,602ypcc5-if3l-e5at-7k90zo0bft2knd2f,intento,Luqita,ok,Pete's Dragon,Pete's Dragon,Dificil,Otro,Peliculas
+1655754828,602ypcc5-if3l-e5at-7k90zo0bft2knd2f,intento,Luqita,error,The Condemned 2,The Ark,Dificil,Otro,Peliculas
+1655754829,602ypcc5-if3l-e5at-7k90zo0bft2knd2f,fin,Luqita,finalizada,-,-,Dificil,Otro,Peliculas
+1655754893,ka22n1r0-2zqh-5gl1-2bwtm16iv34k25lq,inicio_partida,Luqita,-,-,-,Facil,Otro,Peliculas
+1655754894,ka22n1r0-2zqh-5gl1-2bwtm16iv34k25lq,intento,Luqita,error,Goal!,Made of Honor,Facil,Otro,Peliculas
+1655754896,ka22n1r0-2zqh-5gl1-2bwtm16iv34k25lq,intento,Luqita,error,Bloodthirsty,Astro Kid,Facil,Otro,Peliculas
+1655754898,ka22n1r0-2zqh-5gl1-2bwtm16iv34k25lq,intento,Luqita,error,Altered Carbon: Resleeved,Blade: Trinity,Facil,Otro,Peliculas
+1655754900,ka22n1r0-2zqh-5gl1-2bwtm16iv34k25lq,intento,Luqita,error,Agatha and the Curse of Ishtar,Appointment with Death,Facil,Otro,Peliculas
+1655754901,ka22n1r0-2zqh-5gl1-2bwtm16iv34k25lq,intento,Luqita,error,Swamp Thing,My Boyfriend's Meds,Facil,Otro,Peliculas
+1655754903,ka22n1r0-2zqh-5gl1-2bwtm16iv34k25lq,intento,Luqita,error,Lavender,Saw 3D,Facil,Otro,Peliculas
+1655754904,ka22n1r0-2zqh-5gl1-2bwtm16iv34k25lq,intento,Luqita,error,The Great Gatsby,Azumi,Facil,Otro,Peliculas
+1655754906,ka22n1r0-2zqh-5gl1-2bwtm16iv34k25lq,intento,Luqita,error,Full Body Massage,The Sword in the Stone,Facil,Otro,Peliculas
+1655754908,ka22n1r0-2zqh-5gl1-2bwtm16iv34k25lq,intento,Luqita,error,Die Another Day,Beautiful Sisters: Flesh Slave,Facil,Otro,Peliculas
+1655754909,ka22n1r0-2zqh-5gl1-2bwtm16iv34k25lq,intento,Luqita,ok,Suck Me Shakespeer 3,Suck Me Shakespeer 3,Facil,Otro,Peliculas
+1655754910,ka22n1r0-2zqh-5gl1-2bwtm16iv34k25lq,fin,Luqita,finalizada,-,-,Facil,Otro,Peliculas
+1655755084,ol6tb1w7-k98c-7fxy-okl4exulvxdxtqq8,inicio_partida,Luqita,-,-,-,Facil,Otro,Peliculas
+1655755085,ol6tb1w7-k98c-7fxy-okl4exulvxdxtqq8,intento,Luqita,ok,Alvin and the Chipmunks Meet Frankenstein,Alvin and the Chipmunks Meet Frankenstein,Facil,Otro,Peliculas
+1655755086,ol6tb1w7-k98c-7fxy-okl4exulvxdxtqq8,intento,Luqita,error,1900,The Wind Rises,Facil,Otro,Peliculas
+1655755088,ol6tb1w7-k98c-7fxy-okl4exulvxdxtqq8,intento,Luqita,error,Project X,War Machine,Facil,Otro,Peliculas
+1655755090,ol6tb1w7-k98c-7fxy-okl4exulvxdxtqq8,intento,Luqita,ok,Return of the Seven,Return of the Seven,Facil,Otro,Peliculas
+1655755092,ol6tb1w7-k98c-7fxy-okl4exulvxdxtqq8,intento,Luqita,error,The Miracle Maker,Naruto Shippuden the Movie: The Will of Fire,Facil,Otro,Peliculas
+1655755096,ol6tb1w7-k98c-7fxy-okl4exulvxdxtqq8,intento,Luqita,error,Rumor Has It...,Swallow,Facil,Otro,Peliculas
+1655755098,ol6tb1w7-k98c-7fxy-okl4exulvxdxtqq8,intento,Luqita,ok,Barbie: The Princess & The Popstar,Barbie: The Princess & The Popstar,Facil,Otro,Peliculas
+1655755099,ol6tb1w7-k98c-7fxy-okl4exulvxdxtqq8,intento,Luqita,error,The Clique,Salon Kitty,Facil,Otro,Peliculas
+1655755101,ol6tb1w7-k98c-7fxy-okl4exulvxdxtqq8,intento,Luqita,error,The Breed,Blood: The Last Vampire,Facil,Otro,Peliculas
+1655755102,ol6tb1w7-k98c-7fxy-okl4exulvxdxtqq8,intento,Luqita,ok,Philomena,Philomena,Facil,Otro,Peliculas
+1655755103,ol6tb1w7-k98c-7fxy-okl4exulvxdxtqq8,fin,Luqita,finalizada,-,-,Facil,Otro,Peliculas
+1655755148,1g0o9owi-yr5l-fpvf-86cck6bilsb8wi1z,inicio_partida,Luqita,-,-,-,Facil,Otro,Peliculas
+1655755148,1g0o9owi-yr5l-fpvf-86cck6bilsb8wi1z,intento,Luqita,error,Ms .45,XOXO,Facil,Otro,Peliculas
+1655755150,1g0o9owi-yr5l-fpvf-86cck6bilsb8wi1z,fin,Luqita,cancelada,-,Mary and Max,Facil,Otro,Peliculas
+1655755282,ax3f22ws-saio-6b36-4wndbot0c4khxp16,inicio_partida,Luqita,-,-,-,Facil,Otro,Peliculas
+1655755283,ax3f22ws-saio-6b36-4wndbot0c4khxp16,intento,Luqita,ok,A Taxi Driver,A Taxi Driver,Facil,Otro,Peliculas
+1655755285,ax3f22ws-saio-6b36-4wndbot0c4khxp16,intento,Luqita,error,Game Over,The Snowman,Facil,Otro,Peliculas
+1655755286,ax3f22ws-saio-6b36-4wndbot0c4khxp16,intento,Luqita,error,Naruto: Legend of the Stone of Gelel,Forbidden Quest,Facil,Otro,Peliculas
+1655755288,ax3f22ws-saio-6b36-4wndbot0c4khxp16,intento,Luqita,error,Pirates of the Caribbean: At World's End,Nancy Drew and the Hidden Staircase,Facil,Otro,Peliculas
+1655755289,ax3f22ws-saio-6b36-4wndbot0c4khxp16,intento,Luqita,error,Monstruosamente Solo,The Courageous Heart of Irena Sendler,Facil,Otro,Peliculas
+1655755290,ax3f22ws-saio-6b36-4wndbot0c4khxp16,intento,Luqita,error,Night in Paradise,Silk Road,Facil,Otro,Peliculas
+1655755292,ax3f22ws-saio-6b36-4wndbot0c4khxp16,intento,Luqita,ok,The Disaster Artist,The Disaster Artist,Facil,Otro,Peliculas
+1655755293,ax3f22ws-saio-6b36-4wndbot0c4khxp16,intento,Luqita,error,Mermaid Down,Hellboy Animated: Blood and Iron,Facil,Otro,Peliculas
+1655755297,ax3f22ws-saio-6b36-4wndbot0c4khxp16,intento,Luqita,ok,Slumber,Slumber,Facil,Otro,Peliculas
+1655755298,ax3f22ws-saio-6b36-4wndbot0c4khxp16,intento,Luqita,error,Chances Are,Batman: Hush,Facil,Otro,Peliculas
+1655755299,ax3f22ws-saio-6b36-4wndbot0c4khxp16,fin,Luqita,finalizada,-,-,Facil,Otro,Peliculas

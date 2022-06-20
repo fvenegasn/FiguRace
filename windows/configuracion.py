@@ -53,7 +53,7 @@ def interface():
             sg.InputText(parametros[dificultad_elegida]["rta_correcta"],key='-CORRECTAS-')
         ],
         [
-            sg.Text('Ingrese el puntaje sumado por cada respuesta incorrecta'), 
+            sg.Text('Ingrese el puntaje restado por cada respuesta incorrecta'), 
             sg.InputText(parametros[dificultad_elegida]["rta_incorrecta"],key='-INCORRECTAS-')
         ],
         [

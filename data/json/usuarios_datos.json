@@ -71,7 +71,7 @@
         "genero": "Otro",
         "contraseña": "123456",
         "puntaje": {
-            "Facil": 0,
+            "Facil": 4,
             "Media": 0,
             "Dificil": 1
         }
