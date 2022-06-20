@@ -241,6 +241,7 @@ Timestamp,Id,Evento,Usuarie,Estado,Texto Ingresado,Respuesta,Nivel,Genero,Datase
 1655689780,2vh8oiho-t0o7-28cw-h7l0ri6mi66qs9wq,intento,Luqita,ok,The Forever Purge,The Forever Purge,Dificil,Otro,Peliculas
 1655689788,2vh8oiho-t0o7-28cw-h7l0ri6mi66qs9wq,intento,Luqita,error,Live by Night,Bring the Soul: The Movie,Dificil,Otro,Peliculas
 1655689791,2vh8oiho-t0o7-28cw-h7l0ri6mi66qs9wq,fin,Luqita,finalizada,-,-,Dificil,Otro,Peliculas
+<<<<<<< HEAD
 1655745760,z1mfcjg1-x140-1vx0-6v3sxfqv54hka6ny,inicio_partida,Tebi,-,-,-,Dificil,Transgenero,Peliculas
 1655745777,z1mfcjg1-x140-1vx0-6v3sxfqv54hka6ny,intento,Tebi,timeout,-,Sexo contra sexo,Dificil,Transgenero,Peliculas
 1655745794,z1mfcjg1-x140-1vx0-6v3sxfqv54hka6ny,intento,Tebi,timeout,-,Mobile Suit Gundam: Char's Counterattack,Dificil,Transgenero,Peliculas
@@ -341,3 +342,41 @@ Timestamp,Id,Evento,Usuarie,Estado,Texto Ingresado,Respuesta,Nivel,Genero,Datase
 1655755297,ax3f22ws-saio-6b36-4wndbot0c4khxp16,intento,Luqita,ok,Slumber,Slumber,Facil,Otro,Peliculas
 1655755298,ax3f22ws-saio-6b36-4wndbot0c4khxp16,intento,Luqita,error,Chances Are,Batman: Hush,Facil,Otro,Peliculas
 1655755299,ax3f22ws-saio-6b36-4wndbot0c4khxp16,fin,Luqita,finalizada,-,-,Facil,Otro,Peliculas
+=======
+1655758098,11g5eqpf-gqr3-xw92-8tsktn8v8fsjbpte,inicio_partida,Juli,-,-,-,Facil,Femenino,Peliculas
+1655758114,11g5eqpf-gqr3-xw92-8tsktn8v8fsjbpte,intento,Juli,ok,My Father the Hero,My Father the Hero,Facil,Femenino,Peliculas
+1655758138,11g5eqpf-gqr3-xw92-8tsktn8v8fsjbpte,intento,Juli,error,Stay Out of the Attic,Jingle All the Way,Facil,Femenino,Peliculas
+1655758149,11g5eqpf-gqr3-xw92-8tsktn8v8fsjbpte,intento,Juli,error,HK: Forbidden Super Hero,Superman III,Facil,Femenino,Peliculas
+1655758158,11g5eqpf-gqr3-xw92-8tsktn8v8fsjbpte,intento,Juli,error,13 Sins,Blue Story,Facil,Femenino,Peliculas
+1655758176,11g5eqpf-gqr3-xw92-8tsktn8v8fsjbpte,intento,Juli,error,Doom: Annihilation,The Black Hole,Facil,Femenino,Peliculas
+1655758183,11g5eqpf-gqr3-xw92-8tsktn8v8fsjbpte,intento,Juli,ok,Free Willy,Free Willy,Facil,Femenino,Peliculas
+1655758189,11g5eqpf-gqr3-xw92-8tsktn8v8fsjbpte,intento,Juli,ok,Happy Feet,Happy Feet,Facil,Femenino,Peliculas
+1655758198,11g5eqpf-gqr3-xw92-8tsktn8v8fsjbpte,intento,Juli,ok,Mickey's Twice Upon a Christmas,Mickey's Twice Upon a Christmas,Facil,Femenino,Peliculas
+1655758206,11g5eqpf-gqr3-xw92-8tsktn8v8fsjbpte,intento,Juli,error,Love in the Time of Cholera,Talk Sex,Facil,Femenino,Peliculas
+1655758213,11g5eqpf-gqr3-xw92-8tsktn8v8fsjbpte,intento,Juli,ok,E.T. the Extra-Terrestrial,E.T. the Extra-Terrestrial,Facil,Femenino,Peliculas
+1655758215,11g5eqpf-gqr3-xw92-8tsktn8v8fsjbpte,fin,Juli,finalizada,-,-,Facil,Femenino,Peliculas
+1655758316,knpoiog9-sy7q-fj88-4g6scbare2fsba12,inicio_partida,Juli,-,-,-,Facil,Femenino,Lagos
+1655758325,knpoiog9-sy7q-fj88-4g6scbare2fsba12,intento,Juli,error,Lago Lolog,Lago Buenos Aires,Facil,Femenino,Lagos
+1655758328,knpoiog9-sy7q-fj88-4g6scbare2fsba12,intento,Juli,error,Lago Pico Nº 1,Lago Burmeister,Facil,Femenino,Lagos
+1655758330,knpoiog9-sy7q-fj88-4g6scbare2fsba12,intento,Juli,error,Lago Tromen,Lago Puelo,Facil,Femenino,Lagos
+1655758331,knpoiog9-sy7q-fj88-4g6scbare2fsba12,intento,Juli,error,Lago Cardiel,Lago Lolog,Facil,Femenino,Lagos
+1655758333,knpoiog9-sy7q-fj88-4g6scbare2fsba12,intento,Juli,error,Lago Salitroso o Sucio,Lago Blanco,Facil,Femenino,Lagos
+1655758334,knpoiog9-sy7q-fj88-4g6scbare2fsba12,intento,Juli,ok,Lago Correntoso,Lago Correntoso,Facil,Femenino,Lagos
+1655758336,knpoiog9-sy7q-fj88-4g6scbare2fsba12,intento,Juli,error,Lago Quiroga Chico,Lago Pueyrredón,Facil,Femenino,Lagos
+1655758337,knpoiog9-sy7q-fj88-4g6scbare2fsba12,intento,Juli,ok,Lago Menéndez,Lago Menéndez,Facil,Femenino,Lagos
+1655758339,knpoiog9-sy7q-fj88-4g6scbare2fsba12,intento,Juli,ok,Lago Puelo,Lago Puelo,Facil,Femenino,Lagos
+1655758341,knpoiog9-sy7q-fj88-4g6scbare2fsba12,intento,Juli,ok,Lago Rosario,Lago Rosario,Facil,Femenino,Lagos
+1655758342,knpoiog9-sy7q-fj88-4g6scbare2fsba12,fin,Juli,finalizada,-,-,Facil,Femenino,Lagos
+1655758371,s217wg3b-c845-9gvf-44su11f90jc4kh34,inicio_partida,Juli,-,-,-,Facil,Femenino,Spotify
+1655758375,s217wg3b-c845-9gvf-44su11f90jc4kh34,intento,Juli,error,PARTYNEXTDOOR,Lemaitre,Facil,Femenino,Spotify
+1655758388,s217wg3b-c845-9gvf-44su11f90jc4kh34,intento,Juli,ok,Katy Perry,Katy Perry,Facil,Femenino,Spotify
+1655758398,s217wg3b-c845-9gvf-44su11f90jc4kh34,intento,Juli,error,Florida Georgia Line,Calvin Harris,Facil,Femenino,Spotify
+1655758403,s217wg3b-c845-9gvf-44su11f90jc4kh34,intento,Juli,ok,Foster The People,Foster The People,Facil,Femenino,Spotify
+1655758410,s217wg3b-c845-9gvf-44su11f90jc4kh34,intento,Juli,ok,Katy Perry,Katy Perry,Facil,Femenino,Spotify
+1655758417,s217wg3b-c845-9gvf-44su11f90jc4kh34,intento,Juli,ok,Cheat Codes,Cheat Codes,Facil,Femenino,Spotify
+1655758422,s217wg3b-c845-9gvf-44su11f90jc4kh34,intento,Juli,ok,21 Savage,21 Savage,Facil,Femenino,Spotify
+1655758430,s217wg3b-c845-9gvf-44su11f90jc4kh34,intento,Juli,ok,Gym Class Heroes,Gym Class Heroes,Facil,Femenino,Spotify
+1655758438,s217wg3b-c845-9gvf-44su11f90jc4kh34,intento,Juli,error,lovelytheband,Jason Aldean,Facil,Femenino,Spotify
+1655758445,s217wg3b-c845-9gvf-44su11f90jc4kh34,intento,Juli,ok,Gym Class Heroes,Gym Class Heroes,Facil,Femenino,Spotify
+1655758446,s217wg3b-c845-9gvf-44su11f90jc4kh34,fin,Juli,finalizada,-,-,Facil,Femenino,Spotify
+>>>>>>> 2056d6f1c2a208f3ce996f5abf8cb5c3995731b9
