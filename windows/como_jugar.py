@@ -9,37 +9,20 @@ from static import explicacion_juego
 def interface():
     ruta_imagen = os.path.join(os.getcwd(),'static','figurace_logo.png')
     
-    about_jugar = [
-            [
-                sg.Text("Jugar: ",font=('Arial',14)),
-                sg.Text(explicacion_juego.play_button,key='-PLAY-',font=('Arial',12))
-            ]
-        ]
-    about_perfil = [
-            [
-                sg.Text("Perfil: ",font=('Arial',14)),
-                sg.Text(explicacion_juego.profile_button,key='-PROFILE-',font=('Arial',12))
-            ]
-        ]
-    about_puntajes = [
-            [
-                sg.Text("Puntajes: ",font=('Arial',14)),
-                sg.Text(explicacion_juego.score_button,key='-SCORE-',font=('Arial',12))
-            ]
-        ]
-    about_config = [
-            [
-                sg.Text("Configuración: ",font=('Arial',14)),
-                sg.Text(explicacion_juego.config_button,key='-CONFIG-',font=('Arial',12))
-            ]
-        ]
+    about_general = [
+            [sg.Text("Jugar: ",font=('Arial',14))],
+            [sg.Text(explicacion_juego.play_button,key='-PLAY-',font=('Arial',12))],
+            [sg.Text("Perfil: ",font=('Arial',14))],
+            [sg.Text(explicacion_juego.profile_button,key='-PROFILE-',font=('Arial',12))],
+            [sg.Text("Puntajes: ",font=('Arial',14))],
+            [sg.Text(explicacion_juego.score_button,key='-SCORE-',font=('Arial',12))],
+            [sg.Text("Configuración: ",font=('Arial',14))],
+            [sg.Text(explicacion_juego.config_button,key='-CONFIG-',font=('Arial',12))]
+    ]
 
     layout=[
             [sg.Image(filename=ruta_imagen,key='-IMAGEN-', size=(336,137))],
-            [sg.Column(about_jugar, scrollable=True,  vertical_scroll_only=True, size=(750,75))],
-            [sg.Column(about_perfil, scrollable=True,  vertical_scroll_only=True, size=(750,75))],
-            [sg.Column(about_puntajes, scrollable=True,  vertical_scroll_only=True, size=(750,50))],
-            [sg.Column(about_config, scrollable=True,  vertical_scroll_only=True, size=(750,75))],
+            [sg.Column(about_general, scrollable=True,  vertical_scroll_only=True, size=(750,300))],
             [sg.Button("Volver al menú", key="-VOLVER-",font=('Arial',13))],
         ]
     return layout
