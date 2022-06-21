@@ -1,11 +1,9 @@
 import os
 import PySimpleGUI as sg
 from common.hacer_ventana import crear_ventana,pasar_ventana 
-from windows import jugar, como_jugar
-from windows import configuracion
+from windows import jugar, como_jugar,configuracion,puntajes
 from windows.perfil import perfil
 from common.manejo_datos_juego import mostrar_seleccionado
-from windows.puntaje import puntajes
 
 
 """-------------------------INTERFAZ------------------------------"""
@@ -48,7 +46,6 @@ def interfaz():
             [sg.Column(menu),sg.Column(config)]
         ]
     return layout
-
 
 """-------------------------LOGISTICA------------------------------"""
 def logica_ventana(event,values,**kwargs):
