@@ -353,3 +353,15 @@ Timestamp,Id,Evento,Usuarie,Estado,Texto Ingresado,Respuesta,Nivel,Genero,Datase
 1655760790,jzt035sj-wiii-3te3-j2y1bgk2kbjt8ixz,intento,Luqita,timeout,-,Trolls Holiday,Facil,Otro,Peliculas
 1655760791,jzt035sj-wiii-3te3-j2y1bgk2kbjt8ixz,intento,Luqita,ok,Power/Rangers,Power/Rangers,Facil,Otro,Peliculas
 1655760792,jzt035sj-wiii-3te3-j2y1bgk2kbjt8ixz,fin,Luqita,finalizada,-,-,Facil,Otro,Peliculas
+1655772589,tdo0fn2z-67i3-zzas-3toygxqcdearm12c,inicio_partida,Emi,-,-,-,Facil,Femenino,Peliculas
+1655772590,tdo0fn2z-67i3-zzas-3toygxqcdearm12c,intento,Emi,ok,Rambo: Last Blood,Rambo: Last Blood,Facil,Femenino,Peliculas
+1655772600,tdo0fn2z-67i3-zzas-3toygxqcdearm12c,intento,Emi,ok,Poison Ivy: The New Seduction,Poison Ivy: The New Seduction,Facil,Femenino,Peliculas
+1655772605,tdo0fn2z-67i3-zzas-3toygxqcdearm12c,intento,Emi,error,Acts of Vengeance,Sekaiichi Hatsukoi Movie,Facil,Femenino,Peliculas
+1655772612,tdo0fn2z-67i3-zzas-3toygxqcdearm12c,intento,Emi,error,The Man Who Knew Too Much,Dogville,Facil,Femenino,Peliculas
+1655772617,tdo0fn2z-67i3-zzas-3toygxqcdearm12c,intento,Emi,error,Bone Tomahawk,Meru,Facil,Femenino,Peliculas
+1655772622,tdo0fn2z-67i3-zzas-3toygxqcdearm12c,intento,Emi,ok,Look Who's Back,Look Who's Back,Facil,Femenino,Peliculas
+1655772628,tdo0fn2z-67i3-zzas-3toygxqcdearm12c,intento,Emi,error,Like a Boss,21 Jump Street,Facil,Femenino,Peliculas
+1655772631,tdo0fn2z-67i3-zzas-3toygxqcdearm12c,intento,Emi,error,M,New Nightmare,Facil,Femenino,Peliculas
+1655772633,tdo0fn2z-67i3-zzas-3toygxqcdearm12c,intento,Emi,ok,King of Kings,King of Kings,Facil,Femenino,Peliculas
+1655772635,tdo0fn2z-67i3-zzas-3toygxqcdearm12c,intento,Emi,ok,Come Play With Me,Come Play With Me,Facil,Femenino,Peliculas
+1655772636,tdo0fn2z-67i3-zzas-3toygxqcdearm12c,fin,Emi,finalizada,-,-,Facil,Femenino,Peliculas

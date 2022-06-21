@@ -38,7 +38,7 @@
         "genero": "Femenino",
         "contraseña": "1234",
         "puntaje": {
-            "Facil": 0,
+            "Facil": 5,
             "Media": 0,
             "Dificil": 0
         }
