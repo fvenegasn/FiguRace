@@ -1,5 +1,5 @@
 from common import generos
-from common.paths import ruta_configuracion,ruta_usuarios_datos
+from common.paths import ruta_usuarios_datos
 from common.archivo import escribir_json_data, leer_json_data
 from common.usuario import Usuario
 

@@ -1,5 +1,4 @@
 import PySimpleGUI as sg
-from numpy import size
 from common.hacer_ventana import crear_ventana
 import os
 from static import explicacion_juego 

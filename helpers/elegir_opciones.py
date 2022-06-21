@@ -1,5 +1,5 @@
 import os
-from random import choices,shuffle
+from random import choices
 import csv
 from common.paths import ruta_csv
 
