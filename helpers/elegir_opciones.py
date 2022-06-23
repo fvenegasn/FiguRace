@@ -1,5 +1,5 @@
 import os
-from random import choices
+from random import sample
 import csv
 from common.paths import ruta_csv
 
@@ -26,7 +26,7 @@ def opciones_random(nombre:str,cant_caracteristicas:int):
             columnas=next(reader)
             data = list(map(lambda x: x,reader))
         
-        opciones = choices(data, k=5)
+        opciones = sample(data, k=5)
         descartadas = opciones[1:5]
         elegida = opciones[0]
         caracteristicas = elegida[0:cant_caracteristicas]

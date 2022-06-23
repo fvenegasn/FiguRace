@@ -16,8 +16,8 @@
         "genero": "Femenino",
         "contraseña": "jc19",
         "puntaje": {
-            "Facil": 0,
-            "Media": 0,
+            "Facil": 4,
+            "Media": 1.0,
             "Dificil": 4
         }
     },
