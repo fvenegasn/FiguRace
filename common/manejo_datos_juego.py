@@ -37,7 +37,15 @@ def mostrar_seleccionado(clave:str) -> Any:
         return datos[clave]
 
     except FileNotFoundError:
-        return f"No hay {clave} seleccionado"
+        datos_juego_default()
+
+def datos_juego_default():
+    datos_default = {
+            "perfil": "None",
+            "dificultad": "Media",
+            "dataset": "Spotify"
+            }
+    escribir_json_data(datos_default,ruta_datos_juego)
 
 def parametros_configuracion(dificultad:str):
     

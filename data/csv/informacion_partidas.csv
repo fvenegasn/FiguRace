@@ -289,3 +289,29 @@ Timestamp,Id,Evento,Usuarie,Estado,Texto Ingresado,Respuesta,Nivel,Genero,Datase
 1656007812,gpe930qt-x1no-9z72-zcsuxuukvpeckoz1,intento,Juli,error,Trey Songz,Jason Derulo,Media,Femenino,Spotify
 1656007816,gpe930qt-x1no-9z72-zcsuxuukvpeckoz1,intento,Juli,error,SZA,Marshmello,Media,Femenino,Spotify
 1656007820,gpe930qt-x1no-9z72-zcsuxuukvpeckoz1,fin,Juli,cancelada,-,Disclosure,Media,Femenino,Spotify
+1656011259,m6wkyq4u-lkz4-em69-mxa7ug3ervdzr76b,inicio_partida,Juli,-,-,-,Media,Femenino,Peliculas
+1656011266,m6wkyq4u-lkz4-em69-mxa7ug3ervdzr76b,intento,Juli,ok,Le Divorce,Le Divorce,Media,Femenino,Peliculas
+1656011275,m6wkyq4u-lkz4-em69-mxa7ug3ervdzr76b,intento,Juli,error,Batman: Gotham Knight,Arctic Predator,Media,Femenino,Peliculas
+1656011286,m6wkyq4u-lkz4-em69-mxa7ug3ervdzr76b,intento,Juli,error,Batman Beyond: Return of the Joker,Paris,Media,Femenino,Peliculas
+1656011290,m6wkyq4u-lkz4-em69-mxa7ug3ervdzr76b,intento,Juli,error,Alien,Masquerade,Media,Femenino,Peliculas
+1656011298,m6wkyq4u-lkz4-em69-mxa7ug3ervdzr76b,intento,Juli,ok,Barbie: The Princess & The Popstar,Barbie: The Princess & The Popstar,Media,Femenino,Peliculas
+1656011308,m6wkyq4u-lkz4-em69-mxa7ug3ervdzr76b,intento,Juli,error,Open Range,Thunderbolt,Media,Femenino,Peliculas
+1656011315,m6wkyq4u-lkz4-em69-mxa7ug3ervdzr76b,intento,Juli,error,Close Encounters of the Third Kind,Scoop,Media,Femenino,Peliculas
+1656011320,m6wkyq4u-lkz4-em69-mxa7ug3ervdzr76b,intento,Juli,error,Reap the Wild Wind,Fear,Media,Femenino,Peliculas
+1656011328,m6wkyq4u-lkz4-em69-mxa7ug3ervdzr76b,intento,Juli,error,Serendipity,Crip Camp: A Disability Revolution,Media,Femenino,Peliculas
+1656011338,m6wkyq4u-lkz4-em69-mxa7ug3ervdzr76b,intento,Juli,error,The Invisible Guardian,Curious George 3: Back to the Jungle,Media,Femenino,Peliculas
+1656011339,m6wkyq4u-lkz4-em69-mxa7ug3ervdzr76b,fin,Juli,finalizada,-,-,Media,Femenino,Peliculas
+1656011907,6wsh1h4d-8cgo-y4d5-0qz3ahaqatgsfk0f,inicio_partida,Juli,-,-,-,Media,Femenino,Spotify
+1656011909,6wsh1h4d-8cgo-y4d5-0qz3ahaqatgsfk0f,intento,Juli,error,Calvin Harris,21 Savage,Media,Femenino,Spotify
+1656011910,6wsh1h4d-8cgo-y4d5-0qz3ahaqatgsfk0f,intento,Juli,error,Billie Eilish,Katy Perry,Media,Femenino,Spotify
+1656011911,6wsh1h4d-8cgo-y4d5-0qz3ahaqatgsfk0f,intento,Juli,error,Khalid,Enrique Iglesias,Media,Femenino,Spotify
+1656011912,6wsh1h4d-8cgo-y4d5-0qz3ahaqatgsfk0f,intento,Juli,ok,Drake,Drake,Media,Femenino,Spotify
+1656011914,6wsh1h4d-8cgo-y4d5-0qz3ahaqatgsfk0f,intento,Juli,error,One Direction0,Taylor Swift,Media,Femenino,Spotify
+1656011915,6wsh1h4d-8cgo-y4d5-0qz3ahaqatgsfk0f,intento,Juli,ok,LMFAO,LMFAO,Media,Femenino,Spotify
+1656011916,6wsh1h4d-8cgo-y4d5-0qz3ahaqatgsfk0f,intento,Juli,error,Black Eyed Peas,Lady Gaga,Media,Femenino,Spotify
+1656011918,6wsh1h4d-8cgo-y4d5-0qz3ahaqatgsfk0f,intento,Juli,error,21 Savage,Naughty Boy,Media,Femenino,Spotify
+1656011919,6wsh1h4d-8cgo-y4d5-0qz3ahaqatgsfk0f,intento,Juli,error,Stormzy,Gym Class Heroes,Media,Femenino,Spotify
+1656011921,6wsh1h4d-8cgo-y4d5-0qz3ahaqatgsfk0f,intento,Juli,error,David Guetta,BØRNS,Media,Femenino,Spotify
+1656011921,6wsh1h4d-8cgo-y4d5-0qz3ahaqatgsfk0f,fin,Juli,finalizada,-,-,Media,Femenino,Spotify
+1656011925,dyiy2ek8-3qbu-t53y-31y7r5ekfmfglc46,inicio_partida,Juli,-,-,-,Media,Femenino,Spotify
+1656011926,dyiy2ek8-3qbu-t53y-31y7r5ekfmfglc46,fin,Juli,cancelada,-,Tyga,Media,Femenino,Spotify

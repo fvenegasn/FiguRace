@@ -3,7 +3,7 @@ import PySimpleGUI as sg
 from common.hacer_ventana import crear_ventana,pasar_ventana 
 from windows import jugar, como_jugar,configuracion,puntajes
 from windows.perfil import perfil
-from common.manejo_datos_juego import mostrar_seleccionado
+from common.manejo_datos_juego import mostrar_seleccionado,datos_juego_default
 
 
 """-------------------------INTERFAZ------------------------------"""
@@ -52,7 +52,10 @@ def logica_ventana(event,values,**kwargs):
     window = kwargs['window']
     match event:
         case '-JUGAR-':
-            pasar_ventana(window,jugar.ejecutar)
+            if (mostrar_seleccionado('perfil')=="None"):
+                sg.Popup('Debe seleccionar un usuario para jugar')
+            else:
+                pasar_ventana(window,jugar.ejecutar)
         case '-PUNTAJES-':
             pasar_ventana(window,puntajes.ejecutar)
         case '-PERFIL-':
@@ -73,6 +76,7 @@ def update_windows(window,**kwargs):
 """-------------------------EJECUCIÓN------------------------------"""
 def ejecutar():
     sg.theme('BrightColors')
+    datos_juego_default()
     layout=interfaz()
     crear_ventana("Menú Principal",layout=layout,acciones=logica_ventana,update_windows=update_windows)
 
