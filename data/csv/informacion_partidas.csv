@@ -228,7 +228,6 @@ Timestamp,Id,Evento,Usuarie,Estado,Texto Ingresado,Respuesta,Nivel,Genero,Datase
 1655772633,tdo0fn2z-67i3-zzas-3toygxqcdearm12c,intento,Emi,ok,King of Kings,King of Kings,Facil,Femenino,Peliculas
 1655772635,tdo0fn2z-67i3-zzas-3toygxqcdearm12c,intento,Emi,ok,Come Play With Me,Come Play With Me,Facil,Femenino,Peliculas
 1655772636,tdo0fn2z-67i3-zzas-3toygxqcdearm12c,fin,Emi,finalizada,-,-,Facil,Femenino,Peliculas
-<<<<<<< HEAD
 1656005571,i902zvmp-uc7c-kov0-i4eah1l1jdeu29eu,inicio_partida,Marian,-,-,-,Facil,Masculino,Peliculas
 1656005608,i902zvmp-uc7c-kov0-i4eah1l1jdeu29eu,intento,Marian,error,The Big Sick,Vivarium,Facil,Masculino,Peliculas
 1656005627,i902zvmp-uc7c-kov0-i4eah1l1jdeu29eu,intento,Marian,error,Lion,Nocturama,Facil,Masculino,Peliculas
@@ -349,7 +348,6 @@ Timestamp,Id,Evento,Usuarie,Estado,Texto Ingresado,Respuesta,Nivel,Genero,Datase
 1656014850,kxqld3qh-56m9-xo40-7vij1quwajnfb0xd,intento,ELizabeth,error,Lago Epecuén,Lago Moquehue,Facil,Femenino,Lagos
 1656014862,kxqld3qh-56m9-xo40-7vij1quwajnfb0xd,intento,ELizabeth,error,Lago Azara,Lago Cholila,Facil,Femenino,Lagos
 1656014864,kxqld3qh-56m9-xo40-7vij1quwajnfb0xd,fin,ELizabeth,finalizada,-,-,Facil,Femenino,Lagos
-=======
 1656004290,pdnulmk1-4ci2-5ye5-e2z7h0i3vxiv0zb7,inicio_partida,Juli,-,-,-,Facil,Femenino,Peliculas
 1656004298,pdnulmk1-4ci2-5ye5-e2z7h0i3vxiv0zb7,fin,Juli,cancelada,-,Stagecoach,Facil,Femenino,Peliculas
 1656004331,oqsey2ss-qj2a-8n8l-zjnsbhp9kz2z0h34,inicio_partida,Juli,-,-,-,Facil,Femenino,Peliculas
@@ -437,4 +435,3 @@ Timestamp,Id,Evento,Usuarie,Estado,Texto Ingresado,Respuesta,Nivel,Genero,Datase
 1656011921,6wsh1h4d-8cgo-y4d5-0qz3ahaqatgsfk0f,fin,Juli,finalizada,-,-,Media,Femenino,Spotify
 1656011925,dyiy2ek8-3qbu-t53y-31y7r5ekfmfglc46,inicio_partida,Juli,-,-,-,Media,Femenino,Spotify
 1656011926,dyiy2ek8-3qbu-t53y-31y7r5ekfmfglc46,fin,Juli,cancelada,-,Tyga,Media,Femenino,Spotify
->>>>>>> 4e1d9dabb3dc13bcdd8667d494c5eb55a06724e4
