@@ -228,7 +228,6 @@ Timestamp,Id,Evento,Usuarie,Estado,Texto Ingresado,Respuesta,Nivel,Genero,Datase
 1655772633,tdo0fn2z-67i3-zzas-3toygxqcdearm12c,intento,Emi,ok,King of Kings,King of Kings,Facil,Femenino,Peliculas
 1655772635,tdo0fn2z-67i3-zzas-3toygxqcdearm12c,intento,Emi,ok,Come Play With Me,Come Play With Me,Facil,Femenino,Peliculas
 1655772636,tdo0fn2z-67i3-zzas-3toygxqcdearm12c,fin,Emi,finalizada,-,-,Facil,Femenino,Peliculas
-<<<<<<< HEAD
 1656004290,pdnulmk1-4ci2-5ye5-e2z7h0i3vxiv0zb7,inicio_partida,Juli,-,-,-,Facil,Femenino,Peliculas
 1656004298,pdnulmk1-4ci2-5ye5-e2z7h0i3vxiv0zb7,fin,Juli,cancelada,-,Stagecoach,Facil,Femenino,Peliculas
 1656004331,oqsey2ss-qj2a-8n8l-zjnsbhp9kz2z0h34,inicio_partida,Juli,-,-,-,Facil,Femenino,Peliculas
@@ -282,3 +281,11 @@ Timestamp,Id,Evento,Usuarie,Estado,Texto Ingresado,Respuesta,Nivel,Genero,Datase
 1656005637,8u46zpgt-ouc5-efhr-rebct8ijaxzefl92,inicio_partida,Juli,-,-,-,Media,Femenino,Spotify
 1656005638,8u46zpgt-ouc5-efhr-rebct8ijaxzefl92,pasar,Juli,error,-,Drake,Media,Femenino,Spotify
 1656005641,8u46zpgt-ouc5-efhr-rebct8ijaxzefl92,fin,Juli,cancelada,-,Taylor Swift,Media,Femenino,Spotify
+1656007805,gpe930qt-x1no-9z72-zcsuxuukvpeckoz1,inicio_partida,Juli,-,-,-,Media,Femenino,Spotify
+1656007807,gpe930qt-x1no-9z72-zcsuxuukvpeckoz1,intento,Juli,error,Ellie Goulding,Jason Derulo,Media,Femenino,Spotify
+1656007808,gpe930qt-x1no-9z72-zcsuxuukvpeckoz1,intento,Juli,error,Post Malone,Snakehips,Media,Femenino,Spotify
+1656007810,gpe930qt-x1no-9z72-zcsuxuukvpeckoz1,pasar,Juli,error,-,Marshmello,Media,Femenino,Spotify
+1656007811,gpe930qt-x1no-9z72-zcsuxuukvpeckoz1,intento,Juli,ok,Adele,Adele,Media,Femenino,Spotify
+1656007812,gpe930qt-x1no-9z72-zcsuxuukvpeckoz1,intento,Juli,error,Trey Songz,Jason Derulo,Media,Femenino,Spotify
+1656007816,gpe930qt-x1no-9z72-zcsuxuukvpeckoz1,intento,Juli,error,SZA,Marshmello,Media,Femenino,Spotify
+1656007820,gpe930qt-x1no-9z72-zcsuxuukvpeckoz1,fin,Juli,cancelada,-,Disclosure,Media,Femenino,Spotify
