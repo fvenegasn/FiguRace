@@ -1,5 +1,11 @@
 {
-    "perfil": "Emi",
+<<<<<<< HEAD
+    "perfil": "ELizabeth",
+    "dificultad": "Facil",
+    "dataset": "Lagos"
+=======
+    "perfil": "-None-",
     "dificultad": "Media",
     "dataset": "Spotify"
+>>>>>>> 4e1d9dabb3dc13bcdd8667d494c5eb55a06724e4
 }
