@@ -1,3 +1,4 @@
+from turtle import left
 import PySimpleGUI as sg
 from common.hacer_ventana import crear_ventana
 from common.guardar_perfil import guardar_perfil
@@ -30,16 +31,19 @@ def logistica(event,values,**kwargs):
 """-------------------------EJECUCIÓN------------------------------"""
 def ejecutar():
     layout = [
+        [sg.VPush()],
+
         [sg.Text('Ingrese los siguientes datos:')],
         
-        [sg.Text('Nick', size =(17, 1)), sg.InputText()],
+        [sg.Text('Nick', size =(17, 1)), sg.InputText(size=(18,1))],
         
-        [sg.Text('Edad', size =(17, 1)), sg.InputText()],
+        [sg.Text('Edad', size =(17, 1)), sg.InputText(size=(18,1))],
         
-        [sg.Text('Género autopercibido', size =(17, 1)), sg.Combo(values=lista_generos)],
+        [sg.Text('Género autopercibido', size =(17, 1)), sg.Combo(values=lista_generos,size=(16,1))],
         
-        [sg.Text('Contraseña', size =(17, 1)), sg.InputText(password_char="*")],
+        [sg.Text('Contraseña', size =(17, 1)), sg.InputText(password_char="*",size=(18,1))],
         
-        [sg.Button("Crear", key="-CREAR-"), sg.Button("Cancelar", key="-CANCELAR-")]
+        [sg.Button("Crear", key="-CREAR-"), sg.Button("Cancelar", key="-CANCELAR-")],
+        [sg.VPush()]
     ]
     crear_ventana("Crear perfil", layout,logistica)

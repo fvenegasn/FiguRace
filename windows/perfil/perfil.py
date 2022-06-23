@@ -23,9 +23,11 @@ def logistica(event,values,**kwargs):
 """-------------------------EJECUCIÓN------------------------------"""
 def ejecutar():
     layout = [
+        [sg.VPush()],
         [sg.Button("Seleccionar perfil", key="-SELECCIONAR-",font=('Arial',15))],
         [sg.Button("Crear nuevo perfil", key="-CREAR-",font=('Arial',15))],
         [sg.Button("Editar perfil", key="-EDITAR-",font=('Arial',15))],
         [sg.Button("Volver al menú", key="-VOLVER-",font=('Arial',13))],
+        [sg.VPush()]
     ]
     crear_ventana("Perfiles", layout,logistica)

@@ -24,7 +24,7 @@ def logistica(event,values,**kwargs):
 
 """-------------------------EJECUCIÓN------------------------------"""
 def ejecutar():
-    layout = [
+    layout = [[sg.VPush()],
         [
             sg.Text("Figuracer: ",font=('Arial',15)),
             sg.Text(
@@ -35,10 +35,11 @@ def ejecutar():
         
         [sg.Text('Ingrese nuevos datos:')],
         
-        [sg.Text('Edad:', size =(17, 1)), sg.InputText()],
+        [sg.Text('Edad:', size =(17, 1)), sg.InputText(size=(18,1))],
         
-        [sg.Text('Género autopercibido:', size =(17, 1)), sg.Combo(values=lista_generos)],
+        [sg.Text('Género autopercibido:', size =(17, 1)), sg.Combo(values=lista_generos,size=(16,1))],
         
-        [sg.Button("Aceptar", key="-ACEPTAR-"), sg.Button("Cancelar", key="-CANCELAR-")]
+        [sg.Button("Aceptar", key="-ACEPTAR-"), sg.Button("Cancelar", key="-CANCELAR-")],
+        [sg.VPush()]
     ]
     crear_ventana("Editar perfil", layout,logistica)
