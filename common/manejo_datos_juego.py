@@ -40,6 +40,10 @@ def mostrar_seleccionado(clave:str) -> Any:
         datos_juego_default()
 
 def datos_juego_default():
+    """
+        Guarda en archivo la configuracion por default de los datos del juego
+    """
+    
     datos_default = {
             "perfil": "-None-",
             "dificultad": "Media",
