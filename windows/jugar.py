@@ -123,7 +123,7 @@ def logistica(event,values,respuesta,**kwargs):
                 sg.Popup(f"Terminaste la partida con un puntaje de {data['puntaje']}")
 
             return False
-        case 'cancelada':
+        case 'cancelada'| sg.WIN_CLOSED:
             sg.Popup('Abandona')
             return False
     return True
