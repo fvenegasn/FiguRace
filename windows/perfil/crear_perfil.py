@@ -11,13 +11,19 @@ def logistica(event,values,**kwargs):
         case '-CANCELAR-':
             return False
         case '-CREAR-':
-            exito = guardar_perfil(values[0],values[1],values[2],values[3])
+            exito,caso = guardar_perfil(values[0],values[1],values[2],values[3])
             if exito:
                 sg.Popup('Perfil creado con éxito!')
                 guardar_dato(values[0],'perfil')
                 load_user=True
             else:
-                sg.Popup('El nick ingresado ya existe o no se ingresó una dato no válido')
+                match caso:
+                    case 'nick':
+                        sg.Popup('El nick ingresado ya existe')
+                    case 'edad inválida'|'nick inválido'|'genero inválido':
+                        sg.Popup(f"Se ingresó {caso}")
+                    case 'contraseña inválida':
+                        sg.Popup('Se debe crear una contraseña')
             return False
     return True,load_user
 

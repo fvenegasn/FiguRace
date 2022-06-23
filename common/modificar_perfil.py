@@ -1,6 +1,7 @@
 from common.archivo import escribir_json_data,leer_json_data
 from common.paths import ruta_usuarios_datos
 from common.usuario import Usuario
+from common import generos
 
 
 def editar_perfil(nick:str,edad:str,genero:str):
@@ -10,7 +11,9 @@ def editar_perfil(nick:str,edad:str,genero:str):
     
     usuario = Usuario(nick,edad,genero,contraseña='0')
     if (not edad.isnumeric()):
-        return False
+        return False,'edad inválida'
+    if (genero not in generos.lista_generos):
+        return False,'genero inválido'
 
     try:
         datos_arch = leer_json_data(ruta_usuarios_datos)
@@ -18,10 +21,10 @@ def editar_perfil(nick:str,edad:str,genero:str):
 
         if exito:
             escribir_json_data(datos_arch,ruta_usuarios_datos)
-        return exito
+        return exito,'nick'
 
     except FileNotFoundError:
-        return False
+        return False,'nick'
     
 
 def modificar(datos_arch:list[dict],usuario:Usuario):

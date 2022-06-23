@@ -52,7 +52,7 @@ def logica_ventana(event,values,**kwargs):
     window = kwargs['window']
     match event:
         case '-JUGAR-':
-            if (mostrar_seleccionado('perfil')=="None"):
+            if (mostrar_seleccionado('perfil')=="-None-"):
                 sg.Popup('Debe seleccionar un usuario para jugar')
             else:
                 pasar_ventana(window,jugar.ejecutar)

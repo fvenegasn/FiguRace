@@ -6,12 +6,19 @@ from common.usuario import Usuario
 def guardar_perfil(nick:str, edad:str, genero:str, contraseña:str):
     """Retorna True si se pudo guardar con exito el nuevo usuario"""
     
-    if (not edad.isnumeric()) or (not nick.isalnum()) or (genero not in generos.lista_generos):
-        return False
-    else:
-        usuario = Usuario(nick,edad,genero,contraseña)
-        dato_ingresar = usuario.generar_dicci()
-        return guardar_en_archivo(dato_ingresar)
+    if (not nick.isalnum()):
+        return False,'nick inválido'
+    if (not edad.isnumeric()):
+        return False,'edad inválida'
+    if (genero not in generos.lista_generos):
+        return False,'genero inválido'
+    if (not contraseña):
+        return False,'contraseña inválida'
+    
+    
+    usuario = Usuario(nick,edad,genero,contraseña)
+    dato_ingresar = usuario.generar_dicci()
+    return guardar_en_archivo(dato_ingresar),'nick'
 
 
 def guardar_en_archivo(dato_in:dict):

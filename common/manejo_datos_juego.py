@@ -41,7 +41,7 @@ def mostrar_seleccionado(clave:str) -> Any:
 
 def datos_juego_default():
     datos_default = {
-            "perfil": "None",
+            "perfil": "-None-",
             "dificultad": "Media",
             "dataset": "Spotify"
             }

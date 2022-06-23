@@ -11,17 +11,6 @@
         }
     },
     {
-        "nick": "Juli",
-        "edad": "27",
-        "genero": "Femenino",
-        "contraseña": "jc19",
-        "puntaje": {
-            "Facil": 4,
-            "Media": 1.0,
-            "Dificil": 4
-        }
-    },
-    {
         "nick": "Juan",
         "edad": "25",
         "genero": "Masculino",
@@ -74,6 +63,17 @@
             "Facil": 4,
             "Media": 0,
             "Dificil": 1
+        }
+    },
+    {
+        "nick": "Juli",
+        "edad": "27",
+        "genero": "Femenino",
+        "contraseña": "jc19",
+        "puntaje": {
+            "Facil": 4,
+            "Media": 1.0,
+            "Dificil": 4
         }
     }
 ]
