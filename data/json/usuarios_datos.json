@@ -66,6 +66,60 @@
         }
     },
     {
+<<<<<<< HEAD
+        "nick": "Marian",
+        "edad": "43",
+        "genero": "Masculino",
+        "contraseña": "1234",
+        "puntaje": {
+            "Facil": 5,
+            "Media": 0,
+            "Dificil": 0
+        }
+    },
+    {
+        "nick": "Tato",
+        "edad": "22",
+        "genero": "No-binario",
+        "contraseña": "123",
+        "puntaje": {
+            "Facil": 4,
+            "Media": 0,
+            "Dificil": 0
+        }
+    },
+    {
+        "nick": "Nati",
+        "edad": "41",
+        "genero": "Femenino",
+        "contraseña": "123",
+        "puntaje": {
+            "Facil": 6,
+            "Media": 0,
+            "Dificil": 0
+        }
+    },
+    {
+        "nick": "Coni",
+        "edad": "25",
+        "genero": "Femenino",
+        "contraseña": "123",
+        "puntaje": {
+            "Facil": 2,
+            "Media": 0,
+            "Dificil": 0
+        }
+    },
+    {
+        "nick": "ELizabeth",
+        "edad": "41",
+        "genero": "Femenino",
+        "contraseña": "123",
+        "puntaje": {
+            "Facil": 5,
+            "Media": 0,
+            "Dificil": 0
+=======
         "nick": "Juli",
         "edad": "27",
         "genero": "Femenino",
@@ -74,6 +128,7 @@
             "Facil": 4,
             "Media": 1.0,
             "Dificil": 4
+>>>>>>> 4e1d9dabb3dc13bcdd8667d494c5eb55a06724e4
         }
     }
 ]
