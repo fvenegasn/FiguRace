@@ -228,3 +228,123 @@ Timestamp,Id,Evento,Usuarie,Estado,Texto Ingresado,Respuesta,Nivel,Genero,Datase
 1655772633,tdo0fn2z-67i3-zzas-3toygxqcdearm12c,intento,Emi,ok,King of Kings,King of Kings,Facil,Femenino,Peliculas
 1655772635,tdo0fn2z-67i3-zzas-3toygxqcdearm12c,intento,Emi,ok,Come Play With Me,Come Play With Me,Facil,Femenino,Peliculas
 1655772636,tdo0fn2z-67i3-zzas-3toygxqcdearm12c,fin,Emi,finalizada,-,-,Facil,Femenino,Peliculas
+1656005571,i902zvmp-uc7c-kov0-i4eah1l1jdeu29eu,inicio_partida,Marian,-,-,-,Facil,Masculino,Peliculas
+1656005608,i902zvmp-uc7c-kov0-i4eah1l1jdeu29eu,intento,Marian,error,The Big Sick,Vivarium,Facil,Masculino,Peliculas
+1656005627,i902zvmp-uc7c-kov0-i4eah1l1jdeu29eu,intento,Marian,error,Lion,Nocturama,Facil,Masculino,Peliculas
+1656005642,i902zvmp-uc7c-kov0-i4eah1l1jdeu29eu,intento,Marian,error,Barbie and the Magic of Pegasus 3-D,Rubber,Facil,Masculino,Peliculas
+1656005650,i902zvmp-uc7c-kov0-i4eah1l1jdeu29eu,intento,Marian,error,The Grudge,Nothing But the Truth,Facil,Masculino,Peliculas
+1656005661,i902zvmp-uc7c-kov0-i4eah1l1jdeu29eu,intento,Marian,ok,Carrie,Carrie,Facil,Masculino,Peliculas
+1656005674,i902zvmp-uc7c-kov0-i4eah1l1jdeu29eu,intento,Marian,ok,The Adam Project,The Adam Project,Facil,Masculino,Peliculas
+1656005690,i902zvmp-uc7c-kov0-i4eah1l1jdeu29eu,intento,Marian,ok,Adventures of Dally and Spanky,Adventures of Dally and Spanky,Facil,Masculino,Peliculas
+1656005704,i902zvmp-uc7c-kov0-i4eah1l1jdeu29eu,intento,Marian,ok,EuroTrip,EuroTrip,Facil,Masculino,Peliculas
+1656005721,i902zvmp-uc7c-kov0-i4eah1l1jdeu29eu,intento,Marian,ok,Rurouni Kenshin Part I: Origins,Rurouni Kenshin Part I: Origins,Facil,Masculino,Peliculas
+1656005738,i902zvmp-uc7c-kov0-i4eah1l1jdeu29eu,intento,Marian,error,Cool Hand Luke,West Side Story,Facil,Masculino,Peliculas
+1656005741,i902zvmp-uc7c-kov0-i4eah1l1jdeu29eu,fin,Marian,finalizada,-,-,Facil,Masculino,Peliculas
+1656005838,11iz6k0g-9n1w-g0bs-4nnrbi3i6ogmctle,inicio_partida,Tato,-,-,-,Facil,No-binario,Spotify
+1656005847,11iz6k0g-9n1w-g0bs-4nnrbi3i6ogmctle,intento,Tato,ok,Taylor Swift,Taylor Swift,Facil,No-binario,Spotify
+1656005860,11iz6k0g-9n1w-g0bs-4nnrbi3i6ogmctle,intento,Tato,ok,Jason Aldean,Jason Aldean,Facil,No-binario,Spotify
+1656005868,11iz6k0g-9n1w-g0bs-4nnrbi3i6ogmctle,intento,Tato,error,Clean Bandit,Wale,Facil,No-binario,Spotify
+1656005874,11iz6k0g-9n1w-g0bs-4nnrbi3i6ogmctle,intento,Tato,ok,MAGIC!,MAGIC!,Facil,No-binario,Spotify
+1656005886,11iz6k0g-9n1w-g0bs-4nnrbi3i6ogmctle,intento,Tato,error,Calvin Harris,Alesso,Facil,No-binario,Spotify
+1656005896,11iz6k0g-9n1w-g0bs-4nnrbi3i6ogmctle,intento,Tato,error,Khalid,Jeremih,Facil,No-binario,Spotify
+1656005910,11iz6k0g-9n1w-g0bs-4nnrbi3i6ogmctle,intento,Tato,ok,Portugal. The Man,Portugal. The Man,Facil,No-binario,Spotify
+1656005919,11iz6k0g-9n1w-g0bs-4nnrbi3i6ogmctle,intento,Tato,error,Frank Ocean,Zara Larsson,Facil,No-binario,Spotify
+1656005928,11iz6k0g-9n1w-g0bs-4nnrbi3i6ogmctle,intento,Tato,error,Kendrick Lamar,Natalie La Rose,Facil,No-binario,Spotify
+1656005953,11iz6k0g-9n1w-g0bs-4nnrbi3i6ogmctle,intento,Tato,error,Nickelback,Wiz Khalifa,Facil,No-binario,Spotify
+1656005956,11iz6k0g-9n1w-g0bs-4nnrbi3i6ogmctle,fin,Tato,finalizada,-,-,Facil,No-binario,Spotify
+1656005965,tyg5a7mt-qqjw-bj6g-t4ybbhtds16nay7v,inicio_partida,Tato,-,-,-,Facil,No-binario,Peliculas
+1656005976,tyg5a7mt-qqjw-bj6g-t4ybbhtds16nay7v,intento,Tato,error,The Requin,The Beguiled,Facil,No-binario,Peliculas
+1656005988,tyg5a7mt-qqjw-bj6g-t4ybbhtds16nay7v,intento,Tato,error,Boundin',The Longest Yard,Facil,No-binario,Peliculas
+1656006011,tyg5a7mt-qqjw-bj6g-t4ybbhtds16nay7v,intento,Tato,ok,The Beastmaster,The Beastmaster,Facil,No-binario,Peliculas
+1656006025,tyg5a7mt-qqjw-bj6g-t4ybbhtds16nay7v,intento,Tato,ok,Lady and the Tramp,Lady and the Tramp,Facil,No-binario,Peliculas
+1656006045,tyg5a7mt-qqjw-bj6g-t4ybbhtds16nay7v,intento,Tato,error,The Call Up,Blood Brother,Facil,No-binario,Peliculas
+1656006054,tyg5a7mt-qqjw-bj6g-t4ybbhtds16nay7v,intento,Tato,error,Black Swan,Gone in Sixty Seconds,Facil,No-binario,Peliculas
+1656006069,tyg5a7mt-qqjw-bj6g-t4ybbhtds16nay7v,intento,Tato,ok,Thriller: A Cruel Picture,Thriller: A Cruel Picture,Facil,No-binario,Peliculas
+1656006084,tyg5a7mt-qqjw-bj6g-t4ybbhtds16nay7v,intento,Tato,error,Ajin: Demi-Human,The Hunter's Prayer,Facil,No-binario,Peliculas
+1656006099,tyg5a7mt-qqjw-bj6g-t4ybbhtds16nay7v,intento,Tato,error,Underwater,The Black Devil and the White Prince,Facil,No-binario,Peliculas
+1656006111,tyg5a7mt-qqjw-bj6g-t4ybbhtds16nay7v,intento,Tato,error,Lifeboat,Den of Thieves,Facil,No-binario,Peliculas
+1656006113,tyg5a7mt-qqjw-bj6g-t4ybbhtds16nay7v,fin,Tato,finalizada,-,-,Facil,No-binario,Peliculas
+1656006460,fonwe9td-cj8m-m4a4-wgnfsowt8b99hx72,inicio_partida,Nati,-,-,-,Facil,Femenino,Spotify
+1656006474,fonwe9td-cj8m-m4a4-wgnfsowt8b99hx72,intento,Nati,ok,Anuel AA,Anuel AA,Facil,Femenino,Spotify
+1656006501,fonwe9td-cj8m-m4a4-wgnfsowt8b99hx72,intento,Nati,error,Macklemore,X Ambassadors,Facil,Femenino,Spotify
+1656006511,fonwe9td-cj8m-m4a4-wgnfsowt8b99hx72,intento,Nati,error,Sia,Lizzo,Facil,Femenino,Spotify
+1656006524,fonwe9td-cj8m-m4a4-wgnfsowt8b99hx72,intento,Nati,ok,Imagine Dragons,Imagine Dragons,Facil,Femenino,Spotify
+1656006535,fonwe9td-cj8m-m4a4-wgnfsowt8b99hx72,intento,Nati,ok,One Direction,One Direction,Facil,Femenino,Spotify
+1656006549,fonwe9td-cj8m-m4a4-wgnfsowt8b99hx72,intento,Nati,error,Ciara,Miguel,Facil,Femenino,Spotify
+1656006565,fonwe9td-cj8m-m4a4-wgnfsowt8b99hx72,intento,Nati,ok,Bruno Mars,Bruno Mars,Facil,Femenino,Spotify
+1656006575,fonwe9td-cj8m-m4a4-wgnfsowt8b99hx72,intento,Nati,error,Adele,Tyga,Facil,Femenino,Spotify
+1656006587,fonwe9td-cj8m-m4a4-wgnfsowt8b99hx72,intento,Nati,error,Lana Del Rey,Britney Spears,Facil,Femenino,Spotify
+1656006607,fonwe9td-cj8m-m4a4-wgnfsowt8b99hx72,intento,Nati,ok,Cardi B,Cardi B,Facil,Femenino,Spotify
+1656006609,fonwe9td-cj8m-m4a4-wgnfsowt8b99hx72,fin,Nati,finalizada,-,-,Facil,Femenino,Spotify
+1656006635,0j7qc3h0-xhbe-ub65-evhgkhe1kcpsjewg,inicio_partida,Nati,-,-,-,Facil,Femenino,Peliculas
+1656006651,0j7qc3h0-xhbe-ub65-evhgkhe1kcpsjewg,intento,Nati,error,No Game No Life: Zero,Triple Frontier,Facil,Femenino,Peliculas
+1656006664,0j7qc3h0-xhbe-ub65-evhgkhe1kcpsjewg,intento,Nati,ok,Underdog Kids,Underdog Kids,Facil,Femenino,Peliculas
+1656006672,0j7qc3h0-xhbe-ub65-evhgkhe1kcpsjewg,intento,Nati,ok,Indiana Jones and the Temple of Doom,Indiana Jones and the Temple of Doom,Facil,Femenino,Peliculas
+1656006684,0j7qc3h0-xhbe-ub65-evhgkhe1kcpsjewg,intento,Nati,error,Almost Heroes,Ip Man,Facil,Femenino,Peliculas
+1656006697,0j7qc3h0-xhbe-ub65-evhgkhe1kcpsjewg,intento,Nati,ok,Insidious,Insidious,Facil,Femenino,Peliculas
+1656006708,0j7qc3h0-xhbe-ub65-evhgkhe1kcpsjewg,intento,Nati,error,Tell It to the Bees,My Name Is Nobody,Facil,Femenino,Peliculas
+1656006718,0j7qc3h0-xhbe-ub65-evhgkhe1kcpsjewg,intento,Nati,error,The Horse Whisperer,The Dry,Facil,Femenino,Peliculas
+1656006727,0j7qc3h0-xhbe-ub65-evhgkhe1kcpsjewg,intento,Nati,ok,Despicable Me 2,Despicable Me 2,Facil,Femenino,Peliculas
+1656006735,0j7qc3h0-xhbe-ub65-evhgkhe1kcpsjewg,intento,Nati,ok,Traffic,Traffic,Facil,Femenino,Peliculas
+1656006748,0j7qc3h0-xhbe-ub65-evhgkhe1kcpsjewg,intento,Nati,ok,Batman: The Long Halloween,Batman: The Long Halloween,Facil,Femenino,Peliculas
+1656006749,0j7qc3h0-xhbe-ub65-evhgkhe1kcpsjewg,fin,Nati,finalizada,-,-,Facil,Femenino,Peliculas
+1656008763,2dmmf97c-84o2-k20a-dlie86vys5wadbwz,inicio_partida,Coni,-,-,-,Facil,Femenino,Peliculas
+1656008774,2dmmf97c-84o2-k20a-dlie86vys5wadbwz,intento,Coni,error,Tooth Fairy,Dangal,Facil,Femenino,Peliculas
+1656008799,2dmmf97c-84o2-k20a-dlie86vys5wadbwz,intento,Coni,error,The Deep End of the Ocean,Independence Day,Facil,Femenino,Peliculas
+1656008816,2dmmf97c-84o2-k20a-dlie86vys5wadbwz,intento,Coni,error,Secrets of the Saqqara Tomb,Porno,Facil,Femenino,Peliculas
+1656008842,2dmmf97c-84o2-k20a-dlie86vys5wadbwz,intento,Coni,error,Exploits of a Young Don Juan,Eight Below,Facil,Femenino,Peliculas
+1656008870,2dmmf97c-84o2-k20a-dlie86vys5wadbwz,intento,Coni,ok,Comrades: Almost a Love Story,Comrades: Almost a Love Story,Facil,Femenino,Peliculas
+1656008885,2dmmf97c-84o2-k20a-dlie86vys5wadbwz,intento,Coni,error,Turbo,Mower Minions,Facil,Femenino,Peliculas
+1656008902,2dmmf97c-84o2-k20a-dlie86vys5wadbwz,intento,Coni,error,The Harder They Fall,The Sacrifice,Facil,Femenino,Peliculas
+1656008918,2dmmf97c-84o2-k20a-dlie86vys5wadbwz,intento,Coni,error,13 Hours: The Secret Soldiers of Benghazi,Into the Wild,Facil,Femenino,Peliculas
+1656008934,2dmmf97c-84o2-k20a-dlie86vys5wadbwz,intento,Coni,error,DC League of Super-Pets,Bullet Train,Facil,Femenino,Peliculas
+1656008945,2dmmf97c-84o2-k20a-dlie86vys5wadbwz,intento,Coni,ok,Camp Rock,Camp Rock,Facil,Femenino,Peliculas
+1656008946,2dmmf97c-84o2-k20a-dlie86vys5wadbwz,fin,Coni,finalizada,-,-,Facil,Femenino,Peliculas
+1656008988,w13bnpd2-11n4-xnz2-3yqmybhhsuquz6w4,inicio_partida,Coni,-,-,-,Facil,Femenino,Lagos
+1656008994,w13bnpd2-11n4-xnz2-3yqmybhhsuquz6w4,intento,Coni,error,Lago Nahuel Huapi,Lago Lácar,Facil,Femenino,Lagos
+1656009007,w13bnpd2-11n4-xnz2-3yqmybhhsuquz6w4,intento,Coni,error,Lago Rosario,Lago Epuyén,Facil,Femenino,Lagos
+1656009013,w13bnpd2-11n4-xnz2-3yqmybhhsuquz6w4,intento,Coni,error,Lago Lolog,Lago Correntoso,Facil,Femenino,Lagos
+1656009016,w13bnpd2-11n4-xnz2-3yqmybhhsuquz6w4,intento,Coni,error,Lago Argentino,Lago Tromen,Facil,Femenino,Lagos
+1656009019,w13bnpd2-11n4-xnz2-3yqmybhhsuquz6w4,intento,Coni,error,Lago Futalaufquen,Lago Yehuin,Facil,Femenino,Lagos
+1656009028,w13bnpd2-11n4-xnz2-3yqmybhhsuquz6w4,intento,Coni,error,Lago Pueyrredón,Lago Aluminé,Facil,Femenino,Lagos
+1656009031,w13bnpd2-11n4-xnz2-3yqmybhhsuquz6w4,intento,Coni,error,Lago Lolog,Lago Quillén,Facil,Femenino,Lagos
+1656009033,w13bnpd2-11n4-xnz2-3yqmybhhsuquz6w4,intento,Coni,error,Lago Yehuin,Lago Rosario,Facil,Femenino,Lagos
+1656009035,w13bnpd2-11n4-xnz2-3yqmybhhsuquz6w4,intento,Coni,ok,Lago Nansen,Lago Nansen,Facil,Femenino,Lagos
+1656009037,w13bnpd2-11n4-xnz2-3yqmybhhsuquz6w4,intento,Coni,error,Lago Tromen,Lago Paimún,Facil,Femenino,Lagos
+1656009038,w13bnpd2-11n4-xnz2-3yqmybhhsuquz6w4,fin,Coni,finalizada,-,-,Facil,Femenino,Lagos
+1656014393,oaheer1g-jmq6-4qba-27xrqdksmh1yasnu,inicio_partida,ELizabeth,-,-,-,Facil,Femenino,Spotify
+1656014394,oaheer1g-jmq6-4qba-27xrqdksmh1yasnu,intento,ELizabeth,error,Florence + The Machine,David Guetta,Facil,Femenino,Spotify
+1656014453,oaheer1g-jmq6-4qba-27xrqdksmh1yasnu,intento,ELizabeth,ok,Rihanna,Rihanna,Facil,Femenino,Spotify
+1656014465,oaheer1g-jmq6-4qba-27xrqdksmh1yasnu,intento,ELizabeth,error,Ariana Grande,Nio Garcia,Facil,Femenino,Spotify
+1656014481,oaheer1g-jmq6-4qba-27xrqdksmh1yasnu,intento,ELizabeth,error,The Weeknd,Ed Sheeran,Facil,Femenino,Spotify
+1656014491,oaheer1g-jmq6-4qba-27xrqdksmh1yasnu,intento,ELizabeth,ok,Eminem,Eminem,Facil,Femenino,Spotify
+1656014502,oaheer1g-jmq6-4qba-27xrqdksmh1yasnu,intento,ELizabeth,ok,Halsey,Halsey,Facil,Femenino,Spotify
+1656014516,oaheer1g-jmq6-4qba-27xrqdksmh1yasnu,intento,ELizabeth,error,3OH!3,Scouting For Girls,Facil,Femenino,Spotify
+1656014533,oaheer1g-jmq6-4qba-27xrqdksmh1yasnu,intento,ELizabeth,error,Lil Baby,Jonas Blue,Facil,Femenino,Spotify
+1656014545,oaheer1g-jmq6-4qba-27xrqdksmh1yasnu,intento,ELizabeth,ok,21 Savage,21 Savage,Facil,Femenino,Spotify
+1656014563,oaheer1g-jmq6-4qba-27xrqdksmh1yasnu,intento,ELizabeth,ok,Kesha,Kesha,Facil,Femenino,Spotify
+1656014565,oaheer1g-jmq6-4qba-27xrqdksmh1yasnu,fin,ELizabeth,finalizada,-,-,Facil,Femenino,Spotify
+1656014585,1pz5kdtf-ctvy-l05k-7y88983j3tes8v1n,inicio_partida,ELizabeth,-,-,-,Facil,Femenino,Peliculas
+1656014604,1pz5kdtf-ctvy-l05k-7y88983j3tes8v1n,intento,ELizabeth,ok,Free Fire,Free Fire,Facil,Femenino,Peliculas
+1656014623,1pz5kdtf-ctvy-l05k-7y88983j3tes8v1n,intento,ELizabeth,error,The Shawshank Redemption,Plan A,Facil,Femenino,Peliculas
+1656014639,1pz5kdtf-ctvy-l05k-7y88983j3tes8v1n,intento,ELizabeth,ok,Ghosts of War,Ghosts of War,Facil,Femenino,Peliculas
+1656014661,1pz5kdtf-ctvy-l05k-7y88983j3tes8v1n,intento,ELizabeth,error,Ghostbusters,Death Race 2000,Facil,Femenino,Peliculas
+1656014674,1pz5kdtf-ctvy-l05k-7y88983j3tes8v1n,intento,ELizabeth,error,The Mermaid: Lake of the Dead,Mulholland Drive,Facil,Femenino,Peliculas
+1656014686,1pz5kdtf-ctvy-l05k-7y88983j3tes8v1n,intento,ELizabeth,error,Saturday Night Fever,Stuber,Facil,Femenino,Peliculas
+1656014699,1pz5kdtf-ctvy-l05k-7y88983j3tes8v1n,intento,ELizabeth,error,Swiss Family Robinson,CBGB,Facil,Femenino,Peliculas
+1656014709,1pz5kdtf-ctvy-l05k-7y88983j3tes8v1n,intento,ELizabeth,ok,I Am Bruce Lee,I Am Bruce Lee,Facil,Femenino,Peliculas
+1656014723,1pz5kdtf-ctvy-l05k-7y88983j3tes8v1n,intento,ELizabeth,error,Doraemon: Nobita and the Green Giant Legend,Inheritance,Facil,Femenino,Peliculas
+1656014735,1pz5kdtf-ctvy-l05k-7y88983j3tes8v1n,intento,ELizabeth,error,Crows Zero II,Page Eight,Facil,Femenino,Peliculas
+1656014737,1pz5kdtf-ctvy-l05k-7y88983j3tes8v1n,fin,ELizabeth,finalizada,-,-,Facil,Femenino,Peliculas
+1656014751,kxqld3qh-56m9-xo40-7vij1quwajnfb0xd,inicio_partida,ELizabeth,-,-,-,Facil,Femenino,Lagos
+1656014770,kxqld3qh-56m9-xo40-7vij1quwajnfb0xd,intento,ELizabeth,error,Lago Correntoso,Lago Pueyrredón,Facil,Femenino,Lagos
+1656014781,kxqld3qh-56m9-xo40-7vij1quwajnfb0xd,intento,ELizabeth,ok,Lago Lácar,Lago Lácar,Facil,Femenino,Lagos
+1656014789,kxqld3qh-56m9-xo40-7vij1quwajnfb0xd,intento,ELizabeth,ok,Lago Lácar,Lago Lácar,Facil,Femenino,Lagos
+1656014804,kxqld3qh-56m9-xo40-7vij1quwajnfb0xd,intento,ELizabeth,error,Lago Aluminé,Lago Fontana,Facil,Femenino,Lagos
+1656014812,kxqld3qh-56m9-xo40-7vij1quwajnfb0xd,intento,ELizabeth,error,Lago Perito Moreno,Lago Yehuin,Facil,Femenino,Lagos
+1656014821,kxqld3qh-56m9-xo40-7vij1quwajnfb0xd,intento,ELizabeth,ok,Lago Currhué,Lago Currhué,Facil,Femenino,Lagos
+1656014833,kxqld3qh-56m9-xo40-7vij1quwajnfb0xd,intento,ELizabeth,error,Lago Yehuin,Lago Burmeister,Facil,Femenino,Lagos
+1656014842,kxqld3qh-56m9-xo40-7vij1quwajnfb0xd,intento,ELizabeth,ok,Lago Mascardi,Lago Mascardi,Facil,Femenino,Lagos
+1656014850,kxqld3qh-56m9-xo40-7vij1quwajnfb0xd,intento,ELizabeth,error,Lago Epecuén,Lago Moquehue,Facil,Femenino,Lagos
+1656014862,kxqld3qh-56m9-xo40-7vij1quwajnfb0xd,intento,ELizabeth,error,Lago Azara,Lago Cholila,Facil,Femenino,Lagos
+1656014864,kxqld3qh-56m9-xo40-7vij1quwajnfb0xd,fin,ELizabeth,finalizada,-,-,Facil,Femenino,Lagos
