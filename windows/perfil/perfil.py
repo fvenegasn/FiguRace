@@ -1,6 +1,7 @@
 import PySimpleGUI as sg
 from common.hacer_ventana import crear_ventana,pasar_ventana
 from windows.perfil import crear_perfil,editar_perfil, seleccionar_perfil
+from common.manejo_datos_juego import mostrar_seleccionado
 
 """-------------------------LOGÍSTICA------------------------------"""
 def logistica(event,values,**kwargs):
@@ -11,7 +12,10 @@ def logistica(event,values,**kwargs):
         case '-CREAR-':
             pasar_ventana(window,crear_perfil.ejecutar)
         case '-EDITAR-':
-            pasar_ventana(window,editar_perfil.ejecutar)
+            if (mostrar_seleccionado('perfil')=="-None-"):
+                sg.Popup('Seleccione usuario')
+            else:
+                pasar_ventana(window,editar_perfil.ejecutar)
         case '-VOLVER-':
             return False
     return True
@@ -19,9 +23,11 @@ def logistica(event,values,**kwargs):
 """-------------------------EJECUCIÓN------------------------------"""
 def ejecutar():
     layout = [
+        [sg.VPush()],
         [sg.Button("Seleccionar perfil", key="-SELECCIONAR-",font=('Arial',15))],
         [sg.Button("Crear nuevo perfil", key="-CREAR-",font=('Arial',15))],
         [sg.Button("Editar perfil", key="-EDITAR-",font=('Arial',15))],
         [sg.Button("Volver al menú", key="-VOLVER-",font=('Arial',13))],
+        [sg.VPush()]
     ]
     crear_ventana("Perfiles", layout,logistica)

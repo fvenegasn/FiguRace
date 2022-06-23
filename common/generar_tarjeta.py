@@ -15,8 +15,6 @@ def generar_tarjeta(dataset_actual,cant_caracteristicas):
 
     opciones.insert(random.randrange(5),correcta)
 
-    pistas=[]
-    for i,pista in enumerate(caracteristicas):
-        pistas.append([sg.Text(columnas[i]+':',font=('Arial',14)),sg.Text(pista,font=('Arial',12))])
-
+    pistas = [[sg.Text(columnas[i]+':',font=('Arial',14)),sg.Text(pista,font=('Arial',12))] for i,pista in enumerate(caracteristicas)]
+    
     return opciones,pistas,nombre_correcta

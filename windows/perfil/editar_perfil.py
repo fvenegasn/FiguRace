@@ -10,17 +10,21 @@ def logistica(event,values,**kwargs):
         case '-CANCELAR-':
             return False
         case '-ACEPTAR-':
-            exito = editar_perfil(mostrar_seleccionado('perfil'),values[0],values[1])
+            exito,caso = editar_perfil(mostrar_seleccionado('perfil'),values[0],values[1])
             if exito:
                 sg.Popup('Perfil editado con éxito!')
             else:
-                sg.Popup('Datos ingresados incorrectos')
+                match caso:
+                    case 'nick':
+                        sg.Popup('No existe el nick')
+                    case 'edad inválida'|'genero inválido':
+                        sg.Popup(f"Se ingresó {caso}")
             return False
     return True
 
 """-------------------------EJECUCIÓN------------------------------"""
 def ejecutar():
-    layout = [
+    layout = [[sg.VPush()],
         [
             sg.Text("Figuracer: ",font=('Arial',15)),
             sg.Text(
@@ -31,10 +35,11 @@ def ejecutar():
         
         [sg.Text('Ingrese nuevos datos:')],
         
-        [sg.Text('Edad:', size =(17, 1)), sg.InputText()],
+        [sg.Text('Edad:', size =(17, 1)), sg.InputText(size=(18,1))],
         
-        [sg.Text('Género autopercibido:', size =(17, 1)), sg.Combo(values=lista_generos)],
+        [sg.Text('Género autopercibido:', size =(17, 1)), sg.Combo(values=lista_generos,size=(16,1))],
         
-        [sg.Button("Aceptar", key="-ACEPTAR-"), sg.Button("Cancelar", key="-CANCELAR-")]
+        [sg.Button("Aceptar", key="-ACEPTAR-"), sg.Button("Cancelar", key="-CANCELAR-")],
+        [sg.VPush()]
     ]
     crear_ventana("Editar perfil", layout,logistica)

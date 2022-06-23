@@ -20,11 +20,11 @@ de acuerdo a lo que desee el usuario."""
 
 ### Perfil
 
-profile_button = """La selección de esta ventana permitirá al usuario crear y/o editar perfiles. En la misma,
-en caso de 'crear un nuevo perfil', se deberá indicar Nick (Apodo), Edad, Género autopercibido y
-Contraseña de la persona que jugará. Adicionalmente, si se selecciona la opción de
-'edición de perfil', se deberá indicar el Nick del usuario a modificar y el usuario deberá ingresar
-los nuevos datos."""
+profile_button = """La selección de esta ventana permitirá al usuario crear, seleccionar y/o editar perfiles. 
+En la misma, en caso de 'crear un nuevo perfil', se deberá indicar Nick (Apodo), Edad, Género 
+autopercibido y Contraseña de la persona que jugará. En caso de 'seleccionar perfil', el usuario 
+deberá ingresar su nick y contraseña. Adicionalmente, si se selecciona la opción de 'edición de 
+perfil', el usuario deberá ingresar los nuevos datos y se modificará el perfil ya seleccionado."""
 
 ### Puntajes
 

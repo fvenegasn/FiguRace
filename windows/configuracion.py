@@ -69,13 +69,15 @@ def interface():
 
 
     layout = [
+        [sg.VPush()],
         [layout_dataset],
         [layout_dificultad],
         [layout_parametros],
         [
             sg.Button('Seleccionar configuración por defecto', key="-DEFAULT-"),
             sg.Button("Volver al menú", key="-VOLVER-",font=('Arial',13))
-        ]
+        ],
+        [sg.VPush()]
     ]
     return layout
 
