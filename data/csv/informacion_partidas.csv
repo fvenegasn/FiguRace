@@ -435,3 +435,11 @@ Timestamp,Id,Evento,Usuarie,Estado,Texto Ingresado,Respuesta,Nivel,Genero,Datase
 1656011921,6wsh1h4d-8cgo-y4d5-0qz3ahaqatgsfk0f,fin,Juli,finalizada,-,-,Media,Femenino,Spotify
 1656011925,dyiy2ek8-3qbu-t53y-31y7r5ekfmfglc46,inicio_partida,Juli,-,-,-,Media,Femenino,Spotify
 1656011926,dyiy2ek8-3qbu-t53y-31y7r5ekfmfglc46,fin,Juli,cancelada,-,Tyga,Media,Femenino,Spotify
+1656029025,cx16gcf5-qd91-hctj-t7y952gwdop1s7k2,inicio_partida,Tato,-,-,-,Media,No-binario,Lagos
+1656029029,cx16gcf5-qd91-hctj-t7y952gwdop1s7k2,fin,Tato,cancelada,-,Lago Perito Moreno,Media,No-binario,Lagos
+1656033375,b4pxek3w-nm94-uuw3-19utfziakm490rgw,inicio_partida,Fran,-,-,-,Media,Masculino,Spotify
+1656033378,b4pxek3w-nm94-uuw3-19utfziakm490rgw,intento,Fran,error,Axwell /\ Ingrosso,Tiësto,Media,Masculino,Spotify
+1656033379,b4pxek3w-nm94-uuw3-19utfziakm490rgw,intento,Fran,error,MØ,Kodaline,Media,Masculino,Spotify
+1656033380,b4pxek3w-nm94-uuw3-19utfziakm490rgw,intento,Fran,ok,Ariana Grande,Ariana Grande,Media,Masculino,Spotify
+1656033434,b4pxek3w-nm94-uuw3-19utfziakm490rgw,intento,Fran,timeout,-,CeeLo Green,Media,Masculino,Spotify
+1656033435,b4pxek3w-nm94-uuw3-19utfziakm490rgw,fin,Fran,cancelada,-,Lady Gaga,Media,Masculino,Spotify
