@@ -6,7 +6,8 @@ from common import generos
 
 def editar_perfil(nick:str,edad:str,genero:str):
     """
-        Edita los datos del perfil si el nick ingresado existe
+        Edita los datos del perfil si el nick ingresado existe y devuelve true.
+        Caso contrario devuelve false y el motivo de la falla
     """
     
     usuario = Usuario(nick,edad,genero,contraseña='0')

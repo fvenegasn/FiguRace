@@ -443,3 +443,27 @@ Timestamp,Id,Evento,Usuarie,Estado,Texto Ingresado,Respuesta,Nivel,Genero,Datase
 1656033380,b4pxek3w-nm94-uuw3-19utfziakm490rgw,intento,Fran,ok,Ariana Grande,Ariana Grande,Media,Masculino,Spotify
 1656033434,b4pxek3w-nm94-uuw3-19utfziakm490rgw,intento,Fran,timeout,-,CeeLo Green,Media,Masculino,Spotify
 1656033435,b4pxek3w-nm94-uuw3-19utfziakm490rgw,fin,Fran,cancelada,-,Lady Gaga,Media,Masculino,Spotify
+1656081500,7rp8kq8f-8ue9-scs6-gywnmxsoe680uugw,inicio_partida,Juli,-,-,-,Media,Femenino,Spotify
+1656081507,7rp8kq8f-8ue9-scs6-gywnmxsoe680uugw,intento,Juli,ok,Travis Scott,Travis Scott,Media,Femenino,Spotify
+1656081515,7rp8kq8f-8ue9-scs6-gywnmxsoe680uugw,intento,Juli,error,Charlie Puth,Ciara,Media,Femenino,Spotify
+1656081518,7rp8kq8f-8ue9-scs6-gywnmxsoe680uugw,intento,Juli,ok,Major Lazer,Major Lazer,Media,Femenino,Spotify
+1656081523,7rp8kq8f-8ue9-scs6-gywnmxsoe680uugw,intento,Juli,ok,Drake,Drake,Media,Femenino,Spotify
+1656081529,7rp8kq8f-8ue9-scs6-gywnmxsoe680uugw,intento,Juli,error,MARINA,Sheppard,Media,Femenino,Spotify
+1656081536,7rp8kq8f-8ue9-scs6-gywnmxsoe680uugw,intento,Juli,ok,Zay Hilfigerrr,Zay Hilfigerrr,Media,Femenino,Spotify
+1656081541,7rp8kq8f-8ue9-scs6-gywnmxsoe680uugw,intento,Juli,error,Beyoncé,Lunay,Media,Femenino,Spotify
+1656081545,7rp8kq8f-8ue9-scs6-gywnmxsoe680uugw,intento,Juli,ok,B Young,B Young,Media,Femenino,Spotify
+1656081551,7rp8kq8f-8ue9-scs6-gywnmxsoe680uugw,intento,Juli,error,Macklemore & Ryan Lewis,Rizzle Kicks,Media,Femenino,Spotify
+1656081557,7rp8kq8f-8ue9-scs6-gywnmxsoe680uugw,intento,Juli,ok,A Boogie Wit da Hoodie,A Boogie Wit da Hoodie,Media,Femenino,Spotify
+1656081557,7rp8kq8f-8ue9-scs6-gywnmxsoe680uugw,fin,Juli,finalizada,-,-,Media,Femenino,Spotify
+1656081777,tdrgdor1-hy66-gqw9-lzxugprxk3hlr6w4,inicio_partida,Mabe,-,-,-,Facil,Femenino,Peliculas
+1656081790,tdrgdor1-hy66-gqw9-lzxugprxk3hlr6w4,intento,Mabe,error,Apollo 13,Enough,Facil,Femenino,Peliculas
+1656081808,tdrgdor1-hy66-gqw9-lzxugprxk3hlr6w4,intento,Mabe,error,No eres tú,The Bar,Facil,Femenino,Peliculas
+1656081825,tdrgdor1-hy66-gqw9-lzxugprxk3hlr6w4,intento,Mabe,ok,Backdraft 2,Backdraft 2,Facil,Femenino,Peliculas
+1656081839,tdrgdor1-hy66-gqw9-lzxugprxk3hlr6w4,intento,Mabe,error,Winx Club: The Mystery of the Abyss,Twist,Facil,Femenino,Peliculas
+1656081848,tdrgdor1-hy66-gqw9-lzxugprxk3hlr6w4,intento,Mabe,ok,Night at the Museum: Secret of the Tomb,Night at the Museum: Secret of the Tomb,Facil,Femenino,Peliculas
+1656081860,tdrgdor1-hy66-gqw9-lzxugprxk3hlr6w4,intento,Mabe,error,Black Christmas,The Grudge 2,Facil,Femenino,Peliculas
+1656081873,tdrgdor1-hy66-gqw9-lzxugprxk3hlr6w4,intento,Mabe,error,Wedding Crashers,The Unforgivable,Facil,Femenino,Peliculas
+1656081883,tdrgdor1-hy66-gqw9-lzxugprxk3hlr6w4,intento,Mabe,error,Ninja: Shadow of a Tear,Flora & Ulysses,Facil,Femenino,Peliculas
+1656081890,tdrgdor1-hy66-gqw9-lzxugprxk3hlr6w4,intento,Mabe,error,Mad Max 2,Guardians of the Galaxy,Facil,Femenino,Peliculas
+1656081901,tdrgdor1-hy66-gqw9-lzxugprxk3hlr6w4,intento,Mabe,error,Rogue One: A Star Wars Story,Platoon,Facil,Femenino,Peliculas
+1656081903,tdrgdor1-hy66-gqw9-lzxugprxk3hlr6w4,fin,Mabe,finalizada,-,-,Facil,Femenino,Peliculas

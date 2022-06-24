@@ -4,7 +4,10 @@ from common.archivo import escribir_json_data, leer_json_data
 from common.usuario import Usuario
 
 def guardar_perfil(nick:str, edad:str, genero:str, contraseña:str):
-    """Retorna True si se pudo guardar con exito el nuevo usuario"""
+    """
+        Retorna True si se pudo guardar con exito el nuevo usuario.
+        Caso contrario devuelve False y el motivo de la falla
+    """
     
     if (not nick.isalnum()):
         return False,'nick inválido'

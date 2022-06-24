@@ -3,7 +3,12 @@ import random
 import PySimpleGUI as sg
 
 
-def generar_tarjeta(dataset_actual,cant_caracteristicas):
+def generar_tarjeta(dataset_actual:str,cant_caracteristicas:int):
+    """
+        Devuelve botones que contienen distintas opciones extraídas del dataset 'dataset_actual', 
+        entre ellas la correcta. Además devuelve el nombre de la respuesta correcta y el número 
+        pistas para adivinar dado por 'cant_caracteristicas'.
+    """
     
     columnas,caracteristicas,nombre_correcta,nombre_incorrectas = opciones_random(dataset_actual,cant_caracteristicas)
 

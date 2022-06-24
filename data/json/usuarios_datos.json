@@ -127,8 +127,19 @@
         "contraseña": "jc19",
         "puntaje": {
             "Facil": 4,
-            "Media": 1.0,
+            "Media": 4.0,
             "Dificil": 4
+        }
+    },
+    {
+        "nick": "Mabe",
+        "edad": "60",
+        "genero": "Femenino",
+        "contraseña": "1234",
+        "puntaje": {
+            "Facil": 2,
+            "Media": 0,
+            "Dificil": 0
         }
     }
 ]
