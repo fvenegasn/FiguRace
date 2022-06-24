@@ -467,3 +467,15 @@ Timestamp,Id,Evento,Usuarie,Estado,Texto Ingresado,Respuesta,Nivel,Genero,Datase
 1656081890,tdrgdor1-hy66-gqw9-lzxugprxk3hlr6w4,intento,Mabe,error,Mad Max 2,Guardians of the Galaxy,Facil,Femenino,Peliculas
 1656081901,tdrgdor1-hy66-gqw9-lzxugprxk3hlr6w4,intento,Mabe,error,Rogue One: A Star Wars Story,Platoon,Facil,Femenino,Peliculas
 1656081903,tdrgdor1-hy66-gqw9-lzxugprxk3hlr6w4,fin,Mabe,finalizada,-,-,Facil,Femenino,Peliculas
+1656082565,md4xxw5u-6lp8-47lw-3pib9jmr209ds0r7,inicio_partida,Tebi,-,-,-,Media,Transgenero,Spotify
+1656082575,md4xxw5u-6lp8-47lw-3pib9jmr209ds0r7,intento,Tebi,error,Rihanna,M.O,Media,Transgenero,Spotify
+1656082580,md4xxw5u-6lp8-47lw-3pib9jmr209ds0r7,intento,Tebi,ok,XXXTENTACION,XXXTENTACION,Media,Transgenero,Spotify
+1656082585,md4xxw5u-6lp8-47lw-3pib9jmr209ds0r7,intento,Tebi,error,Karmin,Rihanna,Media,Transgenero,Spotify
+1656082590,md4xxw5u-6lp8-47lw-3pib9jmr209ds0r7,intento,Tebi,ok,21 Savage,21 Savage,Media,Transgenero,Spotify
+1656082593,md4xxw5u-6lp8-47lw-3pib9jmr209ds0r7,intento,Tebi,error,Calvin Harris,Mike Posner,Media,Transgenero,Spotify
+1656082601,md4xxw5u-6lp8-47lw-3pib9jmr209ds0r7,intento,Tebi,ok,Chris Brown,Chris Brown,Media,Transgenero,Spotify
+1656082604,md4xxw5u-6lp8-47lw-3pib9jmr209ds0r7,intento,Tebi,ok,Chris Brown,Chris Brown,Media,Transgenero,Spotify
+1656082610,md4xxw5u-6lp8-47lw-3pib9jmr209ds0r7,intento,Tebi,error,Dynoro,Mann,Media,Transgenero,Spotify
+1656082616,md4xxw5u-6lp8-47lw-3pib9jmr209ds0r7,intento,Tebi,error,The Weeknd,Britney Spears,Media,Transgenero,Spotify
+1656082621,md4xxw5u-6lp8-47lw-3pib9jmr209ds0r7,intento,Tebi,error,Drake,The Weeknd,Media,Transgenero,Spotify
+1656082622,md4xxw5u-6lp8-47lw-3pib9jmr209ds0r7,fin,Tebi,finalizada,-,-,Media,Transgenero,Spotify

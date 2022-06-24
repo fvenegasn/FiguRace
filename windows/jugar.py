@@ -102,12 +102,12 @@ def logistica(event,values,respuesta,**kwargs):
         case "ok":
             sg.Popup('Muy bien!')
             data['puntaje'] = data['puntaje'] + data["rta_correcta"]
-        case "error"|'-PASAR-':
-            texto="Incorrecto" if estado=="error" else "Ronda perdida"
-            sg.Popup(f"{texto} :( La respuesta correcta es {respuesta}")
+        case "error":
+            sg.Popup(f"Incorrecto :( La respuesta correcta es {respuesta}")
             data['puntaje'] = data['puntaje'] - data["rta_incorrecta"]
+        case '-PASAR-':
+            sg.Popup(f"Ronda perdida :( La respuesta correcta es {respuesta}")
     
-
     match estado:
         case "ok" | "error"|'-PASAR-':
             if not termino_el_juego:

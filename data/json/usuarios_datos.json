@@ -6,7 +6,7 @@
         "contraseña": "asdasd",
         "puntaje": {
             "Facil": 0,
-            "Media": 0,
+            "Media": 1.0,
             "Dificil": 0
         }
     },
