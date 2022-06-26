@@ -577,3 +577,15 @@ Timestamp,Id,Evento,Usuarie,Estado,Texto Ingresado,Respuesta,Nivel,Genero,Datase
 1656120646,8gio75pn-nhsb-7f8b-elnserwmzo05moj3,intento,Fran,error,Kid Ink,Justin Timberlake,Facil,Masculino,Spotify
 1656120648,8gio75pn-nhsb-7f8b-elnserwmzo05moj3,intento,Fran,error,Shawn Mendes,A Boogie Wit da Hoodie,Facil,Masculino,Spotify
 1656120649,8gio75pn-nhsb-7f8b-elnserwmzo05moj3,fin,Fran,cancelada,-,Clean Bandit,Facil,Masculino,Spotify
+1656203633,urmhe7hq-o4u8-ra8w-2jtaidea1e2dbflc,inicio_partida,Juli,-,-,-,Media,Femenino,Spotify
+1656203664,urmhe7hq-o4u8-ra8w-2jtaidea1e2dbflc,intento,Juli,timeout,-,Calvin Harris,Media,Femenino,Spotify
+1656203672,urmhe7hq-o4u8-ra8w-2jtaidea1e2dbflc,intento,Juli,error,Enrique Iglesias,Camila Cabello,Media,Femenino,Spotify
+1656203679,urmhe7hq-o4u8-ra8w-2jtaidea1e2dbflc,intento,Juli,ok,5 Seconds of Summer,5 Seconds of Summer,Media,Femenino,Spotify
+1656203684,urmhe7hq-o4u8-ra8w-2jtaidea1e2dbflc,intento,Juli,error,Foster The People,The Vamps,Media,Femenino,Spotify
+1656203691,urmhe7hq-o4u8-ra8w-2jtaidea1e2dbflc,intento,Juli,error,Gotye,BLACKPINK,Media,Femenino,Spotify
+1656203698,urmhe7hq-o4u8-ra8w-2jtaidea1e2dbflc,intento,Juli,error,21 Savage,Train,Media,Femenino,Spotify
+1656203703,urmhe7hq-o4u8-ra8w-2jtaidea1e2dbflc,intento,Juli,ok,KALEO,KALEO,Media,Femenino,Spotify
+1656203707,urmhe7hq-o4u8-ra8w-2jtaidea1e2dbflc,intento,Juli,ok,Ozuna,Ozuna,Media,Femenino,Spotify
+1656203713,urmhe7hq-o4u8-ra8w-2jtaidea1e2dbflc,pasar,Juli,error,-,Coldplay,Media,Femenino,Spotify
+1656203748,urmhe7hq-o4u8-ra8w-2jtaidea1e2dbflc,intento,Juli,timeout,-,Rudimental,Media,Femenino,Spotify
+1656203748,urmhe7hq-o4u8-ra8w-2jtaidea1e2dbflc,fin,Juli,finalizada,-,-,Media,Femenino,Spotify

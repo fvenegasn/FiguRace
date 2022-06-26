@@ -7,6 +7,7 @@ from common.manejo_datos_juego import buscar_usuario, mostrar_seleccionado, para
 import time
 from common.partida import Partida
 from helpers.generar_id import gen_id
+from helpers.fin_partida import fin_partida
 from windows import siguiente_tarjeta
 
 def interfaz(puntaje_actual):
@@ -79,7 +80,10 @@ def logistica(event,values,respuesta,**kwargs):
         sg.Popup('Se acabo el tiempo!')
         partida = Partida(int(time.time()),id_partida,'intento',usuarie,'timeout','-',respuesta,nivel,genero,dataset)
         guardar_partida(partida)
-        siguiente_tarjeta.ejecutar(window,data['puntaje'])
+        if not termino_el_juego:
+            siguiente_tarjeta.ejecutar(window,data['puntaje'])
+        else:
+            fin_partida(id_partida,usuarie,nivel,genero,dataset,data)
         return False
 
     #-------------------EVENTOS---------------------#
@@ -113,15 +117,7 @@ def logistica(event,values,respuesta,**kwargs):
             if not termino_el_juego:
                 siguiente_tarjeta.ejecutar(window,data['puntaje'])
             else:
-                partida = Partida(int(time.time()),id_partida,'fin',usuarie,'finalizada','-','-',nivel,genero, dataset)
-                guardar_partida(partida)
-
-                puntaje_final=data['puntaje']
-                guardar_puntaje(usuarie,puntaje_final,nivel)
-                if puntaje_final > data['puntaje_max']:
-                    guardar_puntaje_maximo(usuarie,puntaje_final,nivel)
-                sg.Popup(f"Terminaste la partida con un puntaje de {data['puntaje']}")
-
+                fin_partida(id_partida,usuarie,nivel,genero,dataset,data)
             return False
         case 'cancelada'| sg.WIN_CLOSED:
             sg.Popup('Abandona')
