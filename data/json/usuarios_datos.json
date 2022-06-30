@@ -141,5 +141,16 @@
             "Media": 0,
             "Dificil": 0
         }
+    },
+    {
+        "nick": "Facu",
+        "edad": "26",
+        "genero": "Transgenero",
+        "contraseña": "python",
+        "puntaje": {
+            "Facil": 0,
+            "Media": 5,
+            "Dificil": 0
+        }
     }
 ]

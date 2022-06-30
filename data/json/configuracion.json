@@ -1,6 +1,6 @@
 {
     "Facil": {
-        "tiempo_limite": 5,
+        "tiempo_limite": 60,
         "cant_rondas": 10,
         "rta_correcta": 1,
         "rta_incorrecta": 0,
@@ -10,7 +10,7 @@
         "tiempo_limite": 30,
         "cant_rondas": 10,
         "rta_correcta": 1,
-        "rta_incorrecta": 0.5,
+        "rta_incorrecta": 0,
         "cant_caracteristicas": 3
     },
     "Dificil": {
