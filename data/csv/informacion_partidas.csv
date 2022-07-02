@@ -650,3 +650,102 @@ Timestamp,Id,Evento,Usuarie,Estado,Texto Ingresado,Respuesta,Nivel,Genero,Datase
 1656801783,d865y22l-gyvq-7uhw-4r2odxszy8eblg5o,inicio_partida,Fran,-,-,-,Media,Masculino,Spotify
 1656801785,d865y22l-gyvq-7uhw-4r2odxszy8eblg5o,fin,Fran,cancelada,-,Regard,Media,Masculino,Spotify
 1656801789,d865y22l-gyvq-7uhw-4r2odxszy8eblg5o,fin,Fran,cancelada,-,Regard,Media,Masculino,Spotify
+1656804635,rhslep04-invi-x8zo-h0tors08zt0x6rd8,inicio_partida,Fran,-,-,-,Dificil,Masculino,Spotify
+1656804639,rhslep04-invi-x8zo-h0tors08zt0x6rd8,intento,Fran,timeout,-,Tim Berg,Dificil,Masculino,Spotify
+1656804642,rhslep04-invi-x8zo-h0tors08zt0x6rd8,intento,Fran,timeout,-,Bruno Mars,Dificil,Masculino,Spotify
+1656804647,rhslep04-invi-x8zo-h0tors08zt0x6rd8,intento,Fran,timeout,-,Marshmello,Dificil,Masculino,Spotify
+1656804650,rhslep04-invi-x8zo-h0tors08zt0x6rd8,intento,Fran,timeout,-,Kendrick Lamar,Dificil,Masculino,Spotify
+1656804653,rhslep04-invi-x8zo-h0tors08zt0x6rd8,intento,Fran,timeout,-,Lana Del Rey,Dificil,Masculino,Spotify
+1656804655,rhslep04-invi-x8zo-h0tors08zt0x6rd8,intento,Fran,timeout,-,FINNEAS,Dificil,Masculino,Spotify
+1656804658,rhslep04-invi-x8zo-h0tors08zt0x6rd8,intento,Fran,timeout,-,Niall Horan,Dificil,Masculino,Spotify
+1656804662,rhslep04-invi-x8zo-h0tors08zt0x6rd8,intento,Fran,timeout,-,Justin Bieber,Dificil,Masculino,Spotify
+1656804666,rhslep04-invi-x8zo-h0tors08zt0x6rd8,intento,Fran,timeout,-,Route 94,Dificil,Masculino,Spotify
+1656804669,rhslep04-invi-x8zo-h0tors08zt0x6rd8,intento,Fran,timeout,-,Lady Gaga,Dificil,Masculino,Spotify
+1656804669,rhslep04-invi-x8zo-h0tors08zt0x6rd8,fin,Fran,finalizada,-,-,Dificil,Masculino,Spotify
+1656804674,r3a0df95-ml2h-299l-q2zvziqmzejijvrj,inicio_partida,Fran,-,-,-,Dificil,Masculino,Spotify
+1656804678,r3a0df95-ml2h-299l-q2zvziqmzejijvrj,intento,Fran,timeout,-,Avicii,Dificil,Masculino,Spotify
+1656804680,r3a0df95-ml2h-299l-q2zvziqmzejijvrj,fin,Fran,cancelada,-,Bastille,Dificil,Masculino,Spotify
+1656804926,ehmcsfi2-0yds-dyfo-jb8iysvypy0odlrd,inicio_partida,Fran,-,-,-,Dificil,Masculino,Spotify
+1656804930,ehmcsfi2-0yds-dyfo-jb8iysvypy0odlrd,intento,Fran,timeout,-,Swedish House Mafia,Dificil,Masculino,Spotify
+1656804934,ehmcsfi2-0yds-dyfo-jb8iysvypy0odlrd,intento,Fran,timeout,-,Rudimental,Dificil,Masculino,Spotify
+1656804937,ehmcsfi2-0yds-dyfo-jb8iysvypy0odlrd,intento,Fran,timeout,-,Tove Lo,Dificil,Masculino,Spotify
+1656804941,ehmcsfi2-0yds-dyfo-jb8iysvypy0odlrd,intento,Fran,timeout,-,Martin Garrix,Dificil,Masculino,Spotify
+1656804943,ehmcsfi2-0yds-dyfo-jb8iysvypy0odlrd,intento,Fran,timeout,-,Example,Dificil,Masculino,Spotify
+1656804946,ehmcsfi2-0yds-dyfo-jb8iysvypy0odlrd,intento,Fran,timeout,-,Imagine Dragons,Dificil,Masculino,Spotify
+1656804949,ehmcsfi2-0yds-dyfo-jb8iysvypy0odlrd,intento,Fran,timeout,-,Calvin Harris,Dificil,Masculino,Spotify
+1656804952,ehmcsfi2-0yds-dyfo-jb8iysvypy0odlrd,intento,Fran,timeout,-,will.i.am,Dificil,Masculino,Spotify
+1656804955,ehmcsfi2-0yds-dyfo-jb8iysvypy0odlrd,intento,Fran,timeout,-,Foster The People,Dificil,Masculino,Spotify
+1656804957,ehmcsfi2-0yds-dyfo-jb8iysvypy0odlrd,intento,Fran,timeout,-,Cardi B,Dificil,Masculino,Spotify
+1656804957,ehmcsfi2-0yds-dyfo-jb8iysvypy0odlrd,fin,Fran,finalizada,-,-,Dificil,Masculino,Spotify
+1656805035,o6kbmty9-kl2l-s9vp-kg11q1h7clwpjhfv,inicio_partida,Fran,-,-,-,Dificil,Masculino,Spotify
+1656805039,o6kbmty9-kl2l-s9vp-kg11q1h7clwpjhfv,intento,Fran,timeout,-,Little Mix,Dificil,Masculino,Spotify
+1656805043,o6kbmty9-kl2l-s9vp-kg11q1h7clwpjhfv,intento,Fran,timeout,-,NSG,Dificil,Masculino,Spotify
+1656805046,o6kbmty9-kl2l-s9vp-kg11q1h7clwpjhfv,intento,Fran,timeout,-,Taylor Swift,Dificil,Masculino,Spotify
+1656805049,o6kbmty9-kl2l-s9vp-kg11q1h7clwpjhfv,intento,Fran,timeout,-,Rihanna,Dificil,Masculino,Spotify
+1656805052,o6kbmty9-kl2l-s9vp-kg11q1h7clwpjhfv,intento,Fran,timeout,-,Beyoncé,Dificil,Masculino,Spotify
+1656805056,o6kbmty9-kl2l-s9vp-kg11q1h7clwpjhfv,intento,Fran,timeout,-,Sebastian Ingrosso,Dificil,Masculino,Spotify
+1656805059,o6kbmty9-kl2l-s9vp-kg11q1h7clwpjhfv,intento,Fran,timeout,-,Axwell /\ Ingrosso,Dificil,Masculino,Spotify
+1656805063,o6kbmty9-kl2l-s9vp-kg11q1h7clwpjhfv,intento,Fran,timeout,-,Frank Ocean,Dificil,Masculino,Spotify
+1656805066,o6kbmty9-kl2l-s9vp-kg11q1h7clwpjhfv,intento,Fran,timeout,-,The Chainsmokers,Dificil,Masculino,Spotify
+1656805069,o6kbmty9-kl2l-s9vp-kg11q1h7clwpjhfv,intento,Fran,timeout,-,Tinie Tempah,Dificil,Masculino,Spotify
+1656805069,o6kbmty9-kl2l-s9vp-kg11q1h7clwpjhfv,fin,Fran,finalizada,-,-,Dificil,Masculino,Spotify
+1656805467,x4f0o4i6-qpmu-snc1-cyco2nn5u82nui2r,inicio_partida,Fran,-,-,-,Dificil,Masculino,Spotify
+1656805481,x4f0o4i6-qpmu-snc1-cyco2nn5u82nui2r,intento,Fran,timeout,-,Bruno Mars,Dificil,Masculino,Spotify
+1656805491,x4f0o4i6-qpmu-snc1-cyco2nn5u82nui2r,intento,Fran,timeout,-,The Weeknd,Dificil,Masculino,Spotify
+1656805497,x4f0o4i6-qpmu-snc1-cyco2nn5u82nui2r,intento,Fran,timeout,-,Future,Dificil,Masculino,Spotify
+1656805504,x4f0o4i6-qpmu-snc1-cyco2nn5u82nui2r,intento,Fran,timeout,-,Jason Derulo,Dificil,Masculino,Spotify
+1656805507,x4f0o4i6-qpmu-snc1-cyco2nn5u82nui2r,intento,Fran,timeout,-,P!nk,Dificil,Masculino,Spotify
+1656805511,x4f0o4i6-qpmu-snc1-cyco2nn5u82nui2r,intento,Fran,timeout,-,Travis Scott,Dificil,Masculino,Spotify
+1656805514,x4f0o4i6-qpmu-snc1-cyco2nn5u82nui2r,intento,Fran,timeout,-,Mark Ronson,Dificil,Masculino,Spotify
+1656805517,x4f0o4i6-qpmu-snc1-cyco2nn5u82nui2r,intento,Fran,timeout,-,Cardi B,Dificil,Masculino,Spotify
+1656805520,x4f0o4i6-qpmu-snc1-cyco2nn5u82nui2r,intento,Fran,timeout,-,Nicki Minaj,Dificil,Masculino,Spotify
+1656805522,x4f0o4i6-qpmu-snc1-cyco2nn5u82nui2r,intento,Fran,timeout,-,Adam Lambert,Dificil,Masculino,Spotify
+1656805522,x4f0o4i6-qpmu-snc1-cyco2nn5u82nui2r,fin,Fran,finalizada,-,-,Dificil,Masculino,Spotify
+1656805525,3zfzsd2l-bwil-drtv-7t0qdvocm28skkmm,inicio_partida,Fran,-,-,-,Dificil,Masculino,Spotify
+1656805529,3zfzsd2l-bwil-drtv-7t0qdvocm28skkmm,intento,Fran,timeout,-,KALEO,Dificil,Masculino,Spotify
+1656805545,3zfzsd2l-bwil-drtv-7t0qdvocm28skkmm,intento,Fran,timeout,-,Jason Derulo,Dificil,Masculino,Spotify
+1656805553,3zfzsd2l-bwil-drtv-7t0qdvocm28skkmm,intento,Fran,timeout,-,Justin Timberlake,Dificil,Masculino,Spotify
+1656805556,3zfzsd2l-bwil-drtv-7t0qdvocm28skkmm,intento,Fran,timeout,-,Birdy,Dificil,Masculino,Spotify
+1656805560,3zfzsd2l-bwil-drtv-7t0qdvocm28skkmm,intento,Fran,timeout,-,Swedish House Mafia,Dificil,Masculino,Spotify
+1656805562,3zfzsd2l-bwil-drtv-7t0qdvocm28skkmm,intento,Fran,ok,Paramore,Paramore,Dificil,Masculino,Spotify
+1656805565,3zfzsd2l-bwil-drtv-7t0qdvocm28skkmm,intento,Fran,timeout,-,The Weeknd,Dificil,Masculino,Spotify
+1656805566,3zfzsd2l-bwil-drtv-7t0qdvocm28skkmm,intento,Fran,error,Milky Chance,Post Malone,Dificil,Masculino,Spotify
+1656805569,3zfzsd2l-bwil-drtv-7t0qdvocm28skkmm,intento,Fran,error,Post Malone,Arctic Monkeys,Dificil,Masculino,Spotify
+1656805575,3zfzsd2l-bwil-drtv-7t0qdvocm28skkmm,intento,Fran,timeout,-,Jax Jones,Dificil,Masculino,Spotify
+1656805576,3zfzsd2l-bwil-drtv-7t0qdvocm28skkmm,fin,Fran,finalizada,-,-,Dificil,Masculino,Spotify
+1656805578,itppei5p-x693-3nsi-lj70pe3a4xgiskxu,inicio_partida,Fran,-,-,-,Dificil,Masculino,Spotify
+1656805580,itppei5p-x693-3nsi-lj70pe3a4xgiskxu,fin,Fran,cancelada,-,Chris Brown,Dificil,Masculino,Spotify
+1656805591,34fd36l3-zk81-j5a8-n2hw0q959m4zcgfu,inicio_partida,Fran,-,-,-,Dificil,Masculino,Spotify
+1656805598,34fd36l3-zk81-j5a8-n2hw0q959m4zcgfu,intento,Fran,timeout,-,Taylor Swift,Dificil,Masculino,Spotify
+1656805600,34fd36l3-zk81-j5a8-n2hw0q959m4zcgfu,fin,Fran,cancelada,-,Disclosure,Dificil,Masculino,Spotify
+1656805617,loadtn4u-m2pv-3ch9-7tn4iu75mc7flsv3,inicio_partida,Fran,-,-,-,Facil,Masculino,Spotify
+1656805619,loadtn4u-m2pv-3ch9-7tn4iu75mc7flsv3,fin,Fran,cancelada,-,Robin Thicke,Facil,Masculino,Spotify
+1656805622,56412z2a-q8y1-vz77-gh6lgh7jtiijfdop,inicio_partida,Fran,-,-,-,Facil,Masculino,Spotify
+1656805625,56412z2a-q8y1-vz77-gh6lgh7jtiijfdop,pasar,Fran,error,-,Normani,Facil,Masculino,Spotify
+1656805736,56412z2a-q8y1-vz77-gh6lgh7jtiijfdop,intento,Fran,timeout,-,One Direction,Facil,Masculino,Spotify
+1656805737,56412z2a-q8y1-vz77-gh6lgh7jtiijfdop,intento,Fran,error,Khalid,Sam Smith,Facil,Masculino,Spotify
+1656805739,56412z2a-q8y1-vz77-gh6lgh7jtiijfdop,intento,Fran,error,Paramore,Ludacris,Facil,Masculino,Spotify
+1656805740,56412z2a-q8y1-vz77-gh6lgh7jtiijfdop,intento,Fran,error,Pitbull,Post Malone,Facil,Masculino,Spotify
+1656805742,56412z2a-q8y1-vz77-gh6lgh7jtiijfdop,intento,Fran,ok,Mumford & Sons,Mumford & Sons,Facil,Masculino,Spotify
+1656805744,56412z2a-q8y1-vz77-gh6lgh7jtiijfdop,intento,Fran,error,Justin Timberlake,Migos,Facil,Masculino,Spotify
+1656805746,56412z2a-q8y1-vz77-gh6lgh7jtiijfdop,intento,Fran,ok,Panic! At The Disco,Panic! At The Disco,Facil,Masculino,Spotify
+1656805748,56412z2a-q8y1-vz77-gh6lgh7jtiijfdop,intento,Fran,error,The Wanted,David Guetta,Facil,Masculino,Spotify
+1656805750,56412z2a-q8y1-vz77-gh6lgh7jtiijfdop,intento,Fran,ok,Calvin Harris,Calvin Harris,Facil,Masculino,Spotify
+1656805751,56412z2a-q8y1-vz77-gh6lgh7jtiijfdop,fin,Fran,finalizada,-,-,Facil,Masculino,Spotify
+1656805753,47yrac43-ox7k-tlvt-viqbhu6kkjkkva0s,inicio_partida,Fran,-,-,-,Facil,Masculino,Spotify
+1656805754,47yrac43-ox7k-tlvt-viqbhu6kkjkkva0s,intento,Fran,error,One Direction,Avicii,Facil,Masculino,Spotify
+1656805756,47yrac43-ox7k-tlvt-viqbhu6kkjkkva0s,fin,Fran,cancelada,-,XXXTENTACION,Facil,Masculino,Spotify
+1656805866,pqx20gai-cvc2-tbkx-3rlwuasoznmehcgi,inicio_partida,Fran,-,-,-,Media,Masculino,Spotify
+1656805868,pqx20gai-cvc2-tbkx-3rlwuasoznmehcgi,intento,Fran,error,JAY-Z,Tyler,Media,Masculino,Spotify
+1656805869,pqx20gai-cvc2-tbkx-3rlwuasoznmehcgi,intento,Fran,error,B.o.B,Kesha,Media,Masculino,Spotify
+1656805871,pqx20gai-cvc2-tbkx-3rlwuasoznmehcgi,intento,Fran,error,Miguel,Kodak Black,Media,Masculino,Spotify
+1656805872,pqx20gai-cvc2-tbkx-3rlwuasoznmehcgi,intento,Fran,error,The Band Perry,Marshmello,Media,Masculino,Spotify
+1656805874,pqx20gai-cvc2-tbkx-3rlwuasoznmehcgi,intento,Fran,error,Calvin Harris,Sigrid,Media,Masculino,Spotify
+1656805875,pqx20gai-cvc2-tbkx-3rlwuasoznmehcgi,intento,Fran,error,Tove Lo,Billie Eilish,Media,Masculino,Spotify
+1656805877,pqx20gai-cvc2-tbkx-3rlwuasoznmehcgi,intento,Fran,error,Flo Rida,Jeremih,Media,Masculino,Spotify
+1656805878,pqx20gai-cvc2-tbkx-3rlwuasoznmehcgi,intento,Fran,error,Frank Ocean,Nicki Minaj,Media,Masculino,Spotify
+1656805879,pqx20gai-cvc2-tbkx-3rlwuasoznmehcgi,intento,Fran,error,Jason Derulo,Lorde,Media,Masculino,Spotify
+1656805881,pqx20gai-cvc2-tbkx-3rlwuasoznmehcgi,intento,Fran,ok,lovelytheband,lovelytheband,Media,Masculino,Spotify
+1656805883,pqx20gai-cvc2-tbkx-3rlwuasoznmehcgi,fin,Fran,finalizada,-,-,Media,Masculino,Spotify
+1656805885,qlqfqppq-obh8-hb83-8o1ufqyil7gyd3bi,inicio_partida,Fran,-,-,-,Media,Masculino,Spotify
+1656805886,qlqfqppq-obh8-hb83-8o1ufqyil7gyd3bi,fin,Fran,cancelada,-,Tove Lo,Media,Masculino,Spotify

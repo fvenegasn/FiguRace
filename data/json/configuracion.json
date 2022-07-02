@@ -10,11 +10,11 @@
         "tiempo_limite": 30,
         "cant_rondas": 10,
         "rta_correcta": 1,
-        "rta_incorrecta": 0,
+        "rta_incorrecta": 0.5,
         "cant_caracteristicas": 3
     },
     "Dificil": {
-        "tiempo_limite": 15,
+        "tiempo_limite": 3,
         "cant_rondas": 10,
         "rta_correcta": 1,
         "rta_incorrecta": 1,
