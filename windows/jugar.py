@@ -84,6 +84,8 @@ def logistica(event,values,respuesta,**kwargs):
             siguiente_tarjeta.ejecutar(window,data['puntaje'])
         else:
             fin_partida(id_partida,usuarie,nivel,genero,dataset,data)
+            if (sg.Popup("¿Quieres jugar nuevamente?", button_type=1) == "Yes"):
+                    ejecutar()
         return False
 
     #-------------------EVENTOS---------------------#
@@ -118,12 +120,12 @@ def logistica(event,values,respuesta,**kwargs):
                 siguiente_tarjeta.ejecutar(window,data['puntaje'])
             else:
                 fin_partida(id_partida,usuarie,nivel,genero,dataset,data)
+                if (sg.Popup("¿Quieres jugar nuevamente?", button_type=1) == "Yes"):
+                    ejecutar()
             return False
         case 'cancelada'| sg.WIN_CLOSED:
             if (sg.Popup("¿Seguro quieres abandonar la partida?", button_type=4) == "OK"):
                 return False
-            #sg.Popup("This is a simple popup", button_type=5)
-            #return False
     return True
 
 """-------------------------INICIALZACIÓN SESIÓN------------------------------"""
