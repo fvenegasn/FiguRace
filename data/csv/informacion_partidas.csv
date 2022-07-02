@@ -633,3 +633,20 @@ Timestamp,Id,Evento,Usuarie,Estado,Texto Ingresado,Respuesta,Nivel,Genero,Datase
 1656598567,0hv8o42s-3dpz-6ico-hzy90yhsozn6hziz,intento,Facu,error,Example,The Weeknd,Media,Transgenero,Spotify
 1656598584,0hv8o42s-3dpz-6ico-hzy90yhsozn6hziz,intento,Facu,ok,Rizzle Kicks,Rizzle Kicks,Media,Transgenero,Spotify
 1656598586,0hv8o42s-3dpz-6ico-hzy90yhsozn6hziz,fin,Facu,finalizada,-,-,Media,Transgenero,Spotify
+1656799063,u2uk8y4j-s7ei-g1wf-p7orc1928ytdkb5c,inicio_partida,Fran,-,-,-,Media,Masculino,Spotify
+1656799066,u2uk8y4j-s7ei-g1wf-p7orc1928ytdkb5c,fin,Fran,cancelada,-,Nick Jonas,Media,Masculino,Spotify
+1656799545,q1ielgbv-8bdk-2d6d-i1qogn72qy9ry3cv,inicio_partida,Fran,-,-,-,Media,Masculino,Spotify
+1656799548,q1ielgbv-8bdk-2d6d-i1qogn72qy9ry3cv,fin,Fran,cancelada,-,The Vamps,Media,Masculino,Spotify
+1656799619,5e4max0w-o8h4-l6bl-wh1218f884xe98us,inicio_partida,Fran,-,-,-,Media,Masculino,Spotify
+1656799620,5e4max0w-o8h4-l6bl-wh1218f884xe98us,fin,Fran,cancelada,-,Lauv,Media,Masculino,Spotify
+1656801570,7dxmtjnb-c9nb-0ibu-wuyv0wt9e25c8qs7,inicio_partida,Fran,-,-,-,Media,Masculino,Spotify
+1656801571,7dxmtjnb-c9nb-0ibu-wuyv0wt9e25c8qs7,fin,Fran,cancelada,-,The Band Perry,Media,Masculino,Spotify
+1656801605,lvbvuuto-578x-t9lf-kzdldch4ulvymk3q,inicio_partida,Fran,-,-,-,Media,Masculino,Spotify
+1656801606,lvbvuuto-578x-t9lf-kzdldch4ulvymk3q,fin,Fran,cancelada,-,Taylor Swift,Media,Masculino,Spotify
+1656801629,xu5plunz-rpdd-smgt-umol6dr2dm6kw6av,inicio_partida,Fran,-,-,-,Media,Masculino,Spotify
+1656801630,xu5plunz-rpdd-smgt-umol6dr2dm6kw6av,fin,Fran,cancelada,-,Ed Sheeran,Media,Masculino,Spotify
+1656801778,murub5rs-ejy9-wm7x-dbrywutjrbmvkk75,inicio_partida,Fran,-,-,-,Media,Masculino,Spotify
+1656801780,murub5rs-ejy9-wm7x-dbrywutjrbmvkk75,fin,Fran,cancelada,-,P!nk,Media,Masculino,Spotify
+1656801783,d865y22l-gyvq-7uhw-4r2odxszy8eblg5o,inicio_partida,Fran,-,-,-,Media,Masculino,Spotify
+1656801785,d865y22l-gyvq-7uhw-4r2odxszy8eblg5o,fin,Fran,cancelada,-,Regard,Media,Masculino,Spotify
+1656801789,d865y22l-gyvq-7uhw-4r2odxszy8eblg5o,fin,Fran,cancelada,-,Regard,Media,Masculino,Spotify

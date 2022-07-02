@@ -120,8 +120,10 @@ def logistica(event,values,respuesta,**kwargs):
                 fin_partida(id_partida,usuarie,nivel,genero,dataset,data)
             return False
         case 'cancelada'| sg.WIN_CLOSED:
-            sg.Popup('Abandona')
-            return False
+            if (sg.Popup("¿Seguro quieres abandonar la partida?", button_type=4) == "OK"):
+                return False
+            #sg.Popup("This is a simple popup", button_type=5)
+            #return False
     return True
 
 """-------------------------INICIALZACIÓN SESIÓN------------------------------"""
