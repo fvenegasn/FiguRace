@@ -121,7 +121,7 @@ def logistica(event,values,respuesta,**kwargs):
             else:
                 fin_partida(id_partida,usuarie,nivel,genero,dataset,data)
                 if (sg.Popup("¿Quieres jugar nuevamente?", button_type=1) == "Yes"):
-                    ejecutar()
+                    ejecutar(window,nueva=True)
             return False
         case 'cancelada'| sg.WIN_CLOSED:
             if (sg.Popup("¿Seguro quieres abandonar la partida?", button_type=4) == "OK"):
@@ -152,7 +152,9 @@ def initialize(data):
     guardar_partida(partida_inicio)
 
 """-------------------------EJECUCIÓN------------------------------"""
-def ejecutar():
+def ejecutar(partida_previa = None,nueva=False):
+    if nueva:
+        partida_previa.close()
     layout,respuesta = interfaz(0)
     crear_ventana("Pantalla de Juego", layout,logistica,initialize=initialize,respuesta= respuesta)
     
