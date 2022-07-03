@@ -2,7 +2,7 @@ import PySimpleGUI as sg
 from common.generar_tarjeta import generar_tarjeta
 from common.hacer_ventana import crear_ventana
 import os
-from common.manejo_datos_juego import guardar_partida, guardar_puntaje, guardar_puntaje_maximo 
+from common.manejo_datos_juego import guardar_partida
 from common.manejo_datos_juego import buscar_usuario, mostrar_seleccionado, parametros_configuracion
 import time
 from common.partida import Partida
