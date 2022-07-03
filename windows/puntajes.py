@@ -6,11 +6,11 @@ from helpers.mejores_puntajes import mejores_promedios, mejores_puntajes
 def interface():
     
     layout = [
-        [sg.Text("MEJORES PUNTAJES ",font=('Arial',16))],
+        [sg.Text("MEJORES PUNTAJES ",font=('Arial',14))],
         [mejores_puntajes('facil'),mejores_puntajes('media'),mejores_puntajes('dificil')],
-        [sg.Text("PUNTAJES PROMEDIOS",font=('Arial',16))],
+        [sg.Text("PUNTAJES PROMEDIOS",font=('Arial',14))],
         [mejores_promedios('facil'),mejores_promedios('media'),mejores_promedios('dificil')],
-        [sg.Column([[sg.Button("Volver al menú", key="-VOLVER-",font=('Arial',14))]],justification='right')],
+        [sg.Column([[sg.Button("Volver al menú", key="-VOLVER-",font=('Arial',12))]],justification='right')],
     ]
     return layout
 

@@ -1,4 +1,3 @@
-from select import select
 import PySimpleGUI as sg
 from common.hacer_ventana import crear_ventana
 from common.modificar_perfil import editar_perfil
