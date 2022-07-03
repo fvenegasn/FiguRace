@@ -26,7 +26,13 @@ def opciones_random(nombre:str,cant_caracteristicas:int):
             columnas=next(reader)
             data = list(map(lambda x: x,reader))
         
-        opciones = sample(data, k=5)
+        exito = False
+        while (not exito):
+            opciones = sample(data, k=5)
+            nombres_opciones = list(map(lambda x:x[5],opciones))
+            nombres_sin_rep = set(nombres_opciones)
+            exito = len(nombres_sin_rep) == len(nombres_opciones)
+        
         descartadas = opciones[1:5]
         elegida = opciones[0]
         caracteristicas = elegida[0:cant_caracteristicas]
