@@ -1,16 +1,16 @@
 import PySimpleGUI as sg 
 from common.hacer_ventana import crear_ventana
-from helpers.mejores_puntajes import hacer_tabla
+from helpers.mejores_puntajes import mejores_promedios, mejores_puntajes
 
 """-------------------------INTERFAZ------------------------------"""
 def interface():
     
     layout = [
-        [sg.VPush()],
         [sg.Text("MEJORES PUNTAJES ",font=('Arial',16))],
-        [hacer_tabla('Nivel Fácil','facil'),hacer_tabla('Nivel Medio','media'),hacer_tabla('Nivel Dificil','dificil')],
+        [mejores_puntajes('facil'),mejores_puntajes('media'),mejores_puntajes('dificil')],
+        [sg.Text("PUNTAJES PROMEDIOS",font=('Arial',16))],
+        [mejores_promedios('facil'),mejores_promedios('media'),mejores_promedios('dificil')],
         [sg.Column([[sg.Button("Volver al menú", key="-VOLVER-",font=('Arial',14))]],justification='right')],
-        [sg.VPush()]
     ]
     return layout
 
