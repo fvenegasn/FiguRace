@@ -1,4 +1,3 @@
-from turtle import left
 import PySimpleGUI as sg
 from common.hacer_ventana import crear_ventana
 from common.guardar_perfil import guardar_perfil
