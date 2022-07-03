@@ -53,7 +53,7 @@ def interfaz(puntaje_actual):
         [sg.Image(filename = ruta_imagen)],
         [sg.Text('Tiempo restante',font=('Arial',20))],
         [sg.Text(tiempo_limite,key='-TEMPORIZADOR-',font=('Arial',20))],
-        [sg.Button('Abandonar juego',font=('Arial',10),key='cancelada,fin,-',border_width=2,size=(12,1))]
+        [sg.Button('Abandonar juego',font=('Arial',10),key='cancelada',border_width=2,size=(12,1))]
     ]
 
     layout=[[sg.Column(columna1),sg.Column(layout_tarjeta,element_justification='center',background_color='grey')]]
@@ -93,7 +93,7 @@ def logistica(event,values,respuesta,**kwargs):
 
     eventos = event.split(',')
     estado = eventos[0]
-    if len(eventos) > 2: #casos en el que se clickea alguna opcion o se abandona el juego
+    if len(eventos) > 2: #casos en el que se clickea alguna opcion
         evento = eventos[1]
         texto_ingresado = eventos[2]
 
@@ -125,6 +125,8 @@ def logistica(event,values,respuesta,**kwargs):
             return False
         case 'cancelada'| sg.WIN_CLOSED:
             if (sg.Popup("¿Seguro quieres abandonar la partida?", button_type=4) == "OK"):
+                partida = Partida(int(time.time()),id_partida,'fin',usuarie,estado,'-',respuesta,nivel,genero, dataset)
+                guardar_partida(partida)
                 return False
     return True
 
