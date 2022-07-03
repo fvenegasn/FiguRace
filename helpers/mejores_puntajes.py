@@ -25,7 +25,7 @@ def hacer_tabla(title:str,columna1:list,columna2:list):
         [sg.Column(datos,scrollable=True,vertical_scroll_only=True,element_justification='left',background_color='grey',size=(200,200))],
     ]
 
-    tabla=sg.Frame(title=title,layout=layout_tabla,font=('Arial',12),background_color='pink',size=(180,200))
+    tabla=sg.Frame(title=title,layout=layout_tabla,font=('Arial',12),background_color='pink',size=(180,180))
     return tabla
 
 def elegir_mejores(cant:int,data_frame:pd.DataFrame,columna:str):
