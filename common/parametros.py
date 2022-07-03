@@ -10,7 +10,7 @@ options = {
     "Media":{"tiempo_limite" : 30,
     "cant_rondas": 10,
     "rta_correcta" : 1, 
-    "rta_incorrecta" : 0.5, 
+    "rta_incorrecta" : 1, 
     "cant_caracteristicas" : 3
     },
 
