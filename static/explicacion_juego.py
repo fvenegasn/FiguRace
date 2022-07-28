@@ -29,7 +29,8 @@ perfil', el usuario deberá ingresar los nuevos datos y se modificará el perfil
 ### Puntajes
 
 score_button = """Esta pantalla mostrará los datos de los 20 mejores puntajes, por cada nivel, junto con el 
-Nick del jugador que lo obtuvo."""
+Nick del jugador que lo obtuvo. Además se podra visualizar los 20 puntajes promedios más altos  
+para cada nivel, con el respectivo nombre de usuario """
 
 ### Configuración
 
